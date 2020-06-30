@@ -1,0 +1,149 @@
+
+// #lab_social_icon_footer {
+//   padding: 40px 0;
+//   background-color: #dedede;
+// }
+
+#lab_social_icon_footer a {
+  color: #333;
+}
+
+#lab_social_icon_footer .social:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+
+#lab_social_icon_footer .social {
+  -webkit-transform: scale(0.8);
+  /* Browser Variations: */
+  
+  -moz-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+}
+/*
+    Multicoloured Hover Variations
+*/
+
+#lab_social_icon_footer #social-gh:hover {
+  color: #161614;
+}
+
+#lab_social_icon_footer #social-em:hover {
+  color: #dd4b38;
+}
+
+#lab_social_icon_footer #social-tg:hover {
+  color: #45a7ed;
+}
+
+
+// For links
+.enabled {
+	font-weight: bold;
+}
+
+.lang {
+  list-style: none;
+}
+
+.site-title {
+    font-size: 18px !important;
+}
+
+.lang-sel {
+  padding: 7px;
+}
+
+
+// /* Search position */
+// .page-header {
+//   margin: 0 0 0;
+// }
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 15rem
+  }
+}
+
+@media (min-width: 50rem) {
+  .main {
+    margin-left: 17rem
+  }
+}
+
+/* a third sublevel of items */
+//li.toc_li ul { background: red }
+
+#sidebar.affix {
+  top: 20px;
+}
+
+/* For tabs */
+.tab-header ul > li::before {
+  content: "";
+}
+
+.bs-docs-sidebar ul > li::before {
+  content: "";
+}
+
+#nav-sidebar.affix {
+  right: 27px;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav > li > a {
+  color: #999;
+  border-left: 2px solid transparent;
+  padding: 4px 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav > li > a {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav > .active > a, .bs-docs-sidebar .nav > li > a:hover, .bs-docs-sidebar .nav > li > a:focus {
+  color: #563d7c;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #563d7c;
+}
+
+/* all active links */
+.bs-docs-sidebar .nav > .active > a, .bs-docs-sidebar .nav > .active:hover > a, .bs-docs-sidebar .nav > .active:focus > a {
+  font-weight: 700;
+}
+
+/* nested active links */
+.bs-docs-sidebar .nav .nav > .active > a, .bs-docs-sidebar .nav .nav > .active:hover > a, .bs-docs-sidebar .nav .nav > .active:focus > a {
+  font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+  display: none;
+}
+
+/* show active nested list */
+.bs-docs-sidebar .nav > .active > ul.nav {
+  display: block;
+}

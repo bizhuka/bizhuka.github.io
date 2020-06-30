@@ -1,0 +1,14 @@
+*.gem
+.bundle
+.ruby-version
+.jekyll-cache
+/*.iml
+/.idea
+/_site
+/dist/bootstrap
+/dist/jquery
+/Gemfile.lock
+.sass-cache
+_site
+Gemfile.lock
+node_modules
