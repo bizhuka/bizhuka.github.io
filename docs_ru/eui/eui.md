@@ -3,7 +3,7 @@ layout: default
 title: "EUI - интерфейс пользователя"
 nav_order: 2
 has_children: true
-permalink: /ru/eui
+permalink: /ru/eui/
 ---
 
 ### **EUI** - Easy user interface
