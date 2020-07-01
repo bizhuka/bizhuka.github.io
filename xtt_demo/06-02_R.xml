@@ -1,0 +1,566 @@
+<?xml version="1.0"?>
+<?mso-application progid="Excel.Sheet"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Molda_B</Author>
+  <LastAuthor>Molda_B</LastAuthor>
+  <Created>2018-02-05T04:44:42Z</Created>
+  <Version>16.00</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>14100</WindowHeight>
+  <WindowWidth>28800</WindowWidth>
+  <WindowTopX>0</WindowTopX>
+  <WindowTopY>0</WindowTopY>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Interior ss:Color="#DDEBF7" ss:Pattern="Solid"/>
+  </Style>
+  <Style ss:ID="s63">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s64">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s65">
+   <Borders>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="2"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="2"/>
+   </Borders>
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#000000" ss:Bold="1"/>
+  </Style>
+  <Style ss:ID="s66">
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+  </Style>
+  <Style ss:ID="s67">
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FF0000"/>
+   <Interior/>
+  </Style>
+  <Style ss:ID="s68">
+   <Interior/>
+  </Style>
+  <Style ss:ID="s69">
+   <Font ss:FontName="Calibri" x:CharSet="204" x:Family="Swiss" ss:Size="11"
+    ss:Color="#FF0000"/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="4"  x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="130.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="266.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="266.25"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s62"><Data ss:Type="String">Convert R-T to tree</Data></Cell>
+    <Cell><Data ss:Type="String">Title</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s62"><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Different R-T declarations (for several sheets) only in XLSX!</Data></Cell>
+    <Cell ss:StyleID="s63"><Data ss:Type="String">Path</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Level</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Parent dir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager\Logs</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager\Tracing</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Receiver</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\Temp</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\img</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\custom</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\plugins</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\css</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\1x</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\2x</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\common</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\external</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\da</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\de</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\en</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\es</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\fr</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\it</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ja</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ko</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\nl</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\pt</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ru</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\sv</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\zh-CN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\zh-TW</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\store</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper\Temp</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet1 (2)">
+  <Table ss:ExpandedColumnCount="4"  x:FullColumns="1"
+   x:FullRows="1" ss:DefaultRowHeight="15">
+   <Column ss:AutoFitWidth="0" ss:Width="208.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="266.25"/>
+   <Column ss:AutoFitWidth="0" ss:Width="82.5"/>
+   <Column ss:AutoFitWidth="0" ss:Width="266.25"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s67"><Data ss:Type="String">direction=column only for XLSX format!</Data></Cell>
+    <Cell><Data ss:Type="String">Title</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:StyleID="s68"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s63"><Data ss:Type="String">Path</Data></Cell>
+    <Cell ss:StyleID="s64"><Data ss:Type="String">Level</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Parent dir</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String"></Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager\Logs</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager\Tracing</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\AuthManager</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Receiver</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\Temp</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\img</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\custom</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\plugins</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\css</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\1x</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\2x</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images\common</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\images</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\external</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\da</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\de</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\en</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\es</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\fr</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\it</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ja</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ko</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\nl</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\pt</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\ru</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\sv</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\zh-CN</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization\zh-TW</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\1\receiver\js\localization</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274\store</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\SelfService\web\kpo-40a77274</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper\Temp</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">D:\USERS\MOLDAB\APPDATA\LOCAL\CITRIX\Web Helper</Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageSetup>
+    <Header x:Margin="0.3"/>
+    <Footer x:Margin="0.3"/>
+    <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
+   </PageSetup>
+   <Unsynced/>
+   <Print>
+    <ValidPrinterInfo/>
+    <PaperSizeIndex>9</PaperSizeIndex>
+    <HorizontalResolution>600</HorizontalResolution>
+    <VerticalResolution>600</VerticalResolution>
+   </Print>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveCol>5</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

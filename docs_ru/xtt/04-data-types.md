@@ -3,7 +3,11 @@ parent: "XTT - отчеты"
 title: "04 Типы данных и пост обработка Excel"
 nav_order: 40
 permalink: /ru/xtt/data-types/
+_cus_head: "_popup_head.html"
+_cus_index: "04"
 ---
+
+{% include _xtt_demo.html %}
 
 Для типов данных Excel может быть критична, так как большинство формул зависит от типа ячейки.
 В атрибутах `ZCL_XTT_REPLACE_BLOCK` вы можете найти следующие объявления.

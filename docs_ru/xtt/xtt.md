@@ -4,11 +4,36 @@ title: "XTT - отчеты"
 nav_order: 3
 has_children: true
 permalink: /ru/xtt/
+_cus_head: "_popup_head.html"
 ---
 
 ### **XTT** - Xml template toolkit
 {: .no_toc }
 
+<div class="tab-header">
+<ul class="nav nav-tabs">
+  <li class="active">
+    <a data-toggle="tab" href="#info">Информация</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#demo">Live demo</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#basic">Базовый шаблон</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#key">Ключевые особенности</a>
+  </li>
+</ul>
+</div>
+
+
+<div class="tab-content">
+
+<!-- TODO INFO -->
+  <div class="tab-pane active" id="info">
+<br/>
+<div class="container-fluid" markdown="1">
 XTT поможет вам автоматизировать вашу процедуру отчетности в SAP
 
 - Возьмите существующий отчет у ваших клиентов
@@ -18,12 +43,33 @@ XTT поможет вам автоматизировать вашу процед
 - Используйте методы **`download( ) | send( ) | show( )`** для соответствующих действий
 - Вот и все!
 
----
+</div> <!-- This close tag must be left aligned. -->
+  </div>
 
-###  Шаблоны
+<!-- TODO LIVE DEMO -->
+<div class="tab-pane" id="demo">
+<br/>
+<div class="container-fluid" markdown="1">
+
+### tr. Z_XTT_INDEX
+{: .no_toc }
+</div> <!-- This close tag must be left aligned. -->
+{% include _xtt_demo.html %}
+
+</div>
+
+<!-- TODO BASIC -->
+<div class="tab-pane" id="basic">
+<br/>
+<div class="container-fluid" markdown="1">
+
+###  Excel шаблон
+{: .no_toc }
+
 ![image](https://user-images.githubusercontent.com/36256417/80579411-6b7c0600-8a23-11ea-8166-d48e63b7d085.png)
 
 ### Код
+{: .no_toc }
 
 ```abap
 " Класс хранения шаблонов
@@ -47,10 +93,13 @@ lo_xtt->merge( iv_block_name = 'R'
 " Вызовете метод SHOW( ) для показа внутри Sap gui
 lo_xtt->download( ).
 ```
+</div> <!-- This close tag must be left aligned. -->
+  </div>
 
-***
-
-### Ключевые особенности
+<!-- TODO KEY -->
+<div class="tab-pane" id="key">
+<br/>
+<div class="container-fluid" markdown="1">
 
 **Различные классы для разных целей:**
 * `ZCL_XTT_EXCEL_XLSX` – Книга Excel (.xlsx), Книга Excel с поддержкой макросов (.xlsm)
@@ -70,3 +119,7 @@ lo_xtt->download( ).
 * Не нужно быть гуру XML и генерировать XML самостоятельно
 * Полное сохранение исходного форматирования документа
 * Формирование сложных объектов отчетности, таких как сводные таблицы и диаграммы
+
+</div> <!-- This close tag must be left aligned. -->
+</div>
+</div>

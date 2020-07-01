@@ -3,7 +3,11 @@ parent: "XTT - отчеты"
 title: "08 Дополнение ;direction=column"
 nav_order: 80
 permalink: /ru/xtt/output-direction/
+_cus_head: "_popup_head.html"
+_cus_index: "08"
 ---
+
+{% include _xtt_demo.html %}
 
 Все таблицы и деревья в вашем шаблоне могут быть реплицированы как по строкам так и столбцам.<br/>
 Данная возможность работает только для класса `ZCL_XTT_EXCEL_XLSX` и 2 типов файлов (xlsx и xlsm).<br/>

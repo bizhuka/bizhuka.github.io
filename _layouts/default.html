@@ -4,8 +4,10 @@ layout: table_wrappers
 
 <!DOCTYPE html>
 
-<html lang="{{ page._locale | default: "en-US" }}">
+<!--TODO Add language-->
+<html lang="{{ page._locale | default: 'en-US' }}">
 {% include head.html %}
+
 <body>
   <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
     <symbol id="svg-link" viewBox="0 0 24 24">
@@ -47,6 +49,7 @@ layout: table_wrappers
         <svg viewBox="0 0 24 24" class="icon"><use xlink:href="#svg-menu"></use></svg>
       </a>
 
+      <!--TODO Add language selector-->
       <nav class="lang-sel">
         <ul>
           {% if page._locale == "ru" %}
@@ -68,6 +71,7 @@ layout: table_wrappers
       </nav>
     </div>
     <nav role="navigation" aria-label="Main" id="site-nav" class="site-nav">
+        <!--TODO Russian navigation panel-->
         {% if page._locale == "ru" %}
           {% include nav_ru.html %}
         {% else %}
@@ -76,10 +80,8 @@ layout: table_wrappers
     </nav>
     <footer class="site-footer">
       <!-- This site uses <a href="https://github.com/pmarsceill/just-the-docs">Just the Docs</a>, a documentation theme for Jekyll. -->
-
-      <section id="lab_social_icon_footer" class="text-small text-grey-dk-000 mb-0">                    
-        <!-- Include Font Awesome Stylesheet in Header -->
-        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <!--TODO Social info-->
+      <section id="lab_social_icon_footer" class="text-small text-grey-dk-000 mb-0">               
         <div class="container">
             <div class="center-block">
               <a href="mailto:modekz@gmail.com"><i id="social-em" class="fa fa-envelope-square social fa-2x"></i></a>
@@ -121,7 +123,6 @@ layout: table_wrappers
       {% endif %}
     </div>
     <div id="main-content-wrap" class="main-content-wrap">
-
       {% unless page.url == "/" %}
         {% if page.parent %}
           <nav aria-label="Breadcrumb" class="breadcrumb-nav">
@@ -137,16 +138,16 @@ layout: table_wrappers
           </nav>
         {% endif %}
       {% endunless %}
-      <!-- TODO
-      data-spy="scroll" -->
 
+      <!-- TODO data-spy="scroll" ? -->
       <div id="main-content" class="main-content" role="main">
 
-            {% if page.has_toc != false %}
-              <nav id="nav-sidebar" class="hidden-print hidden-xs hidden-sm affix bs-docs-sidebar">
-                {% include toc.html id='sidebar' class='nav.nav-stacked' item_class='toc_li' html=content %}
-              </nav>
-            {% endif %}
+        <!-- TODO Add toc -->
+        {% if page.has_toc != false %}
+          <nav id="nav-sidebar" class="hidden-print hidden-xs hidden-sm affix bs-docs-sidebar">
+            {% include toc.html id='sidebar' class='nav.nav-stacked' item_class='toc_li' html=content %}
+          </nav>
+        {% endif %}
 
         {% if site.heading_anchors != false %}
           {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" %}
@@ -157,6 +158,7 @@ layout: table_wrappers
         {% if page.has_children == true and page.has_toc != false %}
           <hr>
 
+          <!--TODO Add Russian TOC for children-->
           {% if page._locale == "ru" %}
             <h2 class="text-delta">Оглавление</h2>
           {% else %}
@@ -177,15 +179,16 @@ layout: table_wrappers
           <hr>
           <footer>
             {% if site.back_to_top %}
+              <!--TODO Russian back to top-->
               {% if page._locale == "ru" %}
                 <p><a href="#top" id="back-to-top">Вернуться к началу</a></p>
               {% else" %}
                 <p><a href="#top" id="back-to-top">{{ site.back_to_top_text }}</a></p>
               {% endif" %}
             {% endif %}
-            <!-- {% if site.footer_content != nil %}
+            {% if site.footer_content != nil %}
               <p class="text-small text-grey-dk-000 mb-0">{{ site.footer_content }}</p>
-            {% endif %} -->
+            {% endif %}
 
             {% if site.last_edit_timestamp or site.gh_edit_link %}
               <div class="d-flex mt-2">
@@ -224,5 +227,4 @@ layout: table_wrappers
     {% endif %}
   </div>
 </body>
-
 </html>

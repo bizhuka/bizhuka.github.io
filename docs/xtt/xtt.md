@@ -4,11 +4,36 @@ title: "XTT - reports"
 nav_order: 3
 has_children: true
 permalink: /xtt/
+_cus_head: "_popup_head.html"
 ---
 
 ### **XTT** - Xml template toolkit
 {: .no_toc }
 
+<div class="tab-header">
+<ul class="nav nav-tabs">
+  <li class="active">
+    <a data-toggle="tab" href="#info">Info</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#demo">Live demo</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#basic">Basic Template</a>
+  </li>
+  <li>
+    <a data-toggle="tab" href="#key">Key features</a>
+  </li>
+</ul>
+</div>
+
+
+<div class="tab-content">
+
+<!-- TODO INFO -->
+  <div class="tab-pane active" id="info">
+<br/>
+<div class="container-fluid" markdown="1">
 XTT helps you to automate your reporting routine in SAP
 
 - Get existing report from your customers
@@ -18,12 +43,33 @@ XTT helps you to automate your reporting routine in SAP
 - Use **`download( ) | send( ) | show( )`** method for appropriate action
 - That's all!
 
----
+</div> <!-- This close tag must be left aligned. -->
+  </div>
 
-###  Template
+<!-- TODO LIVE DEMO -->
+<div class="tab-pane" id="demo">
+<br/>
+<div class="container-fluid" markdown="1">
+
+### tr. Z_XTT_INDEX
+{: .no_toc }
+</div> <!-- This close tag must be left aligned. -->
+{% include _xtt_demo.html %}
+
+</div>
+
+<!-- TODO BASIC -->
+<div class="tab-pane" id="basic">
+<br/>
+<div class="container-fluid" markdown="1">
+
+### Excel Template
+{: .no_toc }
+
 ![image](https://user-images.githubusercontent.com/36256417/80579411-6b7c0600-8a23-11ea-8166-d48e63b7d085.png)
 
 ### Code
+{: .no_toc }
 
 ```abap
 " Template storage class
@@ -46,11 +92,14 @@ lo_xtt->merge( iv_block_name = 'R'
 " Download to sap_tmp. You could specify path or show SaveAs dialogue
 " Call SHOW( ) for inplace mode
 lo_xtt->download( ).
-```
+``` 
+</div> <!-- This close tag must be left aligned. -->
+  </div>
 
-***
-
-### Main features
+<!-- TODO KEY -->
+<div class="tab-pane" id="key">
+<br/>
+<div class="container-fluid" markdown="1">
 
 * **Various classes for different purposes:**<br/>
  `ZCL_XTT_EXCEL_XLSX` - Excel Workbook (*.xlsx), Excel Macro-Enabled Workbook (*.xlsm)<br/>
@@ -70,3 +119,7 @@ Using familiar redactor as MS Word, MS Excel & Adobe LiveCycle Designer<br/>
 No need to be XML guru and generate XML by yourself<br/>
 Complete preservation of the original document formatting<br/>
 Precreation of complex reporting objects such as pivot tables and charts
+
+</div> <!-- This close tag must be left aligned. -->
+</div>
+</div>

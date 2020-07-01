@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "03 Nested blocks"
 nav_order: 30
 permalink: /xtt/nested-blocks/
+_cus_head: "_popup_head.html"
+_cus_index: "03"
 ---
+
+{% include _xtt_demo.html %}
 
 While processing a table it is necessary to determine the bounds of the "output area".
 That's why you have to  define nested blocks (table of tables etc) very carefully.

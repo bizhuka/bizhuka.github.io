@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "02 Basic tables"
 nav_order: 20
 permalink: /xtt/basic-tables/
+_cus_head: "_popup_head.html"
+_cus_index: "02"
 ---
+
+{% include _xtt_demo.html %}
 
 To represent table in a template you have to declare it as a internal table
 ```abap

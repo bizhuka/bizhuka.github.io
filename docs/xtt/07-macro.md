@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "07 Macro call & prepare_raw event"
 nav_order: 70
 permalink: /xtt/macro/
+_cus_head: "_popup_head.html"
+_cus_index: "07"
 ---
+
+{% include _xtt_demo.html %}
 
 The simplest way I can describe macro calls is `Do not use them at all!`. There are lot of issues, restrictions with VBA macro and in general the approach is error prone. That's why in my humble opinion you should avoid it. Instead of that there is special event `PREPARE_RAW` which can give you the abilty to change XML content directly. But the posibility to call a macro still exist in the library.
 

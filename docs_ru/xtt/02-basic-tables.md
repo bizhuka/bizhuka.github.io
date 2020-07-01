@@ -3,7 +3,11 @@ parent: "XTT - отчеты"
 title: "02 Вывод простой таблицы"
 nav_order: 20
 permalink: /ru/xtt/basic-tables/
+_cus_head: "_popup_head.html"
+_cus_index: "02"
 ---
+
+{% include _xtt_demo.html %}
 
 Чтобы представить таблицу в шаблоне, вы должны объявить ее как внутреннюю таблицу в коде
 ```abap

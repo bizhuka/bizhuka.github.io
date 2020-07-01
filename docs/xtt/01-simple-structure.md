@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "01 Simple structure"
 nav_order: 10
 permalink: /xtt/simple-structure/
+_cus_head: "_popup_head.html"
+_cus_index: "01"
 ---
+
+{% include _xtt_demo.html %}
 
 The easiest way to send elementary data to a report is to pass them by a structure
 ```abap

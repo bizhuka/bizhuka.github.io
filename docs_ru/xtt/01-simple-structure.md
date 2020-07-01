@@ -3,7 +3,11 @@ parent: "XTT - отчеты"
 title: "01 Вывод простой структуры"
 nav_order: 10
 permalink: /ru/xtt/simple-structure/
+_cus_head: "_popup_head.html"
+_cus_index: "01"
 ---
+
+{% include _xtt_demo.html %}
 
 Самый простой способ отправить простые данные в отчет - передать их в структуре
 ```abap

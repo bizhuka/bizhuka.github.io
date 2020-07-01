@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "08 ;direction=column addition"
 nav_order: 80
 permalink: /xtt/output-direction/
+_cus_head: "_popup_head.html"
+_cus_index: "08"
 ---
+
+{% include _xtt_demo.html %}
 
 All tables and trees in you template could be populated with rows and columns as well.<br/>
 But the feature works only for the `ZCL_XTT_EXCEL_XLSX` class and 2 file types (xlsx & xlsm).<br/>

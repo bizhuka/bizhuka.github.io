@@ -3,7 +3,11 @@ parent: "XTT - отчеты"
 title: "09 Динамическая таблица (дерево)"
 nav_order: 90
 permalink: /ru/xtt/dynamic-table/
+_cus_head: "_popup_head.html"
+_cus_index: "09"
 ---
+
+{% include _xtt_demo.html %}
 
 Все, что вам нужно сделать, это с **merge-ить** ваши столбцы в первую очередь<br/>
 А затем просто вставить основную таблицу вторым **merge**

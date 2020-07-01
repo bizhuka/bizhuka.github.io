@@ -1,0 +1,83 @@
+{% if page._cus_index != nil %}
+    {% for demo in site.data.xtt_demo %}
+        {% if demo.ID == page._cus_index %}
+<a data-bootbox="popup-{{ demo.ID }}" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">{{ demo.LABEL }}</a>
+        {% break %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">№</th>
+            <th scope="col">Demo</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for demo in site.data.xtt_demo %}
+        <tr>
+            <td>
+                {{ demo.ID }}
+            </td>
+            <td>
+                <a data-bootbox="popup-{{ demo.ID }}" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">{{ demo.LABEL }}</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+
+
+{% for demo in site.data.xtt_demo %}
+{% if page._cus_index != nil and demo.ID != page._cus_index %}
+    {% continue %}
+{% endif %}
+
+<div id="popup-{{ demo.ID }}" title="Demo {{ demo.ID }} - {{ demo.LABEL }}" class="hidden">
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Type</th>
+            <th scope="col">Template</th>
+            <th scope="col">Report</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for file in demo.FILES %}
+        <tr>
+            <td>{{ file.KIND }}</td>
+            <td>
+                <a href="/xtt_demo/{{ file.TEMPLATE }}" class="btn btn-lg btn-outline">
+                    <i class="glyphicon glyphicon-save"></i>
+                    Template
+                </a>
+            </td>
+            <td>
+                <a href="/xtt_demo/{{ file.REPORT }}" class="btn btn-lg btn-outline">
+                    <i class="glyphicon glyphicon-save"></i>
+                    Report
+                </a>
+            </td>
+        </tr>
+        {% endfor%}
+    </tbody>
+</table>
+
+
+{% capture my_include %}{% include /xtt_demo/{{ demo.ID }}.md %}{% endcapture %}
+{{ my_include | markdownify }}
+
+
+{% for merge in demo.MERGE %}
+<p>xtt-><b>MERGE</b>( IV_BLOCK_NAME = <i>'{{merge.KEY}}'</i> IS_BLOCK = </p>
+
+<pre>{{merge.VAL}}</pre>
+<p>).</p>
+<hr>
+{% endfor %}
+
+</div>
+{% endfor %}

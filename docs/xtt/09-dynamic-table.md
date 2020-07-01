@@ -3,7 +3,11 @@ parent: "XTT - reports"
 title: "09 Dynamic table (tree)"
 nav_order: 90
 permalink: /xtt/dynamic-table/
+_cus_head: "_popup_head.html"
+_cus_index: "09"
 ---
+
+{% include _xtt_demo.html %}
 
 All you have to do is to **merge** your columns first<br/>
 And then just insert main table with the second **merge**
