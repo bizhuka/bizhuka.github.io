@@ -13,7 +13,7 @@ _cus_index: "08"
 Данная возможность работает только для класса `ZCL_XTT_EXCEL_XLSX` и 2 типов файлов (xlsx и xlsm).<br/>
 Для этого в любом месте вашего шаблона просто добавьте специальный маркер {;direction=column} для таблицы или дерева.
 
-Код ABAP аналогичен [Пример №05](../tree-group-by-fields/1/)
+Код ABAP аналогичен [Пример №05](../tree-group-by-fields/)
 ```abap
     SET HANDLER on_prepare_tree_05 ACTIVATION abap_true.
 

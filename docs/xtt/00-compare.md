@@ -148,7 +148,7 @@ Result
 <br/>
 <br/>
 
-&nbsp;&nbsp;&nbsp;The second part is related to aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/3/)
+&nbsp;&nbsp;&nbsp;The second part is related to aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
 which work in conjunction with **3) tree output directives**. <br/>
 For more complex cases there is a special event in ABAP
 
@@ -182,7 +182,7 @@ and column by column please look at [this example](../dynamic-table/)
 ### {;group=}
 &nbsp;Allows you to group tabular data in a hierarchical structure similar to a **tree**. <br/>
 &nbsp;To convert a table to a tree, you can use ABAP methods
-zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/1/) or zcl_xtt_replace_block=>[tree_create_relat](../tree-group-by-field-relations/4/). <br/>
+zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/) or zcl_xtt_replace_block=>[tree_create_relat](../tree-group-by-field-relations/). <br/>
 &nbsp;But making such a group declaration in the template itself allows you to give a clear picture of the fact that the table has been transformed into a tree.<br/>
 
 * Instead tree_create => {;group=_Comma-separated table fields_}.<br/>
@@ -205,7 +205,7 @@ For tree org units by IT 1001 **{R-T;group=OBJID-SOBID}**
 
 In the `ZCL_XTT_EXCEL_XLSX` class, the declaration of a tree at the sheet level makes it possible to display the same table on different sheets with different groupings 
 
-[In this](../tree-group-by-fields/1/) example, the table {R-T} is displayed differently depending on the declaration on a particular sheet
+[In this](../tree-group-by-fields/) example, the table {R-T} is displayed differently depending on the declaration on a particular sheet
 
 ![image](https://user-images.githubusercontent.com/36256417/81787378-60909d80-951a-11ea-9e94-36ae3666bd75.png)
 
@@ -230,4 +230,4 @@ Result
 
 ![image](https://user-images.githubusercontent.com/36256417/81808568-529e4500-9539-11ea-9523-e273681d3974.png)
 
-&nbsp;More about directives [level, top, show_if, hide_if](../tree-output-level-by-condition/2/)
+&nbsp;More about directives [level, top, show_if, hide_if](../tree-output-level-by-condition/)

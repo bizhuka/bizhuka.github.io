@@ -148,7 +148,7 @@ permalink: /ru/xtt/compare/
 <br/>
 <br/>
 
-&nbsp;&nbsp;&nbsp;Вторая часть связана с функциями агрегации [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/3/)
+&nbsp;&nbsp;&nbsp;Вторая часть связана с функциями агрегации [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
 которые работают совместно с **3) директивами вывода дерева**. <br/>
 Для более сложных случаев есть специальное событие в ABAP
 
@@ -182,7 +182,7 @@ permalink: /ru/xtt/compare/
 ### {;group=}
 &nbsp;Позволяет сгруппировать табличные данные в иерархическую структуру на подобие **дерева**. <br/>
 &nbsp;Для преобразования таблицы в дерево можно воспользоваться и двумя программными методами
-zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/1/) и zcl_xtt_replace_block=>[tree_create_relat](../tree-group-by-field-relations/4/). <br/>
+zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/) и zcl_xtt_replace_block=>[tree_create_relat](../tree-group-by-field-relations/). <br/>
 &nbsp;Но сделав подобное объявление группы в самом шаблоне, позволяет дать ясную картину того что таблица была трансформирована в дерево.<br/>
 
 * Вместо tree_create => {;group=_Поля таблицы через запятую_}.<br/>
@@ -205,7 +205,7 @@ zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/1/) и zcl_xtt_repl
 
 В классе `ZCL_XTT_EXCEL_XLSX` объявление дерева на уровне страницы дает возможность вывода одной и той же таблицы на разных листах с разными группировками 
 
-[В данном](../tree-group-by-fields/1/) примере таблица {R-T} выводится по разному в зависимости от объявления на конкретном листе
+[В данном](../tree-group-by-fields/) примере таблица {R-T} выводится по разному в зависимости от объявления на конкретном листе
 
 ![image](https://user-images.githubusercontent.com/36256417/81787378-60909d80-951a-11ea-9e94-36ae3666bd75.png)
 
@@ -230,4 +230,4 @@ zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/1/) и zcl_xtt_repl
 
 ![image](https://user-images.githubusercontent.com/36256417/81808568-529e4500-9539-11ea-9523-e273681d3974.png)
 
-&nbsp;Более подробно про директивы [level, top, show_if, hide_if](../tree-output-level-by-condition/2/)
+&nbsp;Более подробно про директивы [level, top, show_if, hide_if](../tree-output-level-by-condition/)

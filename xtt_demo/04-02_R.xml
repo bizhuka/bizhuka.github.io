@@ -140,7 +140,7 @@
     <Cell ss:StyleID="s62"><Data ss:Type="String" x:Ticked="1">Use apostrophe. Do not leave blank rows between tables</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="DateTime">2020-07-01T00:00:00</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="DateTime">2020-07-04T00:00:00</Data></Cell>
     <Cell><Data ss:Type="String">;type=date</Data></Cell>
     <Cell ss:MergeDown="3" ss:StyleID="s66"><Data ss:Type="String">No need to specify type</Data><Comment
       ss:Author="Molda_B"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
@@ -148,7 +148,7 @@
          html:Color="#000000">@see class ZCL_XTT_REPLACE_BLOCK constants</Font></B></ss:Data></Comment></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s67"><Data ss:Type="DateTime">1899-12-31T16:49:25</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s67"><Data ss:Type="DateTime">1899-12-31T13:24:16</Data></Cell>
     <Cell><Data ss:Type="String">;type=time</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -160,7 +160,7 @@
     <Cell><Data ss:Type="String" x:Ticked="1">;type=double</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s69"><Data ss:Type="DateTime">2020-07-01T16:49:25</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s69"><Data ss:Type="DateTime">2020-07-04T13:24:16</Data></Cell>
     <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s66"><Data ss:Type="String">Virtual type</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -2059,119 +2059,49 @@
       ss:Name="COUTRY_LIST"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">90</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VN</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bashkortostan</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AD</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Andorra</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Vietnam</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VU</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Utd.Arab Emir.</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AF</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Afghanistan</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Vanuatu</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AG</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WF</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Antigua/Barbuda</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AI</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Anguilla</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Wallis,Futuna</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Albania</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AM</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Armenia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YE</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Dutch Antilles</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AO</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Angola</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Yemen</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AQ</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YT</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Antarctica</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AR</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Argentina</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mayotte</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZA</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa, America</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AT</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Austria</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">South Africa</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AU</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZM</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Australia</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AW</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Aruba</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Zambia</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZW</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AZ</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Azerbaijan</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BA</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bosnia-Herz.</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BB</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Barbados</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BD</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bangladesh</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BE</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Belgium</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BF</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Burkina Faso</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Zimbabwe</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BG</Data><NamedCell
@@ -2194,9 +2124,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Benin</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZZ</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">INC:8000027695</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BM</Data><NamedCell
@@ -2254,11 +2184,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Belize</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">C1</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Chechen</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CA</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Canada</Data><NamedCell
@@ -2284,9 +2209,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Rep.of Congo</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CH</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">C1</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Switzerland</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Chechen</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CI</Data><NamedCell
@@ -2309,9 +2234,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cameroon</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CH</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">China</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Switzerland</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CO</Data><NamedCell
@@ -2324,9 +2249,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Costa Rica</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CN</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia/Monten.</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">China</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CU</Data><NamedCell
@@ -2339,9 +2264,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cape Verde</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CW</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Curacao</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia/Monten.</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CX</Data><NamedCell
@@ -2389,9 +2314,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Algeria</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EC</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CW</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Ecuador</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Curacao</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EE</Data><NamedCell
@@ -2464,9 +2389,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Gabon</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GB</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">KZ</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">United Kingdom</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Kazakhstan</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GD</Data><NamedCell
@@ -2484,9 +2409,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">French Guayana</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GG</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EC</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Guernsey</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Ecuador</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GH</Data><NamedCell
@@ -2529,9 +2454,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Greece</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GG</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">S. Sandwich Ins</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Guernsey</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GT</Data><NamedCell
@@ -2569,9 +2494,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Honduras</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HR</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Croatia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">S. Sandwich Ins</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HT</Data><NamedCell
@@ -2599,14 +2524,14 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Israel</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HR</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Croatia</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IM</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Isle of Man</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IN</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">India</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IO</Data><NamedCell
@@ -2634,9 +2559,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Italy</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IN</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Jersey</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">India</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JM</Data><NamedCell
@@ -2704,11 +2629,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cayman Islands</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">KZ</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Kazakhstan</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">LA</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Laos</Data><NamedCell
@@ -2764,11 +2684,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Libya</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">M1</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mordvin</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MA</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Morocco</Data><NamedCell
@@ -2782,16 +2697,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MD</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Moldova</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MG</Data><NamedCell
@@ -2869,14 +2774,14 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Malawi</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JE</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mexico</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Jersey</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MY</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">M1</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Malaysia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mordvin</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MZ</Data><NamedCell
@@ -2914,9 +2819,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Nicaragua</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MX</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Netherlands</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mexico</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NO</Data><NamedCell
@@ -2957,11 +2862,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OR</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Orange</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OS</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Ossetia</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PA</Data><NamedCell
@@ -3014,9 +2914,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Puerto Rico</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MY</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Palestine</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Malaysia</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PT</Data><NamedCell
@@ -3047,11 +2947,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RO</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Romania</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RS</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia Republic</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RU</Data><NamedCell
@@ -3139,9 +3034,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Suriname</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NL</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">South Sudan</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Netherlands</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ST</Data><NamedCell
@@ -3154,9 +3049,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">El Salvador</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Sint Maarten</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Ossetia</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SY</Data><NamedCell
@@ -3167,11 +3062,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SZ</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Swaziland</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">T1</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Tatarstan</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TC</Data><NamedCell
@@ -3209,9 +3099,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Tokelau Islands</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Palestine</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TM</Data><NamedCell
@@ -3229,9 +3119,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Tonga</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TP</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SS</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">South Sudan</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TR</Data><NamedCell
@@ -3269,14 +3159,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Uganda</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UI</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SX</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Uigur</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UM</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Minor Outl.Isl.</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Sint Maarten</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UN</Data><NamedCell
@@ -3324,54 +3209,169 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">US Virgin Isl.</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AD</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Vietnam</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VU</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Vanuatu</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Andorra</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WF</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AE</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Wallis,Futuna</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WS</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Utd.Arab Emir.</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AF</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Yemen</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YT</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mayotte</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Afghanistan</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZA</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AG</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">South Africa</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZM</Data><NamedCell
-      ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Zambia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Antigua/Barbuda</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZW</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AI</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Zimbabwe</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Anguilla</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZZ</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AL</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">INC:8000027695</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Albania</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AM</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Armenia</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AO</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Angola</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AQ</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Antarctica</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AR</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Argentina</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AS</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa, America</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AT</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Austria</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AU</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Australia</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AW</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Aruba</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AZ</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Azerbaijan</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BA</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bosnia-Herz.</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BB</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Barbados</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BD</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bangladesh</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BE</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Belgium</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BF</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Burkina Faso</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RS</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia Republic</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AN</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Dutch Antilles</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GB</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">United Kingdom</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">T1</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Tatarstan</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TL</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">90</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bashkortostan</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TP</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UI</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Uigur</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UM</Data><NamedCell
+      ss:Name="COUTRY_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Minor Outl.Isl.</Data><NamedCell
       ss:Name="COUTRY_LIST"/></Cell>
    </Row>
   </Table>
@@ -3411,119 +3411,49 @@
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">90</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VN</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bashkortostan</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AD</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Andorra</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Vietnam</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VU</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Utd.Arab Emir.</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AF</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Afghanistan</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Vanuatu</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AG</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WF</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Antigua/Barbuda</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AI</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Anguilla</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Wallis,Futuna</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Albania</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AM</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Armenia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YE</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Dutch Antilles</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AO</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Angola</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Yemen</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AQ</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YT</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Antarctica</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AR</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Argentina</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mayotte</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZA</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa, America</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AT</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Austria</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">South Africa</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AU</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZM</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Australia</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AW</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Aruba</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Zambia</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZW</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AZ</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Azerbaijan</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BA</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bosnia-Herz.</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BB</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Barbados</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BD</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Bangladesh</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BE</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Belgium</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BF</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Burkina Faso</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Zimbabwe</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BG</Data><NamedCell
@@ -3546,9 +3476,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Benin</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZZ</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">INC:8000027695</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BM</Data><NamedCell
@@ -3606,11 +3536,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Belize</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">C1</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Chechen</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CA</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Canada</Data><NamedCell
@@ -3636,9 +3561,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Rep.of Congo</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CH</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">C1</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Switzerland</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Chechen</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CI</Data><NamedCell
@@ -3661,9 +3586,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cameroon</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CH</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">China</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Switzerland</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CO</Data><NamedCell
@@ -3676,9 +3601,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Costa Rica</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CN</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia/Monten.</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">China</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CU</Data><NamedCell
@@ -3691,9 +3616,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cape Verde</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CW</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Curacao</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia/Monten.</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CX</Data><NamedCell
@@ -3741,9 +3666,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Algeria</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EC</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">CW</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Ecuador</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Curacao</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EE</Data><NamedCell
@@ -3816,9 +3741,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Gabon</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GB</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">KZ</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">United Kingdom</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Kazakhstan</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GD</Data><NamedCell
@@ -3836,9 +3761,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">French Guayana</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GG</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">EC</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Guernsey</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Ecuador</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GH</Data><NamedCell
@@ -3881,9 +3806,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Greece</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GG</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">S. Sandwich Ins</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Guernsey</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GT</Data><NamedCell
@@ -3921,9 +3846,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Honduras</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HR</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Croatia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">S. Sandwich Ins</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HT</Data><NamedCell
@@ -3951,14 +3876,14 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Israel</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">HR</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Croatia</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IM</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Isle of Man</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IN</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">India</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IO</Data><NamedCell
@@ -3986,9 +3911,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Italy</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">IN</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Jersey</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">India</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JM</Data><NamedCell
@@ -4056,11 +3981,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Cayman Islands</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">KZ</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Kazakhstan</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">LA</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Laos</Data><NamedCell
@@ -4116,11 +4036,6 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Libya</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">M1</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mordvin</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MA</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Morocco</Data><NamedCell
@@ -4134,16 +4049,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MD</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Moldova</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MG</Data><NamedCell
@@ -4221,14 +4126,14 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Malawi</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">JE</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mexico</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Jersey</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MY</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">M1</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Malaysia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mordvin</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MZ</Data><NamedCell
@@ -4266,9 +4171,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Nicaragua</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MX</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Netherlands</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Mexico</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NO</Data><NamedCell
@@ -4309,11 +4214,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OR</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Orange</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OS</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Ossetia</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PA</Data><NamedCell
@@ -4366,9 +4266,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Puerto Rico</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MY</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Palestine</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Malaysia</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PT</Data><NamedCell
@@ -4399,11 +4299,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RO</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Romania</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RS</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia Republic</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RU</Data><NamedCell
@@ -4491,9 +4386,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Suriname</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SS</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">NL</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">South Sudan</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Netherlands</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ST</Data><NamedCell
@@ -4506,9 +4401,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">El Salvador</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SX</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">OS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Sint Maarten</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Ossetia</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SY</Data><NamedCell
@@ -4519,11 +4414,6 @@
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SZ</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
     <Cell ss:StyleID="s87"><Data ss:Type="String">Swaziland</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">T1</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Tatarstan</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TC</Data><NamedCell
@@ -4561,9 +4451,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Tokelau Islands</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TL</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">PS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Palestine</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TM</Data><NamedCell
@@ -4581,9 +4471,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Tonga</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TP</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SS</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">South Sudan</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TR</Data><NamedCell
@@ -4621,14 +4511,9 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">Uganda</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UI</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">SX</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Uigur</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UM</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Minor Outl.Isl.</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Sint Maarten</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UN</Data><NamedCell
@@ -4676,54 +4561,169 @@
     <Cell ss:StyleID="s87"><Data ss:Type="String">US Virgin Isl.</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VN</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AD</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Vietnam</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">VU</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Vanuatu</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Andorra</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WF</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AE</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Wallis,Futuna</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">WS</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Utd.Arab Emir.</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YE</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AF</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Yemen</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">YT</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Mayotte</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Afghanistan</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZA</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AG</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">South Africa</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-   </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZM</Data><NamedCell
-      ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Zambia</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Antigua/Barbuda</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZW</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AI</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">Zimbabwe</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Anguilla</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row><Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ZZ</Data><NamedCell
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AL</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
-    <Cell ss:StyleID="s87"><Data ss:Type="String">INC:8000027695</Data><NamedCell
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Albania</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AM</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Armenia</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AO</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Angola</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AQ</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Antarctica</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AR</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Argentina</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AS</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Samoa, America</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AT</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Austria</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AU</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Australia</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AW</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Aruba</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AZ</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Azerbaijan</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BA</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bosnia-Herz.</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BB</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Barbados</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BD</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bangladesh</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BE</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Belgium</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BF</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Burkina Faso</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">MF</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">ME</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">RS</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Serbia Republic</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">AX</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">AN</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Dutch Antilles</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">GB</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">United Kingdom</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">T1</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Tatarstan</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">BL</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TL</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">90</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Bashkortostan</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">TP</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">East Timor</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UI</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Uigur</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+   </Row><Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s87"><Data ss:Type="String">UM</Data><NamedCell
+      ss:Name="COUTRY2_LIST"/></Cell>
+    <Cell ss:StyleID="s87"><Data ss:Type="String">Minor Outl.Isl.</Data><NamedCell
       ss:Name="COUTRY2_LIST"/></Cell>
    </Row>
   </Table>

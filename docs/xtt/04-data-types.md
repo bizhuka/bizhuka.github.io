@@ -40,7 +40,7 @@ There are also defined several constants which detects what kind of data you pas
 * 'tree'
 
 As you can notice so far we passed only structures and tables to `merge` method.
-But also we can pass objets (they work exactly as structures) & and trees [(for hierarchical output)](../tree-group-by-fields/1/).
+But also we can pass objets (they work exactly as structures) & and trees [(for hierarchical output)](../tree-group-by-fields/).
 
 ***
 If you have in Excel

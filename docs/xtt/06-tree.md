@@ -2,14 +2,14 @@
 parent: "XTT - reports"
 title: "06 Tree (group by field relations)"
 nav_order: 60
-permalink: /xtt/tree-group-by-field-relations/4/
+permalink: /xtt/tree-group-by-field-relations/
 _cus_head: "_popup_head.html"
 _cus_index: "06"
 ---
 
 {% include _xtt_demo.html %}
 
-Maybe trees based on [subtotals](../tree-group-by-fields/1/) are more common, but in sap there are some other hierarchical data like WBS elements or HR organizational units.<br/>
+Maybe trees based on [subtotals](../tree-group-by-fields/) are more common, but in sap there are some other hierarchical data like WBS elements or HR organizational units.<br/>
 For this kind of data when number of sublevels are unknown and there is only relation `parent - child` you can call the method `TREE_CREATE_RELAT`.
 
 ### TREE_CREATE_RELAT method
