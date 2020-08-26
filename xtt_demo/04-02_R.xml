@@ -140,7 +140,7 @@
     <Cell ss:StyleID="s62"><Data ss:Type="String" x:Ticked="1">Use apostrophe. Do not leave blank rows between tables</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="DateTime">2020-07-07T00:00:00</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
     <Cell><Data ss:Type="String">;type=date</Data></Cell>
     <Cell ss:MergeDown="3" ss:StyleID="s66"><Data ss:Type="String">No need to specify type</Data><Comment
       ss:Author="Molda_B"><ss:Data xmlns="http://www.w3.org/TR/REC-html40"><B><Font
@@ -148,7 +148,7 @@
          html:Color="#000000">@see class ZCL_XTT_REPLACE_BLOCK constants</Font></B></ss:Data></Comment></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s67"><Data ss:Type="DateTime">1899-12-31T13:48:59</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s67"><Data ss:Type="DateTime">1899-12-31T15:06:27</Data></Cell>
     <Cell><Data ss:Type="String">;type=time</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
@@ -160,7 +160,7 @@
     <Cell><Data ss:Type="String" x:Ticked="1">;type=double</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:Index="2" ss:StyleID="s69"><Data ss:Type="DateTime">2020-07-07T13:48:59</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s69"><Data ss:Type="DateTime">2020-08-26T15:06:27</Data></Cell>
     <Cell ss:Index="4" ss:MergeDown="1" ss:StyleID="s66"><Data ss:Type="String">Virtual type</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
