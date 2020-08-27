@@ -132,91 +132,91 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-23T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6758.57</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">5563.86</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-27T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">982.68</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">9927.07</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 3 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-23T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6836.72</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7795.09</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-23T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">4038.64</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7742.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 5 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-27T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7630.05</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6014.38</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 6 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-23T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">5746.69</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">1997.34</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-23T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">471.62</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6510.54</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 8 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-27T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6001.36</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7509.60</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-25T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">9950.90</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7487.59</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 10 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-25T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">153.90</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">7473.27</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-27T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">8972.09</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">1796.79</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 12 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-25T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">214.52</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">8481.91</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-25T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">4164.85</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">4263.78</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-26T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-27T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">847.44</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">1515.22</Data></Cell>
    </Row><Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s66"><Data ss:Type="String">&lt;Caption 15 /&gt;</Data></Cell>
     <Cell ss:StyleID="s66"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-24T00:00:00</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="DateTime">2020-08-25T00:00:00</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6220.04</Data></Cell>
     <Cell ss:StyleID="s67"><Data ss:Type="Number">6482.36</Data></Cell>
    </Row>
@@ -225,7 +225,7 @@
    <PageSetup>
     <Header x:Margin="0.3" x:Data="&amp;C{R-HEADER}"/>
     <Footer x:Margin="0.3"
-     x:Data="&amp;C{R-FOOTER}&#10;Date &amp; time: 26.08.2020 15:06:25"/>
+     x:Data="&amp;C{R-FOOTER}&#10;Date &amp; time: 27.08.2020 11:24:44"/>
     <PageMargins x:Bottom="0.75" x:Left="0.7" x:Right="0.7" x:Top="0.75"/>
    </PageSetup>
    <Unsynced/>
