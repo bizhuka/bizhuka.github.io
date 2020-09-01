@@ -47,7 +47,7 @@ If you have in Excel
 * [List object](../basic-tables/) & pivot tables based on them
 * Merged cells
 * Defined names
-* Formulas (with preceded $ sign)
+* [Formulas](../excel-formula/) with preceded $ sign
 
 They would be 'streched' after data pasting in `ZCL_XTT_EXCEL_XLSX` class.
 
