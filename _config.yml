@@ -136,3 +136,6 @@ defaults:
       path: "docs_ru/xtt"
     values:
       _cus_head: "_popup_head.html"
+
+# telegram comments
+telegram_site_id: "JteWJ_ZQ"
