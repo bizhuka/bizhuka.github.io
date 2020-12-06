@@ -8,9 +8,17 @@
   <!-- Include Font Awesome Stylesheet in Header -->
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  {% if page.layout == 'post' %}
-    <script async src="https://comments.app/js/widget.js?3" data-comments-app-website={{ site.telegram_site_id}} data-limit="100"></script>
-  {% endif %}
 {% if page._cus_head %}
   {% include {{ page._cus_head }} %}
 {% endif %}
+
+  {% if page.layout == 'post' %}
+      <script>
+          (function() {
+              var d = document, s = d.createElement('script');
+              s.src = 'https://github-io-17.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+          })();
+      </script>
+  {% endif %}
