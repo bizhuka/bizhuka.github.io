@@ -25,25 +25,25 @@ _cus_index: "10"
 
 ![image](https://user-images.githubusercontent.com/36256417/91287754-f42c6800-e7b1-11ea-99ce-bb9dc2b49113.png)
 
-На стороне ABAP нам понадобиться лишь 1 дополнительный класс **ZCL_XTT_COMP_CELL**.
+На стороне ABAP нам понадобиться лишь 1 дополнительный класс **zcl_xtt_image**.
 Его инстанция и будет готовое изображение
 
 ```abap
- img  TYPE REF TO zcl_xtt_comp_cell, " <--- IMAGE
+ img  TYPE REF TO zcl_xtt_image, " <--- IMAGE
 ```
 
 При создании объекта нужно будет передать лишь двоичные данные (iv_image TYPE xString)
 
 ```abap
     " Create new instance
-    <ls_icon>-img = zcl_xtt_comp_cell=>create_image( iv_image  = lv_image ).
+    <ls_icon>-img = zcl_xtt_image=>create_image( iv_image  = lv_image ).
 ```
 
 Дополнительно можно передать размер изображения и его формат (расширение)
 
 ```abap
     " Create new instance
-    <ls_icon>-img = zcl_xtt_comp_cell=>create_image( iv_image  = lv_image
+    <ls_icon>-img = zcl_xtt_image=>create_image( iv_image  = lv_image
                                                      iv_ext    = '.gif'
                                                      iv_width  = lv_width
                                                      iv_height = lv_height ).

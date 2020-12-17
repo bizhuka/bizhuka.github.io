@@ -25,25 +25,25 @@ If the output is not complicated by anything and the picture in the template is 
 
 ![image](https://user-images.githubusercontent.com/36256417/91287754-f42c6800-e7b1-11ea-99ce-bb9dc2b49113.png)
 
-On the ABAP side, we only need 1 additional class **ZCL_XTT_COMP_CELL**.
+On the ABAP side, we only need 1 additional class **zcl_xtt_image**.
 One instance of it will be the finished image
 
 ```abap
- img  TYPE REF TO zcl_xtt_comp_cell, " <--- IMAGE
+ img  TYPE REF TO zcl_xtt_image, " <--- IMAGE
 ```
 
 When creating an object, you will need to transfer only binary data (iv_image TYPE xString)
 
 ```abap
     " Create new instance
-    <ls_icon>-img = zcl_xtt_comp_cell=>create_image( iv_image  = lv_image ).
+    <ls_icon>-img = zcl_xtt_image=>create_image( iv_image  = lv_image ).
 ```
 
 Additionally, you can transfer the size of the image and its format (extension)
 
 ```abap
     " Create new instance
-    <ls_icon>-img = zcl_xtt_comp_cell=>create_image( iv_image  = lv_image
+    <ls_icon>-img = zcl_xtt_image=>create_image( iv_image  = lv_image
                                                      iv_ext    = '.gif'
                                                      iv_width  = lv_width
                                                      iv_height = lv_height ).

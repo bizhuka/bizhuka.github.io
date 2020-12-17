@@ -135,79 +135,79 @@
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6758.57</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5563.86</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5971.44</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5021.46</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 10 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">153.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7473.27</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5451.87</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4061.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8972.09</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1796.79</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4573.55</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5436.00</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 12 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">214.52</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8481.91</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1196.35</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">522.46</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4164.85</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4263.78</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7686.95</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2727.98</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">847.44</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1515.22</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">978.18</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">295.55</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 15 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6220.04</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6482.36</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">71.12</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8878.56</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">982.68</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9927.07</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2276.75</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7717.20</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 3 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6836.72</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7795.09</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3031.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">445.22</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4038.64</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7742.85</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">9476.79</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3683.27</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 5 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7630.05</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6014.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4604.00</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5525.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 6 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5746.69</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1997.34</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2159.71</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2260.94</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">471.62</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6510.54</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2490.30</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6388.81</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 8 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6001.36</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7509.60</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5476.81</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">406.18</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9950.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7487.59</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">689.66</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">518.60</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s67"/>
@@ -257,80 +257,80 @@
     <Cell ss:StyleID="s63"><Data ss:Type="String">SUM2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">982.68</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9927.07</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5971.44</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5021.46</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">9476.79</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3683.27</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 5 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7630.05</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6014.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4604.00</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5525.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 8 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6001.36</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7509.60</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5476.81</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">406.18</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8972.09</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1796.79</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 3 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3031.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">445.22</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">847.44</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1515.22</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2490.30</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6388.81</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2276.75</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7717.20</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 6 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2159.71</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2260.94</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 10 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">153.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7473.27</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4164.85</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4263.78</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9950.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7487.59</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5451.87</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4061.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 12 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">214.52</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8481.91</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1196.35</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">522.46</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7686.95</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2727.98</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">689.66</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">518.60</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4573.55</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5436.00</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">978.18</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">295.55</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 15 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6220.04</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6482.36</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6758.57</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5563.86</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 3 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6836.72</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7795.09</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4038.64</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7742.85</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 6 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5746.69</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1997.34</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">471.62</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6510.54</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">71.12</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8878.56</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s67"/>
@@ -380,80 +380,80 @@
     <Cell ss:StyleID="s63"><Data ss:Type="String">SUM2</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 10 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">153.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7473.27</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 15 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">71.12</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">8878.56</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">689.66</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">518.60</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">978.18</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">295.55</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 12 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">214.52</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8481.91</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">471.62</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6510.54</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 14 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">847.44</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1515.22</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">982.68</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9927.07</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4038.64</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7742.85</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4164.85</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">4263.78</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">1196.35</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">522.46</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 6 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5746.69</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1997.34</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 8 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6001.36</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7509.60</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 15 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6220.04</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6482.36</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2159.71</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2260.94</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6758.57</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">5563.86</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 2 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2276.75</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7717.20</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 7 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2490.30</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">6388.81</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 3 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP B</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3031.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">445.22</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP D</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6836.72</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7795.09</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4573.55</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5436.00</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
     <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 5 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7630.05</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">6014.38</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4604.00</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5525.85</Data></Cell>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 11 /&gt;</Data></Cell>
-    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">8972.09</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">1796.79</Data></Cell>
-   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
-    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 9 /&gt;</Data></Cell>
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 10 /&gt;</Data></Cell>
     <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">9950.90</Data></Cell>
-    <Cell ss:StyleID="s66"><Data ss:Type="Number">7487.59</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5451.87</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">4061.85</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 8 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5476.81</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">406.18</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 1 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5971.44</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">5021.46</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 13 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP C</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">7686.95</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">2727.98</Data></Cell>
+   </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
+    <Cell ss:Index="2" ss:StyleID="s64"><Data ss:Type="String">&lt;Caption 4 /&gt;</Data></Cell>
+    <Cell ss:StyleID="s65"><Data ss:Type="String">GRP A</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">9476.79</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="Number">3683.27</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:Index="2" ss:StyleID="s67"/>
