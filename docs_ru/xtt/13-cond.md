@@ -1,6 +1,6 @@
 ---
 parent: "XTT - отчеты"
-title: "13 Дополнение ';type=cond'"
+title: "13 Дополнение type=cond"
 nav_order: 130
 permalink: /ru/xtt/cond/
 _cus_head: "_popup_head.html"

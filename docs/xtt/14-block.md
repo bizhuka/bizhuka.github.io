@@ -1,8 +1,8 @@
 ---
-parent: attributes
+parent: "XTT - reports"
 title: "14 Blocks by condition"
 nav_order: 140
-permalink: /xtt/blocks/
+permalink: /xtt/block/
 _cus_head: "_popup_head.html"
 _cus_index: "14"
 ---
