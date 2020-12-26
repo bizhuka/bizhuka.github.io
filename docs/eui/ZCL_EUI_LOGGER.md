@@ -8,13 +8,15 @@ date: 2020-12-26
 ---
 
 ### ZCL_EUI_LOGGER Class
+{: .no_toc }
 
 Small wrapper on BAL log
 
 ![image](https://user-images.githubusercontent.com/36256417/103149311-83628000-4792-11eb-9481-2f7cf7bc1fac.png)
 
 The purpose of the class is clear from the name\
-Capabilities:
+
+### Capabilities:
 
 * *IS_HEADER* - Log lifetime, object - subobject and other tech. customization
 
