@@ -8,7 +8,6 @@ date: 2020-12-26
 ---
 
 ### ZCL_EUI_LOGGER Class
-{: .no_toc }
 
 Small wrapper on BAL log
 

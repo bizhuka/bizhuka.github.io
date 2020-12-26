@@ -8,7 +8,6 @@ date: 2020-12-26
 ---
 
 ### Класс ZCL_EUI_LOGGER
-{: .no_toc }
 
 Небольшая обертка на BAL log
 
