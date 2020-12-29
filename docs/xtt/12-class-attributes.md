@@ -27,7 +27,7 @@ The template can use:
 * simple fields *{R-MV_MASSN}* & *{R-MS_P0000-STAT2}*.
 * display the table *{R-MT_P0000}*.
 * and even read a single value from the table *{R;cond=value-MT_P0001[ 1 ]-ENAME}* by using the [;cond=](../cond/) addition
-* ';cond=' will also help you to conditionally output something *{R;cond=WHEN value-mv_massn eq '01' THEN |Hiring at { value-ms_p0000-begda DATE = ENVIRONMENT }| WHEN value-mv_massn eq '02' ...*
+* ';cond=' will also help you to conditionally output something *{R;cond=WHEN value-mv_massn eq '01' THEN \|Hiring at { value-ms_p0000-begda DATE = ENVIRONMENT }\| WHEN value-mv_massn eq '02' ...*
 
 without creating an additional *root* structure and manipulating class attributes
 

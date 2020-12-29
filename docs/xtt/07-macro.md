@@ -110,3 +110,14 @@ After all manipulations with STRING content or IF_IXML_DOCUMENT(more convenient 
   " ZIP archive as xstring
   <lv_content> = lo_zip->save( ).
 ```
+
+### PREPARE_RAW for archives
+Since .xlsx & .docx files are archives, it is not very convenient to extract files from them.
+
+For this, a method has been added for processing a separate file in the archive
+
+![image](https://user-images.githubusercontent.com/36256417/103264798-f4de4080-49d5-11eb-9a44-ef4fb2b36ebb.png)
+
+and now you need to check the *path* in the archive, if the `IV_PATH IS INITIAL` event occurred for the entire archive and ir_content is a zip file
+
+![image](https://user-images.githubusercontent.com/36256417/103264863-37078200-49d6-11eb-84a1-a1a79f9ffb5d.png)

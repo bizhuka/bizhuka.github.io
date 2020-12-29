@@ -43,3 +43,10 @@ ssl/ciphersuites = 135:PFS:HIGH::EC_P256:EC_HIGH
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/aqo/src/guide_offline.png)
 ***
+
+### Видео инструкция
+{: .no_toc }
+
+Установка сертификатов необязательна
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QtqWRF0UuLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

@@ -42,3 +42,10 @@ then download zip file
 create offline project and import the zip file
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_offline.png)
 ***
+
+### Video instruction
+{: .no_toc }
+
+Installing certificates is optional
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QtqWRF0UuLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

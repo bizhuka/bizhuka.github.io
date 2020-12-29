@@ -9,7 +9,7 @@ _cus_index: "01"
 
 {% include _xtt_demo.html %}
 
-Самый простой способ отправить простые данные в отчет - передать их в структуре
+Самый простой способ отправить простые данные в отчет - передать их в структуре (или в атрибутах объекта)
 ```abap
     " Document structure
     BEGIN OF ts_root,
@@ -45,24 +45,7 @@ Bottom: ~~{R-BOTTOM}~~
 
 ***
 
-Код XTT для инициализации будет одинаковым:
-```abap
-  " Info about template (Use ZCL_XTT_FILE_OAOR for tr. OAOR)
-  CREATE OBJECT:
-   lo_file TYPE ZCL_XTT_FILE_SMW0 EXPORTING
-     iv_objid = iv_template, " SMW0 binary file
-
-  " The main class (Use ZCL_XTT_WORD_DOCX, ZCL_XTT_PDF for word and pdf respectively)
-   lo_xtt TYPE ZCL_XTT_EXCEL_XLSX EXPORTING
-    io_file = lo_file.
-
-...
-
-  " R is a marker in the IV_TEMPLATE
-  lo_xtt->merge( is_block = ls_root iv_block_name = 'R' ).
-```
-
-После вызова методов lo_xtt **DOWNLOAD** или **SHOW** конечный результат будет таким:
+Если объединить структуру с данными ls_root отчет может выглядеть так
 
 ***
 Basic example
@@ -76,6 +59,33 @@ Just string    **Just string**
 Integer        _3_
 
 Bottom: ~~bottom~~
+***
+
+### Библиотека XTT
+{: .no_toc}
+
+Код для вывода данной структуры в шаблон может выглядеть так:
+
+```abap
+    NEW zcl_xtt_excel_xlsx( NEW zcl_xtt_file_smw0( ) )->merge( ls_root )->download( ).
+```
+
+\* Код библиотеки совместим с версией ABAP 7.02. Новый синтаксис используется в демонстративных целях
+
+1) ZCL_XTT_EXCEL_XLSX  можно заменить на 1 из классов потомков ZCL_XTT
+
+![image](https://user-images.githubusercontent.com/36256417/103254809-06612180-49b1-11eb-9d5f-6ed0125e18f9.png)
+
+2) Вместо ZCL_XTT_FILE_SMW0 на любой из следующих
+
+![image](https://user-images.githubusercontent.com/36256417/103254904-75d71100-49b1-11eb-825f-9c8ca2885253.png)
+
+3) Метод MERGE( ) можно вызывать не сколько раз, для разных меток. По умолчанию 'R'
+
+4) Метод DOWNLOAD( ) имеет опциональные параметры для выгрузки отчета. Для прочих действий можно воспользоваться одним из методов:
+
+![image](https://user-images.githubusercontent.com/36256417/103255194-9c497c00-49b2-11eb-9200-70d9b74bd130.png)
+
 ***
 
 Все форматирование текста внутри **{}** остается неизменным.

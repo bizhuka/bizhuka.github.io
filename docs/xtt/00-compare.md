@@ -88,14 +88,17 @@ The structure of the document will look approximately the same everywhere.
 ```
 
 ### MS Excel
+{: .no_toc }
 
 ![image](https://user-images.githubusercontent.com/36256417/81732894-985ffc80-94aa-11ea-8a8d-7206a7562d44.png)
 
 ### MS Word
+{: .no_toc }
 
 ![image](https://user-images.githubusercontent.com/36256417/81733163-fdb3ed80-94aa-11ea-93a9-c8cc8a629736.png)
 
 ### Adobe LiveCycle
+{: .no_toc }
 
 ![image](https://user-images.githubusercontent.com/36256417/81733595-b4b06900-94ab-11ea-9c92-688414b59c56.png)
 
@@ -109,9 +112,9 @@ The structure of the document will look approximately the same everywhere.
 
 &nbsp;&nbsp;&nbsp;All special features (directives) are always inside **{curly braces}**<br/>
 They, quite conditionally, can be divided into 3 main groups:
-* Related to one value
-* Clarification for the entire table or tree
-* And tree output directives
+* 1) Related to one value
+* 2) Clarification for the entire table or tree
+* 3) Block's directives
 
 Let's look at each of them individually:
 
@@ -120,6 +123,8 @@ Let's look at each of them individually:
 <br>
 
 ### 1) Directives for one value
+
+### 1-1) ';type=' Data type
 
 &nbsp;&nbsp;&nbsp;The first part of them relates to the clarification of [data type {;type=}](../data-types)<br/>
 In general, it is advisable to leave the type as is without converting to others.<br/>
@@ -148,8 +153,14 @@ Result
 <br/>
 <br/>
 
-&nbsp;&nbsp;&nbsp;The second part is related to aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
-which work in conjunction with **3) tree output directives**. <br/>
+### 1-2) ';cond=' Conditional output
+
+&nbsp;&nbsp;&nbsp; [';cond='](../cond/) addition allows you to write a simple condition for displaying one or the other value using String Templates or any other ABAP operator (SWITCH, COND, VALUE) that returns only *one resulting value*
+
+### 1-3) ';func=' Built-in functions
+
+&nbsp;&nbsp;&nbsp;The another part is related to aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
+which work in conjunction with [3-2) tree output directives](../compare/#3-2-tree-output-directives). <br/>
 For more complex cases there is a special event in ABAP
 
 For simple totals in Excel, you can use standard tools
@@ -165,12 +176,12 @@ But if you need a universal method that works in Word and Pdf, you can use these
 
 <br/>
 
-### 2) Clarification for an entire table or tree
+### 2) Clarification for a table or tree
 
 &nbsp;&nbsp;&nbsp; Unlike previous directives that were directly in the cell itself,
-this kind of directives can be placed anywhere in the template
+this kind of directives can be placed anywhere in the template and works for entire table or tree
 
-### {;direction=column}
+### 2-1) ';direction=column'
 [{;direction=column}](../output-direction/) works only for in the `ZCL_XTT_EXCEL_XLSX` class and specifies how to display the table.
 By default, tables and trees are displayed row by row.
 
@@ -179,7 +190,7 @@ By default, tables and trees are displayed row by row.
 &nbsp;&nbsp;&nbsp;If you need a dynamic table that expands row by row,
 and column by column please look at [this example](../dynamic-table/)
  
-### {;group=}
+### 2-1) ';group='
 &nbsp;Allows you to group tabular data in a hierarchical structure similar to a **tree**. <br/>
 &nbsp;To convert a table to a tree, you can use ABAP methods
 zcl_xtt_replace_block=>[tree_create](../tree-group-by-fields/) or zcl_xtt_replace_block=>[tree_create_relat](../tree-group-by-field-relations/). <br/>
@@ -215,7 +226,14 @@ In the `ZCL_XTT_EXCEL_XLSX` class, the declaration of a tree at the sheet level 
 
 <br/>
 
-### 3) Tree output directives
+### 3) Block's directives
+
+### 3-1) ';type=block' Conditional block
+[';type=block;'](../block/) addition together with *';cond='* addition is intended for conditional output of the one block.
+
+That is, it works similarly to 'show_if' for a tree. But it is intended for one-time execution only. 'show_if' works for each table row and their subtotals at different levels
+
+### 3-2) Tree output directives
 &nbsp;After the table has been converted to a tree, you can set the boundaries and output conditions of each level.<br/>
 * **;level=** Specifies for which level this row (column) is intended
 * **;top=X** It says that the withdrawal will be carried out **before** a lower level (empty or ;top= that **after** a lower level)

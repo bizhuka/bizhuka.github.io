@@ -9,7 +9,7 @@ _cus_index: "01"
 
 {% include _xtt_demo.html %}
 
-The easiest way to send elementary data to a report is to pass them by a structure
+The easiest way to send elementary data to a report is to pass them by a structure (or in an object attributes)
 ```abap
     " Document structure
     BEGIN OF ts_root,
@@ -45,24 +45,7 @@ Bottom: ~~{R-BOTTOM}~~
 
 ***
 
- XTT code for initialization will be the same all the time:
-```abap
-  " Info about template (Use ZCL_XTT_FILE_OAOR for tr. OAOR)
-  CREATE OBJECT:
-   lo_file TYPE ZCL_XTT_FILE_SMW0 EXPORTING
-     iv_objid = iv_template, " SMW0 binary file
-
-  " The main class (Use ZCL_XTT_WORD_DOCX, ZCL_XTT_PDF for word and pdf respectively)
-   lo_xtt TYPE ZCL_XTT_EXCEL_XLSX EXPORTING
-    io_file = lo_file.
-
-...
-
-  " R is a marker in the IV_TEMPLATE
-  lo_xtt->merge( is_block = ls_root iv_block_name = 'R' ).
-```
-
-After calling `download` or `show` methods of **lo_xtt** the final result would be like that:
+If you combine the structure with the ls_root data, the report may look like this
 
 ***
 Basic example
@@ -76,6 +59,32 @@ Just string    **Just string**
 Integer        _3_
 
 Bottom: ~~bottom~~
+***
+
+### XTT Library
+{: .no_toc}
+
+The code for outputting this structure to the template may look like this:
+```abap
+    NEW zcl_xtt_excel_xlsx( NEW zcl_xtt_file_smw0( ) )->merge( ls_root )->download( ).
+```
+
+\* The library code is compatible with ABAP 7.02. New syntax is used for demonstration purposes
+
+1) ZCL_XTT_EXCEL_XLSX can be replaced with 1 of the ZCL_XTT descendant classes
+
+![image](https://user-images.githubusercontent.com/36256417/103254809-06612180-49b1-11eb-9d5f-6ed0125e18f9.png)
+
+2) Instead of ZCL_XTT_FILE_SMW0 to any of the following
+
+![image](https://user-images.githubusercontent.com/36256417/103254904-75d71100-49b1-11eb-825f-9c8ca2885253.png)
+
+3) The MERGE () method can be called several times, for different labels. Default 'R'
+
+4) The DOWNLOAD () method has optional parameters for downloading the report. For other actions, you can use one of the methods:
+
+![image](https://user-images.githubusercontent.com/36256417/103255194-9c497c00-49b2-11eb-9200-70d9b74bd130.png)
+
 ***
 
 All text formatting within **{}** remains the same.

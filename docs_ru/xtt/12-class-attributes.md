@@ -27,7 +27,7 @@ _cus_index: "12"
 * простые поля *{R-MV_MASSN}* & *{R-MS_P0000-STAT2}*.
 * вывести таблицу *{R-MT_P0000}*.
 * и даже считать отдельное значение из таблицы *{R;cond=value-MT_P0001[ 1 ]-ENAME}* по средством использования дополнения [;cond=](../cond/)
-* cond также поможет что-то вывести по условию в *{R;cond=WHEN value-mv_massn eq '01' THEN |Hiring at { value-ms_p0000-begda DATE = ENVIRONMENT }| WHEN value-mv_massn eq '02' ...*
+* cond также поможет что-то вывести по условию в *{R;cond=WHEN value-mv_massn eq '01' THEN \|Hiring at { value-ms_p0000-begda DATE = ENVIRONMENT }\| WHEN value-mv_massn eq '02' ...*
 
 без создания дополнительной структуры *root* и манипуляций с атрибутами класса
 

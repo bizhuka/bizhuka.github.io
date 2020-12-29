@@ -40,3 +40,7 @@ The result will appear like that
 * Tree
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/dir_column_04.png)
+
+### Data offset
+If the result in the report has moved down, add non-empty cells to the left of the column with the template.\
+Pay attention to `I stay here`

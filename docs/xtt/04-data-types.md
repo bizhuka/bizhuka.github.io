@@ -25,6 +25,8 @@ Basic data types
 |`boolean`|For Excel logical functions (TRUE or FALSE)|
 |`mask`|Use WRITE TO|
 |`as_is`|Do not escape XML symbols (can contain special chars <>&'..)|
+|`image`|More about pictures [here](../images/)|
+|`block`|More about conditional blocks [here](../block/)|
 
 The first 4 data types detected implicitly. But for the boolean and datetime you have to specify type explicitly.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/data_types_01.png)

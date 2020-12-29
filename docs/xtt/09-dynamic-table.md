@@ -36,3 +36,8 @@ Insert columns as __table__ or __tree__ and then insert main data
     " Rows
     ro_xtt->merge( ls_merge1 ).
 ```
+
+### Explanation
+The template could be limited to 1 column with conditional formatting
+
+The example was created to demonstrate the addition of 'show_if'

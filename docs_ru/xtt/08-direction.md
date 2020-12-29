@@ -42,3 +42,7 @@ _cus_index: "08"
 * Дерево
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/dir_column_04.png)
+
+### Смещение данных
+Если результат в отчете съехал вниз добавьте непустые ячейки слева от столбца с шаблоном.\
+Обратите внимание на `I stay here`

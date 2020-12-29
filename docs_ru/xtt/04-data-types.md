@@ -25,6 +25,8 @@ _cus_index: "04"
 |`boolean`|Для Excel (ИСТИНА или ЛОЖЬ)|
 |`mask`|Использовать WRITE TO|
 |`as_is`|Не преобразовывать XML символы (может содержать специальные символы <>&'..)|
+|`image`|О картинках подробнее [тут](../images/)|
+|`block`|Об условных блоках подробнее [тут](../block/)|
 
 Первые 4 типа данных определяются автоматически. Но для boolean и datetime вам нужно явно указать тип.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/data_types_01.png)
