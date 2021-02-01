@@ -4,7 +4,6 @@
 .jekyll-cache
 /*.iml
 /.idea
-/_site
 /dist/bootstrap
 /dist/jquery
 /Gemfile.lock
