@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "03 Nested blocks"
-nav_order: 30
+title: "030 Nested blocks"
+nav_order: 030
 permalink: /xtt/nested-blocks/
 _cus_head: "_popup_head.html"
-_cus_index: "03"
+_cus_index: "030"
 ---
 
 {% include _xtt_demo.html %}

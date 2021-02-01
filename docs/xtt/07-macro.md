@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "07 Macro call & prepare_raw event"
-nav_order: 70
+title: "070 Macro call & prepare_raw event"
+nav_order: 070
 permalink: /xtt/macro/
 _cus_head: "_popup_head.html"
-_cus_index: "07"
+_cus_index: "070"
 ---
 
 {% include _xtt_demo.html %}

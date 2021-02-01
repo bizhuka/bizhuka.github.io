@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "02 Формулы в Excel"
-nav_order: 21
+title: "021 Формулы в Excel"
+nav_order: 021
 permalink: /ru/xtt/excel-formula/
 _cus_head: "_popup_head.html"
-_cus_index: "02"
+_cus_index: "021"
 ---
 
 {% include _xtt_demo.html %}

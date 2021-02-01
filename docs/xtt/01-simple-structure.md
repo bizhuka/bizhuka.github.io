@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "01 Simple structure"
-nav_order: 10
+title: "010 Simple structure"
+nav_order: 010
 permalink: /xtt/simple-structure/
 _cus_head: "_popup_head.html"
-_cus_index: "01"
+_cus_index: "010"
 ---
 
 {% include _xtt_demo.html %}

@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "04 Типы данных и пост обработка Excel"
-nav_order: 40
+title: "040 Типы данных и пост обработка Excel"
+nav_order: 040
 permalink: /ru/xtt/data-types/
 _cus_head: "_popup_head.html"
-_cus_index: "04"
+_cus_index: "040"
 ---
 
 {% include _xtt_demo.html %}

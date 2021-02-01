@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "06 Деревья (на основе связи родитель дочерний)"
-nav_order: 60
+title: "060 Деревья (на основе связи родитель дочерний)"
+nav_order: 060
 permalink: /ru/xtt/tree-group-by-field-relations/
 _cus_head: "_popup_head.html"
-_cus_index: "06"
+_cus_index: "060"
 ---
 
 {% include _xtt_demo.html %}

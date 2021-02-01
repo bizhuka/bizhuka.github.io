@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "06 Tree (group by field relations)"
-nav_order: 60
+title: "060 Tree (group by field relations)"
+nav_order: 060
 permalink: /xtt/tree-group-by-field-relations/
 _cus_head: "_popup_head.html"
-_cus_index: "06"
+_cus_index: "060"
 ---
 
 {% include _xtt_demo.html %}
