@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "01 Вывод простой структуры"
+title: "010 Вывод простой структуры"
 nav_order: 10
 permalink: /ru/xtt/simple-structure/
 _cus_head: "_popup_head.html"
-_cus_index: "01"
+_cus_index: "010"
 ---
 
 {% include _xtt_demo.html %}

@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "03 Вложенные блоки"
+title: "030 Вложенные блоки"
 nav_order: 30
 permalink: /ru/xtt/nested-blocks/
 _cus_head: "_popup_head.html"
-_cus_index: "03"
+_cus_index: "030"
 ---
 
 {% include _xtt_demo.html %}
