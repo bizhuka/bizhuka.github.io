@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "120 Атрибуты класса"
+title: "12 Атрибуты класса"
 nav_order: 120
 permalink: /ru/xtt/class-attributes/
 _cus_head: "_popup_head.html"
-_cus_index: "120"
+_cus_index: "12"
 ---
 
 {% include _xtt_demo.html %}

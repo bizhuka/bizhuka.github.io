@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "021 Formulas in Excel"
-nav_order: 021
+title: "02 Formulas in Excel"
+nav_order: 21
 permalink: /xtt/excel-formula/
 _cus_head: "_popup_head.html"
-_cus_index: "021"
+_cus_index: "02"
 ---
 
 {% include _xtt_demo.html %}

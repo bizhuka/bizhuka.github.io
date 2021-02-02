@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "020 Basic tables"
-nav_order: 020
+title: "02 Basic tables"
+nav_order: 20
 permalink: /xtt/basic-tables/
 _cus_head: "_popup_head.html"
-_cus_index: "020"
+_cus_index: "02"
 ---
 
 {% include _xtt_demo.html %}
