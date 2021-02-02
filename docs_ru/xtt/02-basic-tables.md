@@ -1,10 +1,10 @@
 ---
 parent: "XTT - отчеты"
-title: "020 Вывод простой таблицы"
-nav_order: 020
+title: "02 Вывод простой таблицы"
+nav_order: 20
 permalink: /ru/xtt/basic-tables/
 _cus_head: "_popup_head.html"
-_cus_index: "020"
+_cus_index: "02"
 ---
 
 {% include _xtt_demo.html %}

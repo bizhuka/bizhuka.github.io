@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "040 Data types & Excel post processing"
-nav_order: 040
+title: "04 Data types & Excel post processing"
+nav_order: 40
 permalink: /xtt/data-types/
 _cus_head: "_popup_head.html"
-_cus_index: "040"
+_cus_index: "04"
 ---
 
 {% include _xtt_demo.html %}
