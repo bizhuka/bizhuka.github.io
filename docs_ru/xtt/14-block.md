@@ -1,6 +1,6 @@
 ---
 parent: "XTT - отчеты"
-title: "14 Блоки по условию"
+title: "140 Блоки по условию"
 nav_order: 140
 permalink: /ru/xtt/block/
 _cus_head: "_popup_head.html"

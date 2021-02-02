@@ -1,6 +1,6 @@
 ---
 parent: "XTT - reports"
-title: "10 Images"
+title: "100 Images"
 nav_order: 100
 permalink: /xtt/images/
 _cus_head: "_popup_head.html"
