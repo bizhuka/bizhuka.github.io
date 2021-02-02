@@ -51,8 +51,7 @@ XTT поможет вам автоматизировать вашу процед
 <br/>
 <div class="container-fluid" markdown="1">
 
-### tr. Z_XTT_INDEX
-{: .no_toc }
+### tr. Z_XTT_DEMO
 </div> <!-- This close tag must be left aligned. -->
 {% include _xtt_demo.html %}
 

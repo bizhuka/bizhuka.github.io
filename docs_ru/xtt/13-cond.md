@@ -4,7 +4,7 @@ title: "13 Дополнение ';cond='"
 nav_order: 130
 permalink: /ru/xtt/cond/
 _cus_head: "_popup_head.html"
-_cus_index: "13"
+_cus_index: "130"
 ---
 
 {% include _xtt_demo.html %}

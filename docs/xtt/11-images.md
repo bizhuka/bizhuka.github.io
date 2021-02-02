@@ -4,7 +4,7 @@ title: "11 Images ';type=image'"
 nav_order: 110
 permalink: /xtt/images-no-code/
 _cus_head: "_popup_head.html"
-_cus_index: "11"
+_cus_index: "110"
 ---
 
 {% include _xtt_demo.html %}

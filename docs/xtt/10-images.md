@@ -4,7 +4,7 @@ title: "10 Images"
 nav_order: 100
 permalink: /xtt/images/
 _cus_head: "_popup_head.html"
-_cus_index: "10"
+_cus_index: "100"
 ---
 
 {% include _xtt_demo.html %}

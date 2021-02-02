@@ -4,7 +4,7 @@ title: "12 Class attributes"
 nav_order: 120
 permalink: /xtt/class-attributes/
 _cus_head: "_popup_head.html"
-_cus_index: "12"
+_cus_index: "120"
 ---
 
 {% include _xtt_demo.html %}
