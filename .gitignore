@@ -8,5 +8,6 @@
 /dist/jquery
 /Gemfile.lock
 .sass-cache
+_site
 Gemfile.lock
 node_modules
