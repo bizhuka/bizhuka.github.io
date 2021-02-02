@@ -51,7 +51,7 @@ XTT helps you to automate your reporting routine in SAP
 <br/>
 <div class="container-fluid" markdown="1">
 
-### tr. Z_XTT_INDEX
+### tr. Z_XTT_DEMO
 {: .no_toc }
 </div> <!-- This close tag must be left aligned. -->
 {% include _xtt_demo.html %}

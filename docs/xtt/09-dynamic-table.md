@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "09 Dynamic table (tree)"
-nav_order: 90
+title: "090 Dynamic table (tree)"
+nav_order: 090
 permalink: /xtt/dynamic-table/
 _cus_head: "_popup_head.html"
-_cus_index: "09"
+_cus_index: "090"
 ---
 
 {% include _xtt_demo.html %}

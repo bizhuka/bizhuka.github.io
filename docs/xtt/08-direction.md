@@ -1,10 +1,10 @@
 ---
 parent: "XTT - reports"
-title: "08 ;direction=column addition"
-nav_order: 80
+title: "080 ;direction=column addition"
+nav_order: 080
 permalink: /xtt/output-direction/
 _cus_head: "_popup_head.html"
-_cus_index: "08"
+_cus_index: "080"
 ---
 
 {% include _xtt_demo.html %}
