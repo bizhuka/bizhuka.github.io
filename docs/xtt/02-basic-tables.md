@@ -56,3 +56,20 @@ The final result for MS Word
 
 All list objects in Excel with corresponding formulas would be properly zoomed.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/basic_table_01.png)
+
+Ctl + F3
+
+![image](https://user-images.githubusercontent.com/36256417/108593671-4fc16200-739f-11eb-96d3-bd7b96169446.png)
+
+
+***
+
+Also [data validation](https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249) are expanding automatically
+![image](https://user-images.githubusercontent.com/36256417/108593426-d07f5e80-739d-11eb-8b31-bf5e014451a8.png)
+
+***
+
+Formulas with scope are supported (Worksheet or Workbook)\
+Including "Print titles"
+
+![image](https://user-images.githubusercontent.com/36256417/108593559-9cf10400-739e-11eb-83db-d5a7079f65ee.png)

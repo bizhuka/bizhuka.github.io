@@ -55,22 +55,6 @@ In the current version (I hope), the conversion from absolute reference to relat
 
 ![image](https://user-images.githubusercontent.com/36256417/91650747-2df8b980-eaa5-11ea-8da9-313a1eb31f78.png)
 
-Previously, a temporary solution was to manually press Enter on each cell or run a macro to remove the 'shared' formulas
-
-```VB
-Sub splitFM()
- Dim r As Range
- 
- For Each r In Selection
-  r.FormulaR1C1 = r.FormulaR1C1
- Next
- 
- ' Save and delete macro with no message 
- Application.DisplayAlerts = True
- ThisWorkbook.Save
- Application.DisplayAlerts = False
-End Sub
-```
 ***
 
 ### Named cell ranges

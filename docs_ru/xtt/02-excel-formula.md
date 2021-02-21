@@ -55,22 +55,6 @@ PS: Для [;direction=column](../output-direction/) (те вывода табл
 В текущей версии преобразование из абсолютной ссылки в относительную и обратно, надеюсь, происходит без проблем 
 ![image](https://user-images.githubusercontent.com/36256417/91650747-2df8b980-eaa5-11ea-8da9-313a1eb31f78.png)
 
-Ранее временным решением было, в ручную нажать Enter на каждой ячейке или же запустить макрос по удалению 'shared' формул
-
-```VB
-Sub splitFM()
- Dim r As Range
- 
- For Each r In Selection
-  r.FormulaR1C1 = r.FormulaR1C1
- Next
- 
- ' Save and delete macro with no message 
- Application.DisplayAlerts = True
- ThisWorkbook.Save
- Application.DisplayAlerts = False
-End Sub
-```
 ***
 
 ### Именованные диапазоны ячеек 
