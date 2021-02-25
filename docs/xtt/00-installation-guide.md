@@ -38,9 +38,12 @@ ssl/ciphersuites = 135:PFS:HIGH::EC_P256:EC_HIGH
 then download zip file
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_zip.png)
+
 ***
+
 create offline project and import the zip file
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_offline.png)
+
 ***
 
 ### Video instruction

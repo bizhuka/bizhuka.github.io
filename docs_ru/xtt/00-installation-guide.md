@@ -38,10 +38,12 @@ ssl/ciphersuites = 135:PFS:HIGH::EC_P256:EC_HIGH
 Вы можете скачать файл
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_zip.png)
+
 ***
 и создать оффлайн проект импортировав zip-файл
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_offline.png)
+
 ***
 
 ### Видео инструкция
