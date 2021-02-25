@@ -1,7 +1,7 @@
 ---
 parent: "XTT - reports"
 title: "Installation guide"
-nav_order: 07
+nav_order: 7
 permalink: /xtt/installation-guide/
 ---
 

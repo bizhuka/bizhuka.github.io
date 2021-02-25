@@ -1,7 +1,7 @@
 ---
 parent: "XTT - отчеты"
 title: "Сравните с другими библиотеками"
-nav_order: 01
+nav_order: 1
 permalink: /ru/xtt/compare/
 ---
 

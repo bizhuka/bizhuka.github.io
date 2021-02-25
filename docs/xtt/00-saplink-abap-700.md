@@ -1,7 +1,7 @@
 ---
 parent: "XTT - reports"
 title: "Installation via SAPLINK"
-nav_order: 08
+nav_order: 8
 permalink: /xtt/saplink-abap-700/
 ---
 

@@ -1,7 +1,7 @@
 ---
 parent: "XTT - reports"
 title: "Compare with other libraries"
-nav_order: 01
+nav_order: 1
 permalink: /xtt/compare/
 ---
 

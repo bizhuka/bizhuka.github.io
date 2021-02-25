@@ -1,7 +1,7 @@
 ---
 parent: "XTT - отчеты"
 title: "Установка через SAPLINK"
-nav_order: 08
+nav_order: 8
 permalink: /ru/xtt/saplink-abap-700/
 ---
 

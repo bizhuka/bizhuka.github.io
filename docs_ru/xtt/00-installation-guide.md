@@ -1,7 +1,7 @@
 ---
 parent: "XTT - отчеты"
 title: "Инструкция по установке"
-nav_order: 07
+nav_order: 7
 permalink: /ru/xtt/installation-guide/
 ---
 
