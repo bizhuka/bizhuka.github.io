@@ -190,7 +190,7 @@ The basic skills of most ABAP developers are probably classes **CL_GUI_ALV_GRID*
 Although the latter is newer, it:
 * does not support editing by default (There are of course several types of tricks to get around this)
 * customization of field catalog, toolbar, layout and variant occurs through method calls<br/>
-those imho CL_SALV_TABLE more verbose than CL_GUI_ALV_GRID (начиная с 7.40) where all ALV tuning happens, as usual, through tables and structures 
+those imho CL_SALV_TABLE more verbose than CL_GUI_ALV_GRID (from 7.40) where all ALV tuning happens, as usual, through tables and structures 
 
 CL_GUI_ALV_GRID, in turn, has 1 but a very significant drawback - to create screens for the main and popup tables ~~love to do masochists~~ a very tedious task for an already busy programmer ~~between sleeping and watching the show during lunch~~
 
