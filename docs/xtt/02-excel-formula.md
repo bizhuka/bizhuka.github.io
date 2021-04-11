@@ -77,6 +77,11 @@ If you need to summarize a table field, you can use standard Excel tools
 
 ![image](https://user-images.githubusercontent.com/36256417/91716839-2e32ab00-ebb2-11ea-961e-c12ae27ce2c6.png)
 
+### Array formulas
+[Array formulas](https://exceljet.net/glossary/array-formula) are also supported
+
+![image](https://user-images.githubusercontent.com/36256417/114306635-323a8a00-9afe-11eb-85b4-619749102b9c.png)
+
 ### Word & PDF
 But what if you need to sum the field values not only in Excel, but also in Word or Pdf?
 In this case, you can use the aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)

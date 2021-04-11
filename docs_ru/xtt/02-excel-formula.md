@@ -77,6 +77,11 @@ PS: Для [;direction=column](../output-direction/) (те вывода табл
 
 ![image](https://user-images.githubusercontent.com/36256417/91716839-2e32ab00-ebb2-11ea-961e-c12ae27ce2c6.png)
 
+### Формулы массива
+[Формулы массива](https://exceljet.net/glossary/array-formula) также поддерживаются
+
+![image](https://user-images.githubusercontent.com/36256417/114306635-323a8a00-9afe-11eb-85b4-619749102b9c.png)
+
 ### Word & PDF
 Но что если нужно просуммировать значения поля не только в Excel, но и в Word или Pdf?
 В этом случае можно воспользоваться функциями агрегации [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
