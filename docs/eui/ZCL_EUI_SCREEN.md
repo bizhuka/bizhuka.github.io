@@ -181,7 +181,7 @@ REPORT zeui_test_screen_02.
 " For simple cases (No PAI, PBO. 2 buttons only)
 NEW zcl_eui_screen(
  " Virtual screen number
- iv_dynnr   = zcl_eui_screen=>mc_dynnr-dyn_popup
+ iv_dynnr   = zcl_eui_screen=>mc_dynnr-dynamic
  " Pass only context
  ir_context = NEW ts_context( ) )->show( ).
 ```
@@ -269,11 +269,10 @@ You do not need to declare the screen through `SELECTION-SCREEN BEGIN OF SCREEN`
 * CALL FUNCTION **'FREE_SELECTIONS_DIALOG'**
     * `new zcl_eui_screen( iv_dynnr = zcl_eui_screen=>mc_dynnr-free_sel )`    
 * **CL_CI_QUERY_ATTRIBUTES**=>GENERIC( )
-    * `new zcl_eui_screen( iv_dynnr = zcl_eui_screen=>mc_dynnr-dyn_popup )`
-* Если вы хотите использовать свой, уже объявленный в другой программе, экран. Укажите его в конструкторе
+    * `new zcl_eui_screen( iv_dynnr = zcl_eui_screen=>mc_dynnr-dynamic )`
+* If you want to use your own screen, already declared in another program. Specify it in the constructor
     * `new zcl_eui_screen( iv_dynnr = '1020'  iv_cprog = 'ZEUI_TEST_SCREEN_02' )`
     
-* iv_dynnr = zcl_eui_screen=>mc_dynnr-**auto_gen** mode generates a program like CL_CI_QUERY_ATTRIBUTES, but doesn’t save it. Since **INSERT REPORT** usually is prohibited    
 ***
 
 ### 2) PBO
