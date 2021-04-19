@@ -140,14 +140,12 @@ NEW zcl_eui_screen(
  " Pass only context
  ir_context     = NEW ts_context( )
 
- " SET PF-STATUS & SET TITLEBAR
-* iv_status_prog  = sy-cprog
-* iv_status_name  = 'STATUS_MANY_BUTTONS'
-* iv_status_title = 'Screen title'
- 
  " Set PAI & PBO handlers (optional)
 )->show( io_handler = me ).
 
+
+" Before ->show( ) method, you can call ->popup( ) or ->set_status( ) methods in a chain form
+ 
 ...
 
 *  ME-> should contain
@@ -276,14 +274,14 @@ You do not need to declare the screen through `SELECTION-SCREEN BEGIN OF SCREEN`
 ***
 
 ### 2) PBO
-**2.1** To use custom PF-STATUS and TITLEBAR, pass them to the constructor
+**2.1** To use custom PF-STATUS and TITLEBAR, pass them after the calling the constructor in SET_STATUS method
 
 ```abap
     " PF-STATUS & SET TITELEBAR 
-    DATA(lo_scr_1020) = NEW zcl_eui_screen(
-        iv_status_prog  = c_cprog
-        iv_status_name  = 'START_STATUS'
-        iv_status_title = 'Start screen' )
+    DATA(lo_scr_1020) = NEW zcl_eui_screen( iv_dynnr = '1020'
+      )->set_status( VALUE #( title = 'Screen title'
+                              prog  = sy-cprog
+                              name  = 'STATUS_MANY_BUTTONS' ) ).
 ```
 
 **2.2** LOOP AT SCREEN

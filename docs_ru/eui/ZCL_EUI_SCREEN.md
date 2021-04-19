@@ -141,13 +141,10 @@ NEW zcl_eui_screen(
  " Передаем только контекст
  ir_context     = NEW ts_context( )
 
- " SET PF-STATUS & SET TITLEBAR
-* iv_status_prog  = sy-cprog
-* iv_status_name  = 'STATUS_MANY_BUTTONS'
-* iv_status_title = 'Screen title'
- 
  " Для PAI & PBO нужен io_handler (optional)
 )->show( io_handler = me ).
+
+" До вызова метода ->show( ), можно вызвать ->popup( ) или ->set_status( ) в виде цепочки
 
 ...
 
@@ -277,14 +274,14 @@ NEW zcl_eui_screen(
 ***
 
 ### 2) PBO
-**2.1** Для использования кастомного PF-STATUS и TITLEBAR передайте их в конструктор
+**2.1** Для использования кастомного PF-STATUS и TITLEBAR передайте их после вызова в метод SET_STATUS
 
 ```abap
     " PF-STATUS & SET TITELEBAR 
-    DATA(lo_scr_1020) = NEW zcl_eui_screen(
-        iv_status_prog  = c_cprog
-        iv_status_name  = 'START_STATUS'
-        iv_status_title = 'Start screen' )
+    DATA(lo_scr_1020) = NEW zcl_eui_screen( iv_dynnr = '1020'
+      )->set_status( VALUE #( title = 'Screen title'
+                              prog  = sy-cprog
+                              name  = 'STATUS_MANY_BUTTONS' ) ).
 ```
 
 **2.2** LOOP AT SCREEN
