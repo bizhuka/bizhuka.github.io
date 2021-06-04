@@ -35,6 +35,18 @@ _cus_index: "040"
 
 ***
 
+Для разрывов строк можно использовать **cl_abap_char_utilities=>cr_lf** соотвествующий разделитель будет подставляться автоматически
+
+| Класс | Разделитель страниц | Разделитель строк |
+|--|--|--|
+| ZCL_XTT_EXCEL_XLSX | - | cl_abap_char_utilities=>cr_lf |
+| ZCL_XTT_EXCEL_XML | - | &#10<b>;</b> |
+| ZCL_XTT_WORD_DOCX & ZCL_XTT_WORD_XML | <w:br w:type="page"<b>/</b>> | <w:br<b>/</b>> |
+| ZCL_XTT_PDF | <breakAfter targetType="pageArea"<b>/</b>> | cl_abap_char_utilities=>cr_lf |
+| ZCL_XTT_HTML | - | <br<b>/</b>> |
+
+***
+
 Также в этом классе можно найти несколько констант, которые определяют, какие данные вы передаете методу `merge`.
 * 'struct'
 * 'object'

@@ -35,6 +35,18 @@ As you could see `;type=mask` addition can be used for material numbers to delet
 
 ***
 
+For line breaks, you can use **cl_abap_char_utilities=>cr_lf** the appropriate separator will be inserted automatically
+
+| Class | Page Separator | Line Separator |
+|--|--|--|
+| ZCL_XTT_EXCEL_XLSX | - | cl_abap_char_utilities=>cr_lf |
+| ZCL_XTT_EXCEL_XML | - | &#10<b>;</b> |
+| ZCL_XTT_WORD_DOCX & ZCL_XTT_WORD_XML | <w:br w:type="page"<b>/</b>> | <w:br<b>/</b>> |
+| ZCL_XTT_PDF | <breakAfter targetType="pageArea"<b>/</b>> | cl_abap_char_utilities=>cr_lf |
+| ZCL_XTT_HTML | - | <br<b>/</b>> |
+
+***
+
 There are also defined several constants which detects what kind of data you pass to `merge` method.
 * 'struct'
 * 'object'
