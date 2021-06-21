@@ -60,3 +60,7 @@ Previously, to hide a block, you had to create a special ABAP table and fill it 
 
 This add-on simply performs the same function only by writing a condition in the template itself
 
+### Shorthand
+For convenience **{R-BL2;type=block;cond=**strlen( **value**-TITLE ) gt 0} can be abbreviated to **{R-BL2;=**strlen( **v**-TITLE ) gt 0}
+
+  *See templates 140

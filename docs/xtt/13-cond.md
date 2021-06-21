@@ -86,6 +86,11 @@ Additional variable for numbering table rows? You can also throw her overboard
 By default all expressions in ';cond=' are converted to strings (;type=string)\
 I removed the backlighting in the last example, I want to believe that the main idea is more or less clear.
 
+### Shorthand
+For convenience **{R;cond=WHEN value-**time GE '120000' THEN 'pm' ELSE 'am'} can be abbreviated to **{R:WHEN v-**time GE '120000' THEN 'pm' ELSE 'am'}
+
+  *See templates 131
+
 In order to reduce the number of possible technical questions, I give a short FAQ in my view (for lack of real questions)\
 \(*The list will be extended if necessary)
 
