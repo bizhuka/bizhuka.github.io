@@ -91,6 +91,9 @@ All text formatting within **{}** remains the same.
 
 **In a word, a block that looks the same can consist of several with the same formatting.**
 
+**Be sure** to check all spelling in WORD by pressing **F7**, as some characters {}; = lead to spelling errors and, accordingly, to different XML blocks within the document.
+![image](https://user-images.githubusercontent.com/36256417/126486571-be58c903-df2d-433b-8559-b3bf151a24e4.png)
+
 ~~To exclude such a case, you need to copy the block from {} to notepad, copy it and paste it back~~
 
 From new version **ZCL_XTT_WORD_DOCX** & **ZCL_XTT_WORD_XML** classes in such cases
