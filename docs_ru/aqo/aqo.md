@@ -4,6 +4,7 @@ title: "AQO - настройки"
 nav_order: 4
 has_children: true
 permalink: /ru/aqo/
+video_link: media.githubusercontent.com/media/bizhuka/lfs/main/aqo1.mp4
 ---
 
 ### **AQO** - Abap quick options
