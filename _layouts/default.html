@@ -153,10 +153,11 @@ layout: table_wrappers
         {% endif %}
 
         <article>
+
 {% if page.video_link %}
-<video width="640" height="360" controls="true" allowfullscreen="true">
-	<source src="https://{{ page.video_link }}" type="video/mp4">
-</video>
+<iframe width="640" height="360" allowfullscreen="true"
+src="https://{{ page.video_link }}">
+</iframe>
 {% endif %}
             {% if site.heading_anchors != false %}
               {% include vendor/anchor_headings.html html=content beforeHeading="true" anchorBody="<svg viewBox=\"0 0 16 16\" aria-hidden=\"true\"><use xlink:href=\"#svg-link\"></use></svg>" anchorClass="anchor-heading" %}
