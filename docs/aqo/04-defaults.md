@@ -1,58 +1,52 @@
 ---
-parent: "AQO - настройки"
-title: "Параметры по умолчанию"
+parent: "AQO - options"
+title: "Defaults"
 nav_order: 04
-permalink: /ru/aqo/defaults/
+permalink: /aqo/defaults/
 ---
 
-### Параметры по умолчанию
+### Defaults
 
-Если в пакете есть всего одна настройка ее можно создать следующим более лаконичным образом
+If there is only one option in the package, you can create it in the following more concise way
 
 ```abap
-
 zcl_aqo_option=>create( io_data = me )
-
 ```
 
-### Пакет по умолчанию
+### Default package
 
-Названние пакета `IV_PACKAGE_ID`  можно не передавать в метод `zcl_aqo_option=>create`, в этом случае он будет равен пакету вызываемого места.
-
-При перемещении класса в другой пакет параметр `IV_PACKAGE_ID` можно будет указать явно
+The package name `IV_PACKAGE_ID` now is optional in the `zcl_aqo_option=>create` method, in this case it will be equal to the package of the called place.
+When moving a class to another package, the `IV_PACKAGE_ID` parameter can be specified explicitly
 
 ### OPTION_ID
+Often, the `OPTION_ID` parameter does not carry any additional semantical meaning. For small developments, it is not important and can be omitted. In this case, the `'OPTION_ID`' parameter will be equal to the value of `'DEFAULT'`.
 
-Зачастую параметр `OPTION_ID` не несет какой-либо дополнительной смысловой нагрузки.  Для небольших разработок он и не важен и его можно не указывать. В этому случае  параметр `OPTION_ID` будет равен значению `'DEFAULT'`. ![image](https://user-images.githubusercontent.com/36256417/159257521-dc2d2cde-4521-471b-88e7-78609f3d64e3.png)
+![image](https://user-images.githubusercontent.com/36256417/159257521-dc2d2cde-4521-471b-88e7-78609f3d64e3.png)
 
 ### IV_REPAIR
+Option's consistency check mode `IV_REPAIR = abap_true` is now permanently enabled.
+And the need for this flag also disappeared
 
-Режим проверки настройки на консистентность `IV_REPAIR = abap_true` теперь постоянно включен
-
-И необходимость в данном флаге также отпала
-
-### TRY - CATCH
-
-Сейчас класс `ZCX_AQO_EXCEPTION` наследует от `CX_NO_CHECK` поэтому обработка исключительной ситуации необязательна.  Редактор не выдает предупреждений и сам класс `ZCX_AQO_EXCEPTION` нельзя использовать в сигнатуре методов.
+### TRY-CATCH
+Also the class `ZCX_AQO_EXCEPTION` inherits from `CX_NO_CHECK` so handling the exception is optional. The editor does not issue warnings, and the `ZCX_AQO_EXCEPTION` class itself cannot be used in method signatures.
 
 ![image](https://user-images.githubusercontent.com/36256417/159420760-04999a6a-7b1b-419b-b932-396dc42515e8.png)
 
-В каком-то смысле блок `TRY - CATCH` не желателен так как простой вывод сообщения `DISPLAY  LIKE 'E'`зачастую просто игнорируется. Не обработанное исключение `ZCX_AQO_EXCEPTION` при отсутствии настройки в БД в продуктиве или ее отличии ее определения от ABAP кода приведет к дампу который проще обнаружить.
+In a sense, the `TRY - CATCH` block is not desirable, since simply printing the message `DISPLAY LIKE 'E'` is often simply ignored. An unhandled `ZCX_AQO_EXCEPTION` exception in the absence of a option in the database in production or its definition differs from the ABAP code will result in a dump that is easier to detect.
+If the option definition differ in the DEV system, a new save window will appear
 
-Если же определение настройки отличается в DEV системе выйдет подобное окно сохранения
-
-### Окно изменений
-
+### Change window
 ![image](https://user-images.githubusercontent.com/36256417/159464121-75509487-d831-4e46-8ef6-7ac1abd046fa.png)
 
-Оно отображает внесенные изменения в настройку. При этом `- Deleted` будет работать только для вложенных полей, те для полей таблицы `TAB_OPT`.  При попытки удалить из кода определение всей таблицы `TAB_OPT` или любого другого верхнеуровневого **невложенного** поля возникнет исключение `ZCX_AQO_EXCEPTION`
+It displays the changes made to the option. `- Deleted` will only appear for nested fields, those for fields in the `TAB_OPT` table. Trying to remove the definition of the entire `TAB_OPT` table or any other top-level **non-nested** field from the code will throw a `ZCX_AQO_EXCEPTION` exception
 
 ![image](https://user-images.githubusercontent.com/36256417/159476233-5234ceee-800c-4561-8f17-8e2ade14ee52.png)
+This means you have to delete top-level fields by yourself.
 
-### Автоматичесчая проверка класса
+### Automatic class check
 
-Для настроек на основе класса теперь можно просто активировать класс и не создавать его инстанс через **F8** в редакторе кода. После активации класса существующую настройку можно открыть в редакторе `ZAQO_EDITOR_OLD`. При этом проверка мэпинга настройки с определением класса произойдет автоматический и окно с изменениями отобразиться при открытии настройки.
+For class-based options, you can now simply activate the class and not instantiate it with **F8** in the code editor. Once the class is activated, the existing option can be opened in the `ZAQO_EDITOR_OLD` editor. In this case, the mapping of the option with the class definition will be checked automatically and a window with changes will be displayed when the option is opened.
 
-Отключить данное поведение можно установив данный переключатель
+You can disable this behavior by this switch.
 
 ![image](https://user-images.githubusercontent.com/36256417/159476712-f2ad4399-eaac-407b-afca-6308c343852b.png)
