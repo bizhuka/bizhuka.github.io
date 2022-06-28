@@ -45,6 +45,15 @@ In the final report, the data will also be grouped
 
 ***
 
+### ALV coloring
+
+Also in ALV you can use 3 colors col_positive (green), col_negative(red) and col_total (yellow)
+![image](https://user-images.githubusercontent.com/36256417/176082738-770110d6-d42a-4a3b-8515-5bececb14631.png)
+
+Technically this feature is implemented by conditional formatting
+
+***
+
 PS:\
 If your report is based on the **CL_SALV_TABLE** class and you need the **CL_GUI_ALV_GRID** class to pass to the **ZCL_XTT_FILE_GRID** constructor.
 
