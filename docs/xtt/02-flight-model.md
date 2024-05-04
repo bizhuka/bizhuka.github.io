@@ -57,5 +57,5 @@ To understand how joining works, just look at the values ​​in the report.
 
 ***
 
-you can read more about trees [here](../tree-group-by-fields/)
+You can read more about trees [here](../tree-group-by-fields/)
 
