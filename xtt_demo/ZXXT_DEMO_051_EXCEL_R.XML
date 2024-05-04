@@ -353,7 +353,7 @@
     <Cell ss:StyleID="s79"><Data ss:Type="String"></Data></Cell>
     <Cell ss:StyleID="s80"><Data ss:Type="String">DEFAULT header (WHEN OTHERS)</Data></Cell>
     <Cell ss:StyleID="s81"><Data ss:Type="String">Group GRP A</Data></Cell>
-    <Cell ss:StyleID="s81"><Data ss:Type="String">COUNT = 4 </Data><Comment
+    <Cell ss:StyleID="s81"><Data ss:Type="String">COUNT =                                                                                                   4</Data><Comment
       ss:Author="Moldabayev, Birzhan"><ss:Data
        xmlns="http://www.w3.org/TR/REC-html40"><B><Font html:Face="Tahoma"
          x:CharSet="204" x:Family="Swiss" html:Size="9" html:Color="#000000">1 formula for level=1</Font></B></ss:Data></Comment></Cell>
@@ -391,7 +391,7 @@
     <Cell ss:StyleID="s79"><Data ss:Type="String"></Data></Cell>
     <Cell><Data ss:Type="String">Footer is the same</Data></Cell>
     <Cell><Data ss:Type="String">End of GRP A sum for SUM1 &amp; SUM2</Data></Cell>
-    <Cell><Data ss:Type="String">Sub items count 4 </Data></Cell>
+    <Cell><Data ss:Type="String">Sub items count                                                                                                   4</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">25529.04</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">14636.76</Data></Cell>
    </Row>
@@ -403,7 +403,7 @@
     <Cell ss:StyleID="s84"><Data ss:Type="String"></Data></Cell>
     <Cell ss:StyleID="s104"><Data ss:Type="String">Complex where with ()</Data></Cell>
     <Cell ss:StyleID="s105"><Data ss:Type="String">Group GRP C </Data></Cell>
-    <Cell ss:StyleID="s105"><Data ss:Type="String">COUNT= 5 </Data></Cell>
+    <Cell ss:StyleID="s105"><Data ss:Type="String">COUNT=                                                                                                   5</Data></Cell>
     <Cell ss:StyleID="s106"/>
     <Cell ss:StyleID="s107"/>
    </Row><Row ss:AutoFitHeight="0" ss:Height="15.75">
@@ -445,7 +445,7 @@
     <Cell ss:StyleID="s79"><Data ss:Type="String"></Data></Cell>
     <Cell><Data ss:Type="String">Footer is the same</Data></Cell>
     <Cell><Data ss:Type="String">End of GRP C sum for SUM1 &amp; SUM2</Data></Cell>
-    <Cell><Data ss:Type="String">Sub items count 5 </Data></Cell>
+    <Cell><Data ss:Type="String">Sub items count                                                                                                   5</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">18771.63</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">17290.43</Data></Cell>
    </Row>
@@ -457,7 +457,7 @@
     <Cell ss:StyleID="s84"><Data ss:Type="String"></Data></Cell>
     <Cell ss:MergeDown="1" ss:StyleID="s86"><Data ss:Type="String">Header for GROUP 'B' 2 rows</Data></Cell>
     <Cell ss:MergeDown="1" ss:StyleID="m341970168"><Data ss:Type="String">Group GRP B </Data></Cell>
-    <Cell ss:MergeDown="1" ss:StyleID="m341970188"><Data ss:Type="String">COUNT= 2 </Data></Cell>
+    <Cell ss:MergeDown="1" ss:StyleID="m341970188"><Data ss:Type="String">COUNT=                                                                                                   2</Data></Cell>
     <Cell ss:MergeDown="1" ss:StyleID="m341970208"/>
     <Cell ss:MergeDown="1" ss:StyleID="m341970228"/>
    </Row>
@@ -481,7 +481,7 @@
     <Cell ss:StyleID="s79"><Data ss:Type="String"></Data></Cell>
     <Cell><Data ss:Type="String">Footer is the same</Data></Cell>
     <Cell><Data ss:Type="String">End of GRP B sum for SUM1 &amp; SUM2</Data></Cell>
-    <Cell><Data ss:Type="String">Sub items count 2 </Data></Cell>
+    <Cell><Data ss:Type="String">Sub items count                                                                                                   2</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">5521.68</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">6834.03</Data></Cell>
    </Row>
@@ -521,7 +521,7 @@
     <Cell ss:StyleID="s79"><Data ss:Type="String"></Data></Cell>
     <Cell><Data ss:Type="String">Footer is the same</Data></Cell>
     <Cell><Data ss:Type="String">End of GRP D sum for SUM1 &amp; SUM2</Data></Cell>
-    <Cell><Data ss:Type="String">Sub items count 4 </Data></Cell>
+    <Cell><Data ss:Type="String">Sub items count                                                                                                   4</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">6312.51</Data></Cell>
     <Cell ss:StyleID="s116"><Data ss:Type="Number">15128.71</Data></Cell>
    </Row>
@@ -538,7 +538,7 @@
    <Row ss:AutoFitHeight="0" ss:Height="24.75">
     <Cell ss:StyleID="s74"><Data ss:Type="String"></Data></Cell>
     <Cell ss:Index="3" ss:StyleID="s75"><Data ss:Type="String">Average for SUM1 &amp; SUM2</Data></Cell>
-    <Cell ss:StyleID="s76"><Data ss:Type="String">Groups count 4  (level=0)</Data></Cell>
+    <Cell ss:StyleID="s76"><Data ss:Type="String">Groups count                                                                                                   4 (level=0)</Data></Cell>
     <Cell ss:StyleID="s77"><Data ss:Type="Number">14033.72</Data></Cell>
     <Cell ss:StyleID="s78"><Data ss:Type="Number">13472.48</Data></Cell>
    </Row>
