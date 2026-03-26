@@ -3,7 +3,7 @@ parent: "EUI - интерфейс пользователя"
 nav_order: 14
 title: "ALV стили"
 tags: [zcl_eui_alv_style]
-permalink: /eui/zcl_eui_alv_style/1
+permalink: /ru/eui/zcl_eui_alv_style/1
 date: 2026-03-26
 ---
 
