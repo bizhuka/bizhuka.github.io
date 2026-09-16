@@ -1,14 +1,16 @@
-*.gem
-.bundle
-.ruby-version
-.jekyll-cache
-/*.iml
-/.idea
-/_site
-/dist/bootstrap
-/dist/jquery
-/Gemfile.lock
-.sass-cache
-_site
-Gemfile.lock
-node_modules
+# Jekyll output and caches
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler output
+.bundle/
+vendor/
+
+# Editor files
+*.iml
+.idea/
+
+# Node dependencies are not required by this site, but keep accidental installs out.
+node_modules/

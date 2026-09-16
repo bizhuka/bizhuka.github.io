@@ -1,83 +1,73 @@
 {% if page._cus_index != nil %}
-    {% for demo in site.data.xtt_demo %}
-        {% if demo.ID == page._cus_index %}
-<a data-bootbox="popup-{{ demo.ID }}" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">{{ demo.LABEL }}</a>
-        {% break %}
-        {% endif %}
-    {% endfor %}
+  {% for demo in site.data.xtt_demo %}
+    {% if demo.ID == page._cus_index %}
+<button type="button" class="btn btn-outline" data-dialog-target="popup-{{ demo.ID }}">{{ demo.LABEL }}</button>
+      {% break %}
+    {% endif %}
+  {% endfor %}
 {% else %}
-<table class="table">
+  <table>
     <thead>
-        <tr>
-            <th scope="col">№</th>
-            <th scope="col">Demo</th>
-        </tr>
+      <tr>
+        <th scope="col">№</th>
+        <th scope="col">Demo</th>
+      </tr>
     </thead>
     <tbody>
-        {% for demo in site.data.xtt_demo %}
+      {% for demo in site.data.xtt_demo %}
         <tr>
-            <td>
-                {{ demo.ID }}
-            </td>
-            <td>
-                <a data-bootbox="popup-{{ demo.ID }}" data-bootbox-size="large" class="btn btn-outline-inverse btn-lg">{{ demo.LABEL }}</a>
-            </td>
+          <td>{{ demo.ID }}</td>
+          <td><button type="button" class="btn btn-outline" data-dialog-target="popup-{{ demo.ID }}">{{ demo.LABEL }}</button></td>
         </tr>
-        {% endfor %}
+      {% endfor %}
     </tbody>
-</table>
+  </table>
 {% endif %}
-
-
 
 {% for demo in site.data.xtt_demo %}
-{% if page._cus_index != nil and demo.ID != page._cus_index %}
+  {% if page._cus_index != nil and demo.ID != page._cus_index %}
     {% continue %}
-{% endif %}
+  {% endif %}
 
-<div id="popup-{{ demo.ID }}" title="Demo {{ demo.ID }} - {{ demo.LABEL }}" class="hidden">
+  <dialog id="popup-{{ demo.ID }}" class="demo-dialog" aria-labelledby="popup-{{ demo.ID }}-title">
+    <div class="demo-dialog-header">
+      <div class="demo-dialog-title" id="popup-{{ demo.ID }}-title" role="heading" aria-level="2">Demo {{ demo.ID }} — {{ demo.LABEL }}</div>
+      <button type="button" class="demo-dialog-close" data-dialog-close aria-label="Close">×</button>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
+    <div class="demo-dialog-body">
+      <table>
+        <thead>
+          <tr>
             <th scope="col">Type</th>
             <th scope="col">Template</th>
             <th scope="col">Report</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for file in demo.FILES %}
-        <tr>
-            <td>{{ file.KIND }}</td>
-            <td>
-                <a href="/xtt_demo/{{ file.TEMPLATE }}" class="btn btn-lg btn-outline">
-                    <i class="glyphicon glyphicon-save"></i>
-                    Template
-                </a>
-            </td>
-            <td>
-                <a href="/xtt_demo/{{ file.REPORT }}" class="btn btn-lg btn-outline">
-                    <i class="glyphicon glyphicon-save"></i>
-                    Report
-                </a>
-            </td>
-        </tr>
-        {% endfor%}
-    </tbody>
-</table>
+          </tr>
+        </thead>
+        <tbody>
+          {% for file in demo.FILES %}
+            <tr>
+              <td>{{ file.KIND }}</td>
+              <td><a href="{{ '/xtt_demo/' | append: file.TEMPLATE | relative_url }}">Download template</a></td>
+              <td><a href="{{ '/xtt_demo/' | append: file.REPORT | relative_url }}">Download report</a></td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
 
+      {% capture demo_include %}{% include /xtt_demo/{{ demo.ID }}.md %}{% endcapture %}
+      {{ demo_include | markdownify }}
 
-{% capture my_include %}{% include /xtt_demo/{{ demo.ID }}.md %}{% endcapture %}
-{{ my_include | markdownify }}
+      {% for merge in demo.MERGE %}
+        <p><code>xtt-&gt;merge( iv_block_name = '{{ merge.KEY }}' is_block =</code></p>
+        <pre>{{ merge.VAL | jsonify | escape }}</pre>
+        <p><code>).</code></p>
+        <hr>
+      {% endfor %}
+    </div>
 
-
-{% for merge in demo.MERGE %}
-<p>xtt-><b>MERGE</b>( IV_BLOCK_NAME = <i>'{{merge.KEY}}'</i> IS_BLOCK = </p>
-
-<pre>{{merge.VAL}}</pre>
-<p>).</p>
-<hr>
-{% endfor %}
-
-</div>
+    <form method="dialog" class="demo-dialog-footer">
+      <button class="btn">Close</button>
+    </form>
+  </dialog>
 {% endfor %}

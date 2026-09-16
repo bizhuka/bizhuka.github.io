@@ -6,7 +6,7 @@ permalink: /ru/xtt/installation-guide/
 ---
 
 ***
-Установите [abapgit](http://docs.abapgit.org/guide-install.html)
+Установите [abapgit](https://docs.abapgit.org/guide-install.html)
 и далее следуйте по ссылкам
 
 ---

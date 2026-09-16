@@ -1,2 +1,200 @@
-@import "./_my/abap";
-@import "./_my/bug-fix";
+// Site-specific styles layered on top of Just the Docs.
+
+.site-title {
+  font-size: 1.125rem !important;
+}
+
+.language-switch {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-right: 0.75rem;
+  white-space: nowrap;
+}
+
+.language-switch a[aria-current="page"] {
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.page-video {
+  margin-bottom: 1.5rem;
+}
+
+.page-video iframe,
+.page-video video {
+  width: 100%;
+  max-width: 56rem;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+
+.page-toc {
+  margin: 0 0 1.5rem;
+  padding: 1rem;
+  border: 1px solid #dfe2e5;
+  border-radius: 0.25rem;
+  background: #f5f6fa;
+}
+
+.page-toc-title {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.page-toc-list {
+  margin-bottom: 0;
+}
+
+.page-toc-list li::before,
+.nav-tabs li::before,
+.dropdown-menu li::before {
+  content: none;
+  display: none !important;
+}
+
+@media (min-width: 66.5rem) {
+  .page-toc {
+    position: sticky;
+    top: 1rem;
+    float: right;
+    width: 15rem;
+    max-height: calc(100vh - 2rem);
+    margin: 0 0 1.5rem 2rem;
+    overflow: auto;
+  }
+}
+
+.nav-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  border-bottom: 1px solid #dfe2e5;
+  list-style: none;
+}
+
+.nav-tabs > li {
+  margin: 0 0 -1px;
+}
+
+.nav-tabs a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem 0.25rem 0 0;
+  text-decoration: none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs a[aria-selected="true"] {
+  border-color: #dfe2e5 #dfe2e5 #fff;
+  background: #fff;
+  color: #27262b;
+  font-weight: 600;
+}
+
+.tab-content {
+  padding-top: 1rem;
+}
+
+.tab-pane[hidden] {
+  display: none !important;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.caret::after {
+  content: " ▾";
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 20;
+  display: none;
+  min-width: 14rem;
+  margin: 0;
+  padding: 0.35rem;
+  border: 1px solid #dfe2e5;
+  border-radius: 0.25rem;
+  background: #fff;
+  box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 12%);
+  list-style: none;
+}
+
+.dropdown.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu a {
+  border: 0;
+  border-radius: 0.15rem;
+}
+
+.demo-dialog {
+  width: min(70rem, calc(100vw - 2rem));
+  max-height: calc(100vh - 2rem);
+  padding: 0;
+  border: 0;
+  border-radius: 0.4rem;
+  box-shadow: 0 0.75rem 2.5rem rgb(0 0 0 / 35%);
+}
+
+.demo-dialog::backdrop {
+  background: rgb(0 0 0 / 55%);
+}
+
+.demo-dialog-header,
+.demo-dialog-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid #dfe2e5;
+}
+
+.demo-dialog-title {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.demo-dialog-close {
+  padding: 0.15rem 0.55rem;
+  border: 0;
+  background: transparent;
+  font-size: 1.75rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.demo-dialog-body {
+  max-height: calc(100vh - 10rem);
+  padding: 1.25rem;
+  overflow: auto;
+}
+
+.demo-dialog-footer {
+  justify-content: flex-end;
+  border-top: 1px solid #dfe2e5;
+  border-bottom: 0;
+}
+
+// Preserve the site's ABAP syntax palette.
+.highlight .k { color: blue; }
+.highlight .n { color: black; }
+.highlight .c1 { color: gray; font-style: italic; }
+.highlight .s1 { color: #4da619; }
+.highlight .mi { color: #287ec2; }
+.highlight .o { color: #800080; }

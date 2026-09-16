@@ -6,7 +6,7 @@ permalink: /aqo/installation-guide/
 ---
 
 ***
-Install [abapgit](http://docs.abapgit.org/guide-install.html)
+Install [abapgit](https://docs.abapgit.org/guide-install.html)
 and follow the links
 
 ---

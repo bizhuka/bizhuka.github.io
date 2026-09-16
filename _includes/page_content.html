@@ -1,0 +1,31 @@
+{% if page.video_link %}
+  {% assign video_url = page.video_link %}
+  {% unless video_url contains "://" %}
+    {% assign video_url = video_url | prepend: "https://" %}
+  {% endunless %}
+  <div class="page-video">
+    {% if video_url contains ".mp4" %}
+      <video controls preload="metadata">
+        <source src="{{ video_url }}" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+    {% else %}
+      <iframe src="{{ video_url }}" title="Video for {{ page.title | escape }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {% endif %}
+  </div>
+{% endif %}
+
+{% if page.has_toc != false %}
+  {% capture page_toc_content %}{% include toc.html html=include.html sanitize=true class="page-toc-list" h_min=2 h_max=3 %}{% endcapture %}
+  {% assign page_toc_content = page_toc_content | strip %}
+  {% if page_toc_content != "" %}
+    <aside class="page-toc" aria-label="On this page">
+      <strong class="page-toc-title">{% if page._locale == "ru" %}Оглавление{% else %}On this page{% endif %}</strong>
+      {{ page_toc_content }}
+    </aside>
+  {% endif %}
+{% endif %}
+
+<article class="page-article">
+  {{ include.html }}
+</article>

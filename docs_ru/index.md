@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "Домой"
 nav_order: 1
 description: "Библиотеки Бiржана Молдабаева"

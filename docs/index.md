@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: Home
 nav_order: 1
 description: "Libraries of Birzhan Moldabayev"

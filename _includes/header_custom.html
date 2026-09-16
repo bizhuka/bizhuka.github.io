@@ -1,0 +1,22 @@
+{% assign current_locale = page._locale | default: "en" %}
+{% assign english_url = page.url %}
+{% if page._locale == nil %}
+  {% assign english_url = "/" %}
+  {% assign russian_url = "/ru/" %}
+{% elsif current_locale == "ru" %}
+  {% assign english_url = page.url | remove_first: "/ru" %}
+  {% if english_url == "" %}{% assign english_url = "/" %}{% endif %}
+  {% assign russian_url = page.url %}
+{% else %}
+  {% if page.url == "/" %}
+    {% assign russian_url = "/ru/" %}
+  {% else %}
+    {% capture russian_url %}/ru{{ page.url }}{% endcapture %}
+  {% endif %}
+{% endif %}
+
+<nav class="language-switch" aria-label="Language">
+  <a href="{{ english_url | relative_url }}" lang="en"{% if current_locale == "en" %} aria-current="page"{% endif %}>EN</a>
+  <span aria-hidden="true">/</span>
+  <a href="{{ russian_url | relative_url }}" lang="ru"{% if current_locale == "ru" %} aria-current="page"{% endif %}>RU</a>
+</nav>

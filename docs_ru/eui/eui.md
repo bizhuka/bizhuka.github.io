@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 title: "EUI - интерфейс пользователя"
 nav_order: 2
 has_children: true

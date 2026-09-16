@@ -1,2 +1,8 @@
 source "https://rubygems.org"
-gemspec
+
+gem "jekyll", "~> 4.4.1"
+gem "just-the-docs", "0.12.0"
+
+group :development, :test do
+  gem "html-proofer", "~> 5.2"
+end
