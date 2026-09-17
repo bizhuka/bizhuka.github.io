@@ -1,3 +1,6 @@
+{% assign xtt_api_base_url = site.xtt_generator.base_url | default: "http://localhost:3000" %}
+{% assign xtt_generate_url = xtt_api_base_url | append: "/api/generate" %}
+
 {% if page._cus_index != nil %}
   {% for demo in site.data.xtt_demo %}
     {% if demo.ID == page._cus_index %}
@@ -28,6 +31,7 @@
   {% if page._cus_index != nil and demo.ID != page._cus_index %}
     {% continue %}
   {% endif %}
+  {% assign generator = site.data.xtt_generator[demo.ID] %}
 
   <dialog id="popup-{{ demo.ID }}" class="demo-dialog" aria-labelledby="popup-{{ demo.ID }}-title">
     <div class="demo-dialog-header">
@@ -55,12 +59,28 @@
         </tbody>
       </table>
 
+      {% if generator %}
+        <section class="demo-generator-prompt" aria-labelledby="generator-prompt-{{ demo.ID }}">
+          <div>
+            <strong id="generator-prompt-{{ demo.ID }}">Generate this example</strong>
+            <span>Choose a template and create a fresh report with the demo service.</span>
+          </div>
+          <button type="button" class="btn btn-primary" data-dialog-target="generator-{{ demo.ID }}">Open generator</button>
+        </section>
+      {% endif %}
+
       {% capture demo_include %}{% include /xtt_demo/{{ demo.ID }}.md %}{% endcapture %}
       {{ demo_include | markdownify }}
 
       {% for merge in demo.MERGE %}
         <p><code>xtt-&gt;merge( iv_block_name = '{{ merge.KEY }}' is_block =</code></p>
-        <pre>{{ merge.VAL | jsonify | escape }}</pre>
+        <div class="demo-json-panel">
+          <div class="demo-json-toolbar">
+            <span>JSON</span>
+            <button type="button" data-copy-json>Copy</button>
+          </div>
+          <pre class="demo-json"><code>{{ merge.VAL | jsonify | escape }}</code></pre>
+        </div>
         <p><code>).</code></p>
         <hr>
       {% endfor %}
@@ -70,4 +90,75 @@
       <button class="btn">Close</button>
     </form>
   </dialog>
+
+{% if generator %}
+<dialog id="generator-{{ demo.ID }}" class="demo-dialog generator-dialog" aria-labelledby="generator-{{ demo.ID }}-title">
+  <div class="demo-dialog-header">
+    <div>
+      <div class="demo-dialog-title" id="generator-{{ demo.ID }}-title" role="heading" aria-level="2">Generate demo {{ demo.ID }}</div>
+      <p class="generator-dialog-subtitle">{{ demo.LABEL }}</p>
+    </div>
+    <button type="button" class="demo-dialog-close" data-dialog-close aria-label="Close">×</button>
+  </div>
+
+  <form class="generator-form" action="{{ xtt_generate_url | escape }}" method="get" target="generator-download-{{ demo.ID }}" data-generator-form>
+    <div class="demo-dialog-body">
+      <input type="hidden" name="example" value="{{ demo.ID }}">
+
+      <div class="generator-fields">
+        <label class="generator-field generator-field-wide">
+          <span>Template</span>
+          <select name="template" required>
+            {% for template in generator.templates %}
+              <option value="{{ template | escape }}"{% if forloop.first %} selected{% endif %}>{{ template }}</option>
+            {% endfor %}
+          </select>
+        </label>
+
+        {% if generator.row_count %}
+          <label class="generator-field">
+            <span>Row count</span>
+            <input type="number" name="mv_r_cnt" value="15" min="1" max="25" step="1" inputmode="numeric" required data-range-message="Row count must be between 1 and 25">
+            <small>1–25 rows</small>
+          </label>
+        {% else %}
+          <input type="hidden" name="mv_r_cnt" value="15">
+        {% endif %}
+
+        {% if generator.column_count %}
+          <label class="generator-field">
+            <span>Column count</span>
+            <input type="number" name="mv_c_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="Column count must be between 1 and 3">
+            <small>1–3 columns</small>
+          </label>
+        {% else %}
+          <input type="hidden" name="mv_c_cnt" value="3">
+        {% endif %}
+
+        {% if generator.block_count %}
+          <label class="generator-field">
+            <span>Block count</span>
+            <input type="number" name="mv_b_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="Block count must be between 1 and 3">
+            <small>1–3 blocks</small>
+          </label>
+        {% else %}
+          <input type="hidden" name="mv_b_cnt" value="3">
+        {% endif %}
+      </div>
+
+      <div class="generator-request">
+        <span>Request preview</span>
+        <code data-generator-url></code>
+      </div>
+      <p class="generator-status" data-generator-status aria-live="polite"></p>
+    </div>
+
+    <div class="demo-dialog-footer">
+      <button type="button" class="btn" data-dialog-close>Cancel</button>
+      <button type="submit" class="btn btn-primary">Generate and download</button>
+    </div>
+  </form>
+  <iframe name="generator-download-{{ demo.ID }}" title="Generated report download" hidden></iframe>
+</dialog>
+{% endif %}
 {% endfor %}

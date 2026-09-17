@@ -310,6 +310,215 @@
   border-bottom: 0;
 }
 
+.demo-dialog .btn-primary {
+  border-color: #286090;
+  background: #337ab7;
+  color: #fff;
+}
+
+.demo-dialog .btn-primary:hover,
+.demo-dialog .btn-primary:focus-visible {
+  border-color: #204d74;
+  background: #286090;
+  color: #fff;
+}
+
+.demo-generator-prompt {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 1.25rem 0;
+  padding: 1rem 1.125rem;
+  border: 1px solid #b8d7ee;
+  border-radius: 0.4rem;
+  background: #f2f8fc;
+}
+
+.demo-generator-prompt strong,
+.demo-generator-prompt span {
+  display: block;
+}
+
+.demo-generator-prompt strong {
+  margin-bottom: 0.2rem;
+  color: #204d74;
+  font-size: 1rem;
+}
+
+.demo-generator-prompt span {
+  color: #5c5962;
+}
+
+.demo-json-panel {
+  margin: 0.75rem 0 1rem;
+  overflow: hidden;
+  border: 1px solid #30363d;
+  border-radius: 0.4rem;
+  background: #0d1117;
+  box-shadow: 0 0.2rem 0.6rem rgb(0 0 0 / 12%);
+}
+
+.demo-json-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.45rem 0.75rem;
+  border-bottom: 1px solid #30363d;
+  background: #161b22;
+  color: #8b949e;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.demo-json-toolbar button {
+  padding: 0.2rem 0.55rem;
+  border: 1px solid #484f58;
+  border-radius: 0.3rem;
+  background: #21262d;
+  color: #c9d1d9;
+  font: inherit;
+  letter-spacing: normal;
+  text-transform: none;
+  cursor: pointer;
+}
+
+.demo-json-toolbar button:hover,
+.demo-json-toolbar button:focus-visible {
+  border-color: #8c959f;
+  background: #30363d;
+}
+
+pre.demo-json {
+  max-height: 30rem;
+  margin: 0;
+  padding: 1rem;
+  overflow: auto;
+  border: 0;
+  border-radius: 0;
+  background: #0d1117;
+  color: #c9d1d9;
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  tab-size: 2;
+}
+
+pre.demo-json code {
+  padding: 0;
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  white-space: pre;
+}
+
+.demo-json .json-key { color: #79c0ff; }
+.demo-json .json-string { color: #a5d6ff; }
+.demo-json .json-number { color: #d2a8ff; }
+.demo-json .json-literal { color: #ff7b72; }
+
+.generator-dialog {
+  width: min(40rem, calc(100vw - 2rem));
+}
+
+.generator-dialog-subtitle {
+  margin: 0.2rem 0 0;
+  color: #6f6b75;
+  font-size: 0.875rem;
+}
+
+.generator-fields {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.generator-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  margin: 0;
+  color: #333;
+  font-weight: 600;
+}
+
+.generator-field-wide {
+  grid-column: 1 / -1;
+}
+
+.generator-field select,
+.generator-field input {
+  width: 100%;
+  height: 2.6rem;
+  padding: 0.45rem 0.65rem;
+  border: 1px solid #b7b4ba;
+  border-radius: 0.3rem;
+  background: #fff;
+  color: #27262b;
+  font: inherit;
+  font-weight: 400;
+}
+
+.generator-field select:focus,
+.generator-field input:focus {
+  border-color: #337ab7;
+  outline: 3px solid rgb(51 122 183 / 18%);
+}
+
+.generator-field small {
+  color: #6f6b75;
+  font-size: 0.75rem;
+  font-weight: 400;
+}
+
+.generator-request {
+  margin-top: 1.25rem;
+  padding: 0.75rem;
+  border: 1px solid #dfe2e5;
+  border-radius: 0.3rem;
+  background: #f5f6fa;
+}
+
+.generator-request > span {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: #6f6b75;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.generator-request code {
+  display: block;
+  padding: 0;
+  background: transparent;
+  color: #333;
+  overflow-wrap: anywhere;
+  white-space: normal;
+}
+
+.generator-status {
+  min-height: 1.4rem;
+  margin: 0.75rem 0 0;
+  color: #5c5962;
+}
+
+.generator-status.error { color: #b42318; }
+.generator-status.ok { color: #247a3b; }
+
+@media (max-width: 40rem) {
+  .demo-generator-prompt {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .generator-fields {
+    grid-template-columns: 1fr;
+  }
+}
+
 // Preserve the site's ABAP syntax palette.
 .highlight .k { color: blue; }
 .highlight .n { color: black; }
