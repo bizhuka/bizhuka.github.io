@@ -21,7 +21,42 @@
 .social-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  align-items: center;
+  gap: 0.15rem;
+}
+
+.social-link {
+  display: inline-flex;
+  padding: 0.2rem;
+  color: #333;
+  transform: scale(0.8);
+  transition: color 0.5s, transform 0.5s;
+}
+
+.social-link svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: currentColor;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  transform: scale(1.1);
+}
+
+.social-link-email:hover,
+.social-link-email:focus-visible {
+  color: #dd4b38;
+}
+
+.social-link-telegram:hover,
+.social-link-telegram:focus-visible {
+  color: #45a7ed;
+}
+
+.social-link-github:hover,
+.social-link-github:focus-visible {
+  color: #161614;
 }
 
 .page-video {
@@ -62,14 +97,80 @@
 
 @media (min-width: 66.5rem) {
   .page-toc {
-    position: sticky;
-    top: 1rem;
-    float: right;
-    width: 15rem;
-    max-height: calc(100vh - 2rem);
-    margin: 0 0 1.5rem 2rem;
+    position: fixed;
+    top: 6.5625rem;
+    right: 1.6875rem;
+    z-index: 10;
+    float: none;
+    width: 16.5rem;
+    max-height: calc(100vh - 8rem);
+    margin: 1.25rem 0;
+    padding: 0 0 0 1.25rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
     overflow: auto;
   }
+
+  .page-toc-title {
+    display: none;
+  }
+
+  .page-toc-list {
+    margin: 0.4375rem 0 0;
+    padding: 0 0 0 1.3125rem;
+  }
+
+  .page-toc-list a {
+    display: block;
+    padding: 0.25rem 1.25rem;
+    border-bottom: 1px solid #eee;
+    border-left: 2px solid transparent;
+    color: #999;
+    font-size: 0.8125rem;
+    font-weight: 400;
+    line-height: 1.6;
+    text-decoration: none;
+  }
+
+  .page-toc-list a:hover,
+  .page-toc-list a:focus-visible {
+    border-left-color: #563d7c;
+    color: #563d7c;
+    background: transparent;
+  }
+}
+
+@media (min-width: 50rem) {
+  .side-bar {
+    width: 16.5rem;
+  }
+
+  .side-bar + .main {
+    margin-left: 17rem;
+  }
+}
+
+@media (min-width: 50rem) and (max-width: 66.499rem) {
+  .main {
+    max-width: calc(100% - 17rem);
+  }
+}
+
+.page-article {
+  color: #333;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.page-article a,
+.site-nav a,
+.site-footer a {
+  color: #337ab7;
+}
+
+.site-footer .social-link {
+  color: #333;
 }
 
 .nav-tabs {
@@ -104,6 +205,24 @@
 
 .tab-content {
   padding-top: 1rem;
+}
+
+.tab-content .container-fluid {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.tab-content .highlight {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  background: #f5f6fa;
+  font-size: 0.8125rem;
+  line-height: 1.4286;
+}
+
+.tab-content .highlight pre {
+  font-size: inherit;
+  line-height: inherit;
 }
 
 .tab-pane[hidden] {

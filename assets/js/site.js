@@ -42,6 +42,12 @@
     if (moveFocus) tab.focus();
   }
 
+  function closeDropdown(dropdown) {
+    dropdown.classList.remove("open");
+    var toggle = dropdown.querySelector('[data-toggle="dropdown"]');
+    if (toggle) toggle.setAttribute("aria-expanded", "false");
+  }
+
   document.querySelectorAll(".nav-tabs").forEach(function (tabList) {
     tabList.setAttribute("role", "tablist");
     var tabs = Array.from(tabList.querySelectorAll('[data-toggle="tab"]'));
@@ -58,7 +64,7 @@
         event.preventDefault();
         activateTab(tab, false);
         document.querySelectorAll(".dropdown.open").forEach(function (item) {
-          item.classList.remove("open");
+          closeDropdown(item);
         });
       });
       tab.addEventListener("keydown", function (event) {
@@ -88,7 +94,7 @@
       var dropdown = toggle.closest(".dropdown");
       var shouldOpen = !dropdown.classList.contains("open");
       document.querySelectorAll(".dropdown.open").forEach(function (item) {
-        item.classList.remove("open");
+        closeDropdown(item);
       });
       dropdown.classList.toggle("open", shouldOpen);
       toggle.setAttribute("aria-expanded", String(shouldOpen));
@@ -98,9 +104,7 @@
   document.addEventListener("click", function (event) {
     if (!event.target.closest(".dropdown")) {
       document.querySelectorAll(".dropdown.open").forEach(function (item) {
-        item.classList.remove("open");
-        var toggle = item.querySelector('[data-toggle="dropdown"]');
-        if (toggle) toggle.setAttribute("aria-expanded", "false");
+        closeDropdown(item);
       });
     }
   });
