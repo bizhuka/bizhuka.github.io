@@ -16,9 +16,11 @@ active in the current terminal.
 
 ### XTT generator
 
-The report-generator host is configured by `xtt_generator.base_url` in
-`_config.yml`. It currently points to `http://localhost:3000`; replace that one
-value with the public HTTPS host before deployment. A runtime `.env` file is not
+The generator metadata is loaded from `/api/example?ind=...` while Jekyll builds
+the site. `_config.yml` uses `http://localhost:3000` for local builds and
+`https://open-abap-xtt.vercel.app` when `JEKYLL_ENV=production`. The generated
+download forms use the same selected host. Local builds fall back to the public
+host when the localhost service is unavailable. A runtime `.env` file is not
 used because GitHub Pages serves static files and cannot read environment
 variables in the browser.
 

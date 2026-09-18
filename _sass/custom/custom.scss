@@ -323,6 +323,57 @@
   color: #fff;
 }
 
+.demo-download-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  min-width: 9.5rem;
+  padding: 0.45rem 0.8rem;
+  border: 1px solid #337ab7;
+  border-radius: 0.35rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.demo-download-button::before {
+  content: "↓";
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.demo-download-template {
+  background: #fff;
+  color: #337ab7;
+  box-shadow: inset 0 0 0 1px rgb(51 122 183 / 12%);
+}
+
+.demo-download-template:hover,
+.demo-download-template:focus-visible {
+  background: #eef6fc;
+  color: #286090;
+}
+
+.demo-dialog .demo-download-report,
+.demo-dialog .demo-download-report:hover,
+.demo-dialog .demo-download-report:focus-visible {
+  color: #fff;
+}
+
+.demo-dialog .demo-download-report {
+  border-color: #286090;
+  background: #337ab7;
+  box-shadow: 0 0.15rem 0.35rem rgb(0 0 0 / 14%);
+}
+
+.demo-dialog .demo-download-report:hover,
+.demo-dialog .demo-download-report:focus-visible {
+  border-color: #204d74;
+  background: #286090;
+}
+
 .demo-generator-prompt {
   display: flex;
   align-items: center;

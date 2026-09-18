@@ -4,10 +4,10 @@ url: "https://bizhuka.github.io"
 baseurl: ""
 repository: bizhuka/bizhuka.github.io
 
-# Public XTT generator endpoint. Replace this value when the production host is ready.
-# GitHub Pages is static, so this belongs in Jekyll config rather than a runtime .env file.
+# XTT metadata is loaded from the API while Jekyll builds the site.
 xtt_generator:
-  base_url: "http://localhost:3000"
+  local_base_url: "http://localhost:3000"
+  production_base_url: "https://open-abap-xtt.vercel.app"
 
 theme: just-the-docs
 permalink: pretty

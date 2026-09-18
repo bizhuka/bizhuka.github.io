@@ -52,8 +52,8 @@
           {% for file in demo.FILES %}
             <tr>
               <td>{{ file.KIND }}</td>
-              <td><a href="{{ '/xtt_demo/' | append: file.TEMPLATE | relative_url }}">Download template</a></td>
-              <td><a href="{{ '/xtt_demo/' | append: file.REPORT | relative_url }}">Download report</a></td>
+              <td><a class="btn demo-download-button demo-download-template" href="{{ '/xtt_demo/' | append: file.TEMPLATE | relative_url }}">Download template</a></td>
+              <td><a class="btn demo-download-button demo-download-report" href="{{ '/xtt_demo/' | append: file.REPORT | relative_url }}">Download report</a></td>
             </tr>
           {% endfor %}
         </tbody>
