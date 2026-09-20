@@ -149,12 +149,12 @@
       if (!navigator.clipboard || !code) return;
       navigator.clipboard.writeText(code.textContent).then(function () {
         var original = button.textContent;
-        button.textContent = "Copied";
+        button.textContent = button.dataset.copySuccess || "Copied";
         window.setTimeout(function () {
           button.textContent = original;
         }, 1500);
       }).catch(function () {
-        button.textContent = "Copy failed";
+        button.textContent = button.dataset.copyFailed || "Copy failed";
       });
     });
   });
@@ -205,14 +205,14 @@
       if (firstInvalid || !template || !template.value) {
         event.preventDefault();
         if (status) {
-          status.textContent = firstInvalid ? firstInvalid.validationMessage : "Choose a template.";
+          status.textContent = firstInvalid ? firstInvalid.validationMessage : (form.dataset.templateMessage || "Choose a template.");
           status.className = "generator-status error";
         }
         return;
       }
       updateGeneratorUrl(form);
       if (status) {
-        status.textContent = "Download requested. Check your browser downloads.";
+        status.textContent = form.dataset.downloadMessage || "Download requested. Check your browser downloads.";
         status.className = "generator-status ok";
       }
     });
@@ -235,8 +235,20 @@
   });
 
   document.querySelectorAll("dialog").forEach(function (dialog) {
-    dialog.addEventListener("click", function (event) {
-      if (event.target === dialog) dialog.close();
+    var pointerStartedOnBackdrop = false;
+
+    dialog.addEventListener("pointerdown", function (event) {
+      pointerStartedOnBackdrop = event.target === dialog;
+    });
+
+    dialog.addEventListener("pointerup", function (event) {
+      var shouldClose = pointerStartedOnBackdrop && event.target === dialog;
+      pointerStartedOnBackdrop = false;
+      if (shouldClose) dialog.close();
+    });
+
+    dialog.addEventListener("pointercancel", function () {
+      pointerStartedOnBackdrop = false;
     });
   });
 })();

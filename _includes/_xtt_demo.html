@@ -1,6 +1,68 @@
 {% assign xtt_api_base_url = site.xtt_generator.base_url | default: "http://localhost:3000" %}
 {% assign xtt_generate_url = xtt_api_base_url | append: "/api/generate" %}
 
+{% if page._locale == "ru" %}
+  {% assign xtt_text_demo = "Демо" %}
+  {% assign xtt_text_type = "Тип" %}
+  {% assign xtt_text_template = "Шаблон" %}
+  {% assign xtt_text_report = "Отчёт" %}
+  {% assign xtt_text_download_template = "Скачать шаблон" %}
+  {% assign xtt_text_download_report = "Скачать отчёт" %}
+  {% assign xtt_text_generate_example = "Создать этот пример" %}
+  {% assign xtt_text_generate_description = "Выберите шаблон и создайте новый отчёт с помощью демонстрационного сервиса." %}
+  {% assign xtt_text_open_generator = "Открыть генератор" %}
+  {% assign xtt_text_copy = "Копировать" %}
+  {% assign xtt_text_copied = "Скопировано" %}
+  {% assign xtt_text_copy_failed = "Не удалось скопировать" %}
+  {% assign xtt_text_close = "Закрыть" %}
+  {% assign xtt_text_generate_demo = "Создать демо" %}
+  {% assign xtt_text_row_count = "Количество строк" %}
+  {% assign xtt_text_rows_range = "От 1 до 25 строк" %}
+  {% assign xtt_text_column_count = "Количество столбцов" %}
+  {% assign xtt_text_columns_range = "От 1 до 3 столбцов" %}
+  {% assign xtt_text_block_count = "Количество блоков" %}
+  {% assign xtt_text_blocks_range = "От 1 до 3 блоков" %}
+  {% assign xtt_text_request_preview = "Предпросмотр запроса" %}
+  {% assign xtt_text_cancel = "Отмена" %}
+  {% assign xtt_text_generate_download = "Создать и скачать" %}
+  {% assign xtt_text_download_frame = "Загрузка созданного отчёта" %}
+  {% assign xtt_text_row_error = "Количество строк должно быть от 1 до 25" %}
+  {% assign xtt_text_column_error = "Количество столбцов должно быть от 1 до 3" %}
+  {% assign xtt_text_block_error = "Количество блоков должно быть от 1 до 3" %}
+  {% assign xtt_text_choose_template = "Выберите шаблон." %}
+  {% assign xtt_text_download_requested = "Запрос отправлен. Проверьте загрузки браузера." %}
+{% else %}
+  {% assign xtt_text_demo = "Demo" %}
+  {% assign xtt_text_type = "Type" %}
+  {% assign xtt_text_template = "Template" %}
+  {% assign xtt_text_report = "Report" %}
+  {% assign xtt_text_download_template = "Download template" %}
+  {% assign xtt_text_download_report = "Download report" %}
+  {% assign xtt_text_generate_example = "Generate this example" %}
+  {% assign xtt_text_generate_description = "Choose a template and create a fresh report with the demo service." %}
+  {% assign xtt_text_open_generator = "Open generator" %}
+  {% assign xtt_text_copy = "Copy" %}
+  {% assign xtt_text_copied = "Copied" %}
+  {% assign xtt_text_copy_failed = "Copy failed" %}
+  {% assign xtt_text_close = "Close" %}
+  {% assign xtt_text_generate_demo = "Generate demo" %}
+  {% assign xtt_text_row_count = "Row count" %}
+  {% assign xtt_text_rows_range = "1–25 rows" %}
+  {% assign xtt_text_column_count = "Column count" %}
+  {% assign xtt_text_columns_range = "1–3 columns" %}
+  {% assign xtt_text_block_count = "Block count" %}
+  {% assign xtt_text_blocks_range = "1–3 blocks" %}
+  {% assign xtt_text_request_preview = "Request preview" %}
+  {% assign xtt_text_cancel = "Cancel" %}
+  {% assign xtt_text_generate_download = "Generate and download" %}
+  {% assign xtt_text_download_frame = "Generated report download" %}
+  {% assign xtt_text_row_error = "Row count must be between 1 and 25" %}
+  {% assign xtt_text_column_error = "Column count must be between 1 and 3" %}
+  {% assign xtt_text_block_error = "Block count must be between 1 and 3" %}
+  {% assign xtt_text_choose_template = "Choose a template." %}
+  {% assign xtt_text_download_requested = "Download requested. Check your browser downloads." %}
+{% endif %}
+
 {% if page._cus_index != nil %}
   {% for demo in site.data.xtt_demo %}
     {% if demo.ID == page._cus_index %}
@@ -13,7 +75,7 @@
     <thead>
       <tr>
         <th scope="col">№</th>
-        <th scope="col">Demo</th>
+        <th scope="col">{{ xtt_text_demo }}</th>
       </tr>
     </thead>
     <tbody>
@@ -35,25 +97,25 @@
 
   <dialog id="popup-{{ demo.ID }}" class="demo-dialog" aria-labelledby="popup-{{ demo.ID }}-title">
     <div class="demo-dialog-header">
-      <div class="demo-dialog-title" id="popup-{{ demo.ID }}-title" role="heading" aria-level="2">Demo {{ demo.ID }} — {{ demo.LABEL }}</div>
-      <button type="button" class="demo-dialog-close" data-dialog-close aria-label="Close">×</button>
+      <div class="demo-dialog-title" id="popup-{{ demo.ID }}-title" role="heading" aria-level="2">{{ xtt_text_demo }} {{ demo.ID }} — {{ demo.LABEL }}</div>
+      <button type="button" class="demo-dialog-close" data-dialog-close aria-label="{{ xtt_text_close }}">×</button>
     </div>
 
     <div class="demo-dialog-body">
       <table>
         <thead>
           <tr>
-            <th scope="col">Type</th>
-            <th scope="col">Template</th>
-            <th scope="col">Report</th>
+            <th scope="col">{{ xtt_text_type }}</th>
+            <th scope="col">{{ xtt_text_template }}</th>
+            <th scope="col">{{ xtt_text_report }}</th>
           </tr>
         </thead>
         <tbody>
           {% for file in demo.FILES %}
             <tr>
               <td>{{ file.KIND }}</td>
-              <td><a class="btn demo-download-button demo-download-template" href="{{ '/xtt_demo/' | append: file.TEMPLATE | relative_url }}">Download template</a></td>
-              <td><a class="btn demo-download-button demo-download-report" href="{{ '/xtt_demo/' | append: file.REPORT | relative_url }}">Download report</a></td>
+              <td><a class="btn demo-download-button demo-download-template" href="{{ '/xtt_demo/' | append: file.TEMPLATE | relative_url }}">{{ xtt_text_download_template }}</a></td>
+              <td><a class="btn demo-download-button demo-download-report" href="{{ '/xtt_demo/' | append: file.REPORT | relative_url }}">{{ xtt_text_download_report }}</a></td>
             </tr>
           {% endfor %}
         </tbody>
@@ -62,10 +124,10 @@
       {% if generator %}
         <section class="demo-generator-prompt" aria-labelledby="generator-prompt-{{ demo.ID }}">
           <div>
-            <strong id="generator-prompt-{{ demo.ID }}">Generate this example</strong>
-            <span>Choose a template and create a fresh report with the demo service.</span>
+            <strong id="generator-prompt-{{ demo.ID }}">{{ xtt_text_generate_example }}</strong>
+            <span>{{ xtt_text_generate_description }}</span>
           </div>
-          <button type="button" class="btn btn-primary" data-dialog-target="generator-{{ demo.ID }}">Open generator</button>
+          <button type="button" class="btn btn-primary" data-dialog-target="generator-{{ demo.ID }}">{{ xtt_text_open_generator }}</button>
         </section>
       {% endif %}
 
@@ -77,7 +139,7 @@
         <div class="demo-json-panel">
           <div class="demo-json-toolbar">
             <span>JSON</span>
-            <button type="button" data-copy-json>Copy</button>
+            <button type="button" data-copy-json data-copy-success="{{ xtt_text_copied | escape }}" data-copy-failed="{{ xtt_text_copy_failed | escape }}">{{ xtt_text_copy }}</button>
           </div>
           <pre class="demo-json"><code>{{ merge.VAL | jsonify | escape }}</code></pre>
         </div>
@@ -87,7 +149,7 @@
     </div>
 
     <form method="dialog" class="demo-dialog-footer">
-      <button class="btn">Close</button>
+      <button class="btn">{{ xtt_text_close }}</button>
     </form>
   </dialog>
 
@@ -95,19 +157,19 @@
 <dialog id="generator-{{ demo.ID }}" class="demo-dialog generator-dialog" aria-labelledby="generator-{{ demo.ID }}-title">
   <div class="demo-dialog-header">
     <div>
-      <div class="demo-dialog-title" id="generator-{{ demo.ID }}-title" role="heading" aria-level="2">Generate demo {{ demo.ID }}</div>
+      <div class="demo-dialog-title" id="generator-{{ demo.ID }}-title" role="heading" aria-level="2">{{ xtt_text_generate_demo }} {{ demo.ID }}</div>
       <p class="generator-dialog-subtitle">{{ demo.LABEL }}</p>
     </div>
-    <button type="button" class="demo-dialog-close" data-dialog-close aria-label="Close">×</button>
+    <button type="button" class="demo-dialog-close" data-dialog-close aria-label="{{ xtt_text_close }}">×</button>
   </div>
 
-  <form class="generator-form" action="{{ xtt_generate_url | escape }}" method="get" target="generator-download-{{ demo.ID }}" data-generator-form>
+  <form class="generator-form" action="{{ xtt_generate_url | escape }}" method="get" target="generator-download-{{ demo.ID }}" data-generator-form data-template-message="{{ xtt_text_choose_template | escape }}" data-download-message="{{ xtt_text_download_requested | escape }}">
     <div class="demo-dialog-body">
       <input type="hidden" name="example" value="{{ demo.ID }}">
 
       <div class="generator-fields">
         <label class="generator-field generator-field-wide">
-          <span>Template</span>
+          <span>{{ xtt_text_template }}</span>
           <select name="template" required>
             {% for template in generator.templates %}
               <option value="{{ template | escape }}"{% if forloop.first %} selected{% endif %}>{{ template }}</option>
@@ -117,9 +179,9 @@
 
         {% if generator.row_count %}
           <label class="generator-field">
-            <span>Row count</span>
-            <input type="number" name="mv_r_cnt" value="15" min="1" max="25" step="1" inputmode="numeric" required data-range-message="Row count must be between 1 and 25">
-            <small>1–25 rows</small>
+            <span>{{ xtt_text_row_count }}</span>
+            <input type="number" name="mv_r_cnt" value="15" min="1" max="25" step="1" inputmode="numeric" required data-range-message="{{ xtt_text_row_error | escape }}">
+            <small>{{ xtt_text_rows_range }}</small>
           </label>
         {% else %}
           <input type="hidden" name="mv_r_cnt" value="15">
@@ -127,9 +189,9 @@
 
         {% if generator.column_count %}
           <label class="generator-field">
-            <span>Column count</span>
-            <input type="number" name="mv_c_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="Column count must be between 1 and 3">
-            <small>1–3 columns</small>
+            <span>{{ xtt_text_column_count }}</span>
+            <input type="number" name="mv_c_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="{{ xtt_text_column_error | escape }}">
+            <small>{{ xtt_text_columns_range }}</small>
           </label>
         {% else %}
           <input type="hidden" name="mv_c_cnt" value="3">
@@ -137,9 +199,9 @@
 
         {% if generator.block_count %}
           <label class="generator-field">
-            <span>Block count</span>
-            <input type="number" name="mv_b_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="Block count must be between 1 and 3">
-            <small>1–3 blocks</small>
+            <span>{{ xtt_text_block_count }}</span>
+            <input type="number" name="mv_b_cnt" value="3" min="1" max="3" step="1" inputmode="numeric" required data-range-message="{{ xtt_text_block_error | escape }}">
+            <small>{{ xtt_text_blocks_range }}</small>
           </label>
         {% else %}
           <input type="hidden" name="mv_b_cnt" value="3">
@@ -147,18 +209,18 @@
       </div>
 
       <div class="generator-request">
-        <span>Request preview</span>
+        <span>{{ xtt_text_request_preview }}</span>
         <code data-generator-url></code>
       </div>
       <p class="generator-status" data-generator-status aria-live="polite"></p>
     </div>
 
     <div class="demo-dialog-footer">
-      <button type="button" class="btn" data-dialog-close>Cancel</button>
-      <button type="submit" class="btn btn-primary">Generate and download</button>
+      <button type="button" class="btn" data-dialog-close>{{ xtt_text_cancel }}</button>
+      <button type="submit" class="btn btn-primary">{{ xtt_text_generate_download }}</button>
     </div>
   </form>
-  <iframe name="generator-download-{{ demo.ID }}" title="Generated report download" hidden></iframe>
+  <iframe name="generator-download-{{ demo.ID }}" title="{{ xtt_text_download_frame }}" hidden></iframe>
 </dialog>
 {% endif %}
 {% endfor %}
