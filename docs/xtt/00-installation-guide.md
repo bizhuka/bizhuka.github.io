@@ -5,15 +5,14 @@ nav_order: 7
 permalink: /xtt/installation-guide/
 ---
 
-***
-Install [abapgit](https://docs.abapgit.org/guide-install.html)
-and follow the links
+## Recommended installation with abapGit
 
----
+Install [abapGit](https://docs.abapgit.org/guide-install.html), then import the dependencies in this order:
 
-### From 2020
-{: .no_toc }
-You have to install [EUI](https://github.com/bizhuka/eui) library first
+1. [EUI](https://github.com/bizhuka/eui)
+2. XTT
+
+EUI is a required dependency for current XTT versions.
 
 ---
 
@@ -23,11 +22,9 @@ You have to install [EUI](https://github.com/bizhuka/eui) library first
 
 ***
 
-If you do not know the proxy parameters for ZABAPGIT_TEST_SSL
+## Offline installation
 
-or you don't have permission to add certificates in STRUST
-
-or you cannot add parameters to  /usr/sap/ED1/SYS/profile/DEFAULT.PFL
+Use an offline abapGit project when the SAP system cannot reach GitHub, the proxy is unavailable, or you cannot maintain the required certificates in `STRUST` and SSL profile settings.
 
 ssl/client_ciphersuites = 150:PFS:HIGH::EC_P256:EC_HIGH
 
@@ -35,20 +32,19 @@ ssl/ciphersuites = 135:PFS:HIGH::EC_P256:EC_HIGH
 
 ***
 
-then download zip file
+Download the repository ZIP:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_zip.png)
 
 ***
 
-create offline project and import the zip file
+Create an offline project and import the ZIP:
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_offline.png)
 
 ***
 
-### Video instruction
-{: .no_toc }
+## Video walkthrough
 
-Installing certificates is optional
+Certificate installation is required only for an online connection from the SAP system.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QtqWRF0UuLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

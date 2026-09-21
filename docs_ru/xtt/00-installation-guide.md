@@ -5,15 +5,14 @@ nav_order: 7
 permalink: /ru/xtt/installation-guide/
 ---
 
-***
-Установите [abapgit](https://docs.abapgit.org/guide-install.html)
-и далее следуйте по ссылкам
+## Рекомендуемая установка через abapGit
 
----
+Установите [abapGit](https://docs.abapgit.org/guide-install.html), затем импортируйте зависимости в следующем порядке:
 
-### С 2020 года
-{: .no_toc }
-Установите сначала [EUI](https://github.com/bizhuka/eui)
+1. [EUI](https://github.com/bizhuka/eui)
+2. XTT
+
+Для актуальных версий XTT библиотека EUI обязательна.
 
 ---
 
@@ -23,11 +22,9 @@ permalink: /ru/xtt/installation-guide/
 
 ***
 
-Если вы не знаете параметры прокси для ZABAPGIT_TEST_SSL
+## Автономная установка
 
-или у вас нет прав на добавление сертификатов в STRUST
-
-или добавления в /usr/sap/ED1/SYS/profile/DEFAULT.PFL настроек
+Используйте автономный проект abapGit, если SAP-система не имеет доступа к GitHub, прокси недоступен либо вы не можете настроить сертификаты в `STRUST` и параметры SSL-профиля.
 
 ssl/client_ciphersuites = 150:PFS:HIGH::EC_P256:EC_HIGH
 
@@ -35,20 +32,19 @@ ssl/ciphersuites = 135:PFS:HIGH::EC_P256:EC_HIGH
 
 ***
 
-Вы можете скачать файл
+Скачайте ZIP репозитория:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_zip.png)
 
 ***
-и создать оффлайн проект импортировав zip-файл
+Создайте автономный проект и импортируйте ZIP:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/guide_offline.png)
 
 ***
 
-### Видео инструкция
-{: .no_toc }
+## Видеоинструкция
 
-Установка сертификатов необязательна
+Сертификаты требуются только для онлайн-подключения SAP-системы.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QtqWRF0UuLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>

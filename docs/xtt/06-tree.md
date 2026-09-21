@@ -9,11 +9,11 @@ _cus_index: "060"
 
 {% include _xtt_demo.html %}
 
-Maybe trees based on [subtotals](../tree-group-by-fields/) are more common, but in sap there are some other hierarchical data like WBS elements or HR organizational units.<br/>
-For this kind of data when number of sublevels are unknown and there is only relation `parent - child` you can call the method `TREE_CREATE_RELAT`.
+## Purpose
 
-### TREE_CREATE_RELAT method
-{: .no_toc }
+Demo `ZCL_XTT_DEMO_060` handles hierarchies whose depth is not known in advance, such as folders, WBS elements, or HR organizational units. Each row identifies a node and its parent; `TREE_CREATE_RELAT` turns those relations into an XTT tree.
+
+## Define the node structure
 
 **Folders hierarchy**
 ```abap
@@ -34,7 +34,9 @@ For this kind of data when number of sublevels are unknown and there is only rel
     END OF ts_root.
 ```
 
-After filling table lt_folders (dir & par_dir) just pass fields' names to `TREE_CREATE_RELAT` method.
+## Build the relation tree
+
+After filling `LT_FOLDERS`, pass the node-key and parent-key component names to `TREE_CREATE_RELAT`:
 ```abap
     GET REFERENCE OF lt_folders INTO lr_table.
     ls_root-t = zcl_xtt_replace_block=>tree_create_relat(
@@ -43,17 +45,19 @@ After filling table lt_folders (dir & par_dir) just pass fields' names to `TREE_
       iv_relat_key  = 'PAR_DIR' ).
 ```
 
-All subtotals also filled in `prepare_tree` handler. For demonstration purpose in the example only filled `LEVEL` field.
+## Enrich generated nodes
+
+Use the `PREPARE_TREE` event to calculate parent values or add hierarchy metadata. The demo stores only the generated depth in `LEVEL`:
 ```abap
 METHOD on_prepare_tree_06.
   FIELD-SYMBOLS:
     <ls_data>     TYPE ts_tree_06.
 
-  " Cast to specefic data
+  " Cast to the application type
   ASSIGN ir_data->* TO <ls_data>.
   <ls_data>-level = ir_tree->level.
 ENDMETHOD.
 ```
 
-Outline level also would copy to subitems
+Excel outline settings are copied to the generated child rows.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/tree_03.png)

@@ -19,9 +19,11 @@
   {% capture page_toc_content %}{% include toc.html html=include.html sanitize=true class="page-toc-list" h_min=2 h_max=3 %}{% endcapture %}
   {% assign page_toc_content = page_toc_content | strip %}
   {% if page_toc_content != "" %}
-    <aside class="page-toc" aria-label="On this page">
-      <strong class="page-toc-title">{% if page._locale == "ru" %}Оглавление{% else %}On this page{% endif %}</strong>
-      {{ page_toc_content }}
+    <aside class="page-toc" aria-label="{% if page._locale == 'ru' %}Оглавление{% else %}On this page{% endif %}">
+      <details class="page-toc-disclosure" open>
+        <summary class="page-toc-title">{% if page._locale == "ru" %}Оглавление{% else %}On this page{% endif %}</summary>
+        <nav aria-label="{% if page._locale == 'ru' %}Разделы страницы{% else %}Page sections{% endif %}">{{ page_toc_content }}</nav>
+      </details>
     </aside>
   {% endif %}
 {% endif %}

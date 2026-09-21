@@ -1,6 +1,6 @@
 ---
 parent: "XTT - reports"
-title: "150 Without GRID template"
+title: "150 Generate XLSX from an ALV grid"
 nav_order: 150
 permalink: /xtt/without-grid-template/
 _cus_head: "_popup_head.html"
@@ -9,22 +9,26 @@ _cus_index: "150"
 
 {% include _xtt_demo.html %}
 
-### Classes for storing templates
+## Purpose
 
-Previously, to create a report, you had to select one of the available classes for template storing
+`ZCL_XTT_FILE_GRID` creates an XLSX template from an existing ALV grid. Use it when a separate workbook template would merely duplicate the ALV columns, grouping, totals, and colors.
+
+## Template sources
+
+For a designed report, choose the storage adapter that matches the template source:
 
 ![image](https://user-images.githubusercontent.com/36256417/108595246-0249f280-73a9-11eb-88fd-c0570e8e3590.png)
 
-Namely:
-* **ZCL_XTT_FILE_SMW0** For templates tr. SMW0 (most common)
-* **ZCL_XTT_FILE_OAOR** tr. OAOR is convenient because there is a built-in BDS versioning for templates
-* **ZCL_XTT_FILE_RAW** Mainly used for templates based on String (less commonly xString) and **ZCL_XTT_HTML** class. Which in turn is used most often for sending letters
+- `ZCL_XTT_FILE_SMW0` for templates stored in transaction SMW0.
+- `ZCL_XTT_FILE_OAOR` for OAOR/BDS storage with versioning.
+- `ZCL_XTT_FILE_RAW` for templates already available as `STRING` or `XSTRING`, often with `ZCL_XTT_HTML`.
 
 
-### Tabular reports
-If you often create reports based on **CL_SALV_TABLE** or **CL_GUI_ALV_GRID** using subtotals and data grouping, and at the same time you do not want to create an Excel template that just repeats ALV output, this class will help you with this.
+## Generate from ALV
 
-This class **ZCL_XTT_FILE_GRID** creates an empty template for **ZCL_XTT_EXCEL_XLSX** and has a number of advantages over standard export to Excel
+For reports based on `CL_SALV_TABLE` or `CL_GUI_ALV_GRID`, `ZCL_XTT_FILE_GRID` builds the initial template and retains ALV grouping and subtotals.
+
+The generated workbook uses modern formatting and supports richer XTT post-processing than the standard spreadsheet export.
 
 ![image](https://user-images.githubusercontent.com/36256417/108615623-40d6c000-7430-11eb-939f-2677f7d38196.png)
 
@@ -45,16 +49,13 @@ In the final report, the data will also be grouped
 
 ***
 
-### ALV coloring
+## ALV colors
 
-Also in ALV you can use 3 colors col_positive (green), col_negative(red) and col_total (yellow)
+The adapter maps `COL_POSITIVE` to green, `COL_NEGATIVE` to red, and `COL_TOTAL` to yellow through conditional formatting.
 ![image](https://user-images.githubusercontent.com/36256417/176082738-770110d6-d42a-4a3b-8515-5bececb14631.png)
 
 Technically this feature is implemented by conditional formatting
 
 ***
 
-PS:\
-If your report is based on the **CL_SALV_TABLE** class and you need the **CL_GUI_ALV_GRID** class to pass to the **ZCL_XTT_FILE_GRID** constructor.
-
-You can use **ZCL_EUI_CONV=>GET_GRID_FROM_SALV()** method to convert object references
+If the report starts with `CL_SALV_TABLE`, use `ZCL_EUI_CONV=>GET_GRID_FROM_SALV( )` to obtain the `CL_GUI_ALV_GRID` reference required by the `ZCL_XTT_FILE_GRID` constructor.

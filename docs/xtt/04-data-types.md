@@ -9,18 +9,19 @@ _cus_index: "040"
 
 {% include _xtt_demo.html %}
 
-For MS Excel data types could be crucial, since most of the formulas depends on cell's type.
-In `ZCL_XTT_REPLACE_BLOCK` attributes you can find the following declaretions.
+## Why types matter
 
-Basic data types
+Demo `ZCL_XTT_DEMO_040` covers scalar types and XLSX post-processing. Excel formulas, sorting, and formatting depend on the actual cell type, so preserve ABAP types whenever possible and override them only when the template contract requires it.
+
+## Supported value types
 
 |Type      | Description      |
 |-------------|-------------|
-|integer| Template format (int4, int8, b, s) |
-|double| Template format (p, f, decfloat16, decfloat34) |
-|date| Template format (d) |
-|time| Template format (t) |
-|string| Template format (string) |
+|`integer`|Numeric template value for `INT4`, `INT8`, `B`, and `S`|
+|`double`|Numeric template value for `P`, `F`, `DECFLOAT16`, and `DECFLOAT34`|
+|`date`|Date value for ABAP type `D`|
+|`time`|Time value for ABAP type `T`|
+|`string`|Text value|
 |`datetime`| Virtual type (DATE + TIME) |
 |`boolean`|For Excel logical functions (TRUE or FALSE)|
 |`mask`|Use WRITE TO|
@@ -28,14 +29,16 @@ Basic data types
 |`image`|More about pictures [here](../images/)|
 |`block`|More about conditional blocks [here](../block/)|
 
-The first 4 data types detected implicitly. But for the boolean and datetime you have to specify type explicitly.
+The first four types are detected automatically. Specify `boolean` and `datetime` explicitly because ABAP has no direct template type for them.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/data_types_01.png)
 
-As you could see `;type=mask` addition can be used for material numbers to delete leading zeros and for the WBS elements use custom pattern for proper visualisation.
+Use `;type=mask` when a value must follow ABAP `WRITE TO` formatting, for example to remove leading zeros from a material number or format a WBS element.
 
 ***
 
-For line breaks, you can use **cl_abap_char_utilities=>cr_lf** the appropriate separator will be inserted automatically
+## Line and page breaks
+
+Use `CL_ABAP_CHAR_UTILITIES=>CR_LF` for a line break. XTT converts it to the representation required by the target format.
 
 | Class | Page Separator | Line Separator |
 |--|--|--|
@@ -47,23 +50,25 @@ For line breaks, you can use **cl_abap_char_utilities=>cr_lf** the appropriate s
 
 ***
 
-There are also defined several constants which detects what kind of data you pass to `merge` method.
+## Merge context kinds
+
+XTT distinguishes four context kinds passed to `MERGE( )`:
 * 'struct'
 * 'object'
 * 'table'
 * 'tree'
 
-As you can notice so far we passed only structures and tables to `merge` method.
-But also we can pass objets (they work exactly as structures) & and trees [(for hierarchical output)](../tree-group-by-fields/).
+Objects are exposed like structures; trees provide [hierarchical output](../tree-group-by-fields/).
 
 ***
-If you have in Excel
+## XLSX post-processing
+
+`ZCL_XTT_EXCEL_XLSX` adjusts the following workbook objects after inserting data:
 * [List object](../basic-tables/) & pivot tables based on them
 * Merged cells
 * Defined names
 * [Formulas](../excel-formula/) with preceded $ sign
 
-They would be 'streched' after data pasting in `ZCL_XTT_EXCEL_XLSX` class.
+These objects are expanded to match the generated range.
 
-In `ZCL_XTT_EXCEL_XML` only formulas & merged cells would be proccessed correctly<br/>
-Since relative references are used in the internal XML (unlike xlsx), there is no need in $ sign.
+`ZCL_XTT_EXCEL_XML` adjusts formulas and merged cells only. Excel XML stores relative references internally, so the special `$` marker used by XLSX formulas is unnecessary.

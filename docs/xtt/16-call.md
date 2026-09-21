@@ -1,6 +1,6 @@
 ---
 parent: "XTT - reports"
-title: "160 Calling a method from a template"
+title: "160 Call a method from a template"
 nav_order: 160
 permalink: /xtt/call/
 _cus_head: "_popup_head.html"
@@ -9,20 +9,20 @@ _cus_index: "160"
 
 {% include _xtt_demo.html %}
 
-### Background
-Previously, absolutely all transmitted data had to be formed in advance and passed to the **xtt-> merge( )** method. And sometimes there is quite a lot of such data.
-In order to reduce the amount of data transferred in example №130, the addition [;cond=](../cond/) is introduced, which allows you to write simple ABAP COND #( ) expressions.
+## Purpose
+
+Demo `ZCL_XTT_DEMO_160` calls an object method from a marker. Use `;call=` when a display value is too involved for a short [`;cond=` expression](../cond/) but does not justify another field in the report context.
 For example, if you need to display the maximum of the fields `A` and `B` in the **`R`** structure, you can write in the template`{R;cond=WHEN value-A gt value-B THEN value-A ELSE value-B }` without creating a 3rd field in **`R`**. For brevity, the expression can be written like this `{R:WHEN v-A gt value-B THEN v-A ELSE v-B}`.
 
-But what if the expression contains a lot of WHEN-THEN pairs, or is it problematic to write it on one line? To improve the reading of the template, the ability to call a method with passing parameters to it has been introduced.
+Move long or reusable presentation logic into a method so the template remains readable.
 
-### Implicit parameter passing
+## Implicit parameter passing
 
-To call a method in a template, you can use the addition **;call =**, the object itself whose methods will be called is passed in the **merge** method
+Pass the target object to `MERGE( )`, then use `;call=` in the marker.
 
 ![image](https://user-images.githubusercontent.com/36256417/124561712-02cabd80-de60-11eb-8891-3c37ebce9fd5.png)
 
-There is no need to specify the transfer of the structure **`R`** in the template
+The complete root context is passed implicitly to an importing parameter named `IS_ROOT`.
 
 ![image](https://user-images.githubusercontent.com/36256417/124562741-322dfa00-de61-11eb-85c0-bcc7fc2a58a9.png)
 
@@ -40,13 +40,15 @@ It is passed implicitly, by the name **`IS_ROOT`**
   ENDMETHOD.
 ```
 
-### Short form
-So that, as in the case of replacing `;cond =` with **`:`**,  you can replace`;call=`  with one symbol **`@`**
+## Short form
+
+As `:` abbreviates `;cond=`, `@` abbreviates `;call=`.
 
 ![image](https://user-images.githubusercontent.com/36256417/124564236-ab7a1c80-de62-11eb-959e-2d4190943faf.png)
 
-### Passing parameters explicitly
-If you don't need to pass the entire structure, you can pass the parameter explicitly via `value-FIELD` (for ;call=) or `v-FIELD` (for @)
+## Explicit parameters
+
+When the method needs only selected values, pass them explicitly with `value-FIELD` in the long form or `v-FIELD` in the `@` shorthand.
 
 ![image](https://user-images.githubusercontent.com/36256417/124570027-52ad8280-de68-11eb-8acd-d561c9bcfe74.png)
 
@@ -61,15 +63,16 @@ The method has the following signature
 ```
 
 
-Note that the type (by default STRING) as opposed to`;cond=` in the cell `{R-T:sy-tabix;type=integer}` is not required. Since the type for `rv_text` is determined dynamically
+Unlike `;cond=`, the output type is derived from the returning parameter. An explicit `;type=` is normally unnecessary.
 
 Result in two languages:
 ![image](https://user-images.githubusercontent.com/36256417/124571071-4aa21280-de69-11eb-94d9-bd9b1e020708.png)
 
 ---
 
-### PS
-Displaying dates through a function is demonstrative in nature. When using Excel, it is better to use the ABAP `D` date type, and set the format in the cell itself (Ctrl + 1)
+## Date-formatting note
+
+The date method is illustrative. For Excel, prefer ABAP type `D` and set the number format in the cell with **Ctrl+1**.
 
 ![image](https://user-images.githubusercontent.com/36256417/124572354-6823ac00-de6a-11eb-8e6c-2b4f44dea44a.png)
 
@@ -77,7 +80,7 @@ Displaying dates through a function is demonstrative in nature. When using Excel
 
 ---
 
-For universal display of dates in Pdf & Word, often you can use `;cond=` with `COUNTRY` addition
+For locale-aware dates in PDF and Word, a string template in `;cond=` with the `COUNTRY` formatting option is often sufficient.
 
 ![image](https://user-images.githubusercontent.com/36256417/124571453-9bb20680-de69-11eb-8eb0-edaee2496098.png)
 

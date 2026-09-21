@@ -7,7 +7,7 @@ permalink: /ru/xtt/
 _cus_head: "_popup_head.html"
 ---
 
-### **XTT** - Xml template toolkit
+## XTT - XML Template Toolkit
 {: .no_toc }
 
 <div class="tab-header">
@@ -34,14 +34,15 @@ _cus_head: "_popup_head.html"
   <div class="tab-pane active" id="info">
 <br/>
 <div class="container-fluid" markdown="1">
-XTT поможет вам автоматизировать вашу процедуру отчетности в SAP
+XTT формирует бизнес-документы из нативных шаблонов Microsoft Office и Adobe без OLE-автоматизации на сервере приложений SAP.
 
-- Возьмите существующий отчет у ваших клиентов
-- Используйте привычный редактор (MS Excel, Word или Adobe LiveCycle Designer) и замените некоторые его части маркерами, включенными в [фигурные скобки](../xtt/compare/)
-- Свяжите все формулы, диаграммы и сводные таблицы с этими маркерами
-- В abap вызовете метод **`merge()`** чтобы передать все данные, включая вложенные структуры, таблицы и деревья
-- Используйте методы **`download( ) | send( ) | show( )`** для соответствующих действий
-- Вот и все!
+1. Возьмите реальный документ, согласованный с пользователями.
+2. Откройте его в Excel, Word или Adobe LiveCycle Designer и замените переменные данные [маркерами в фигурных скобках](../xtt/compare/).
+3. Настройте формулы, диаграммы, сводные таблицы, стили и печать в исходном редакторе.
+4. Передайте структуру, объект, таблицу, вложенную таблицу или дерево через `MERGE( )`.
+5. Выдайте результат методом `DOWNLOAD( )`, `SHOW( )` или `SEND( )`.
+
+Шаблон отвечает за представление, ABAP - за данные и бизнес-правила. Это основная граница ответственности в XTT.
 
 </div> <!-- This close tag must be left aligned. -->
   </div>
@@ -51,7 +52,7 @@ XTT поможет вам автоматизировать вашу процед
 <br/>
 <div class="container-fluid" markdown="1">
 
-### tr. Z_XTT_DEMO
+### Транзакция `Z_XTT_DEMO`
 {: .no_toc }
 </div> <!-- This close tag must be left aligned. -->
 {% include _xtt_demo.html %}

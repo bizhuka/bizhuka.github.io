@@ -9,7 +9,13 @@ _cus_index: "020"
 
 {% include _xtt_demo.html %}
 
-To represent table in a template you have to declare it as a internal table
+## Purpose
+
+Demo `ZCL_XTT_DEMO_020` shows the standard table workflow. A flat internal table is exposed as component `T`, repeated by the template, and rendered in XLSX, DOCX, Excel XML, Word XML, or PDF.
+
+## Define the report context
+
+Declare the repeated data as an internal-table component of the root structure:
 ```abap
     " Document structure
     BEGIN OF ts_root,
@@ -21,7 +27,7 @@ To represent table in a template you have to declare it as a internal table
       datetime TYPE char14,       " date(8) + time(6)
     END OF ts_root.
 ```
-Where **tt_rand_data** is a standard table
+`TT_RAND_DATA` is a standard table with the following row type:
 ```abap
       " Random table data
       BEGIN OF ts_rand_data,
@@ -33,43 +39,44 @@ Where **tt_rand_data** is a standard table
       END OF ts_rand_data,
       tt_rand_data TYPE STANDARD TABLE OF ts_rand_data WITH DEFAULT KEY,
 ```
-The template
+## Define the repeated range
+
+The template contains the root marker `{R-T}` and field markers for the row components:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/basic_table_templ.png)
 
-The pattern for rows can take several rows (From row with first **{R-T}** to the last one)<br/>
-<br/>
-Data filling
+The repeated pattern may span several physical rows. XTT treats the range from the first `{R-T}` marker to the last marker for that block as one logical record.
+
+## Populate and merge the data
 ```abap
-    " {R-T} in a temaplte. @see get_random_table description
+    " {R-T} in the template. See GET_RANDOM_TABLE.
     ls_root-t      = cl_main=>get_random_table( ).
 
-    " For printing
+    " Header and footer values
     ls_root-footer = 'Footer'.
     ls_root-header = 'Header'.
 ```
-<br/>
-<br/>
-The final result for MS Word
+## Result and Excel behavior
+
+The resulting Word document contains one copy of the repeated range per table row:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/basic_table_word.png)
 
-All list objects in Excel with corresponding formulas would be properly zoomed.
+In XLSX output, Excel tables and their formulas are expanded to cover the generated rows.
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/basic_table_01.png)
 
-Ctl + F3
+Use **Ctrl+F3** in Excel to inspect workbook names.
 
 ![image](https://user-images.githubusercontent.com/36256417/108593671-4fc16200-739f-11eb-96d3-bd7b96169446.png)
 
 
 ***
 
-Also [data validation](https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249) are expanding automatically
+[Data-validation](https://support.microsoft.com/en-us/office/apply-data-validation-to-cells-29fecbcc-d1b9-42c1-9d76-eff3ce5f7249) ranges are expanded automatically as well.
 ![image](https://user-images.githubusercontent.com/36256417/108593426-d07f5e80-739d-11eb-8b31-bf5e014451a8.png)
 
 ***
 
-Formulas with scope are supported (Worksheet or Workbook)\
-Including "Print titles"
+XTT preserves worksheet-scoped and workbook-scoped formulas, including names used for print titles.
 
 ![image](https://user-images.githubusercontent.com/36256417/108593559-9cf10400-739e-11eb-83db-d5a7079f65ee.png)

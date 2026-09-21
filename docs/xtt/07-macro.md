@@ -9,12 +9,13 @@ _cus_index: "070"
 
 {% include _xtt_demo.html %}
 
-The simplest way I can describe macro calls is `Do not use them at all!`. There are lot of issues, restrictions with VBA macro and in general the approach is error prone. That's why in my humble opinion you should avoid it. Instead of that there is special event `PREPARE_RAW` which can give you the abilty to change XML content directly. But the posibility to call a macro still exist in the library.
+## Recommendation
 
-### VBA macro
-**The approach do not recommended**
+Demo `ZCL_XTT_DEMO_070` documents two extension points: invoking a VBA macro and modifying the generated XML through `PREPARE_RAW`. Prefer `PREPARE_RAW`. VBA depends on desktop Excel, SAP GUI, OLE, security policy, and an interactive session; it is unsuitable for background or web scenarios.
 
-All macro calls work only in SAP gui, but not in web-dynpro nor in background task.
+## VBA macro
+
+Macro calls work only in SAP GUI. They do not run in Web Dynpro or background processing.
 
 * DOWNLOAD
 ```abap
@@ -25,17 +26,17 @@ All macro calls work only in SAP gui, but not in web-dynpro nor in background ta
         cv_ole_app  = lv_ole_app ).      " Get ole2_object back
 ```
 
-after that you can call a macro by name
+After `DOWNLOAD( )` returns the OLE application object, call the macro by name:
 ```abap
   CALL METHOD OF lv_ole_app 'Run'
     EXPORTING
       #1 = 'MAIN.start'
       #2 = 'From SAP'.
 ```
-This way of calling a macro works regardless of VBA security level. 
+This call path is controlled through OLE and may behave differently from opening the workbook manually.
 
 * SHOW<br/>
-If you decided to call a macro within SAP gui you should use special pbo event handler.
+For in-place `SHOW( )`, register the `PBO` event handler:
 
 ```abap
       on_pbo_07 FOR EVENT pbo OF zcl_xtt
@@ -43,7 +44,7 @@ If you decided to call a macro within SAP gui you should use special pbo event h
             sender
             io_app_obj.
 ```
-here you can call the same macro
+The handler receives the Office application object:
 ```abap
 METHOD on_pbo_07.
   CALL METHOD OF io_app_obj 'Run'
@@ -58,13 +59,11 @@ METHOD on_pbo_07.
   CALL METHOD OF lv_charts 'Add'.
 ENDMETHOD.
 ```
-The bad news this approach depends on VBA security level. And in general do not work.
-Because of that more stable method is to handle with raw XML. It's not so difficult as it sounds.
+This route depends on the client VBA security configuration. Use raw XML processing when the required change can be expressed directly in the document package.
 
-### PREPARE_RAW event
-**recommended**
+## `PREPARE_RAW` event
 
-For 3 ms office formats (Xml Spreadsheet 2003, Word XML Document, Word XML 2003 Document) and Adobe xdp format everything is straightforward.
+For single-file XML formats - Excel XML 2003, Word XML, and Adobe XDP - the event exposes the document content directly.
 
 ```abap
       on_prepare_raw_07 FOR EVENT prepare_raw OF zcl_xtt
@@ -72,14 +71,12 @@ For 3 ms office formats (Xml Spreadsheet 2003, Word XML Document, Word XML 2003 
             sender
             ir_content. " Type Ref To XSTRING
 ```
-ir_content contains reference to document itself. And you can change it by REPLACE or REGEX statements.
+`IR_CONTENT` references the generated document. Modify it with XML APIs or carefully scoped string operations.
 
-For new MS Office Open XML formats
+For Office Open XML formats:
 1. Document (*.docx), Macro-Enabled Document (*.docm)
 1. Workbook (*.xlsx), Macro-Enabled Workbook (*.xlsm)
-the method is a little bit difficult.
-
-First of all since all previously mentioned file formats are actually zip archives, you have to extract desired file.
+these files are ZIP packages. Extract the required XML part, update it, and write it back.
 ```abap
   CASE lv_class_name.
     WHEN 'ZCL_XTT_EXCEL_XLSX'. " OR 'ZCL_XTT_EXCEL_XML'.
@@ -99,7 +96,7 @@ First of all since all previously mentioned file formats are actually zip archiv
     ev_sdoc   = lv_xml ). " As STRING
 ```
 
-After all manipulations with STRING content or IF_IXML_DOCUMENT(more convenient way) just write data back to the zip
+After modifying the string or `IF_IXML_DOCUMENT`, write the part back to the package:
 ```abap
   " Write data back
   zcl_xtt_util=>xml_to_zip(
@@ -111,13 +108,12 @@ After all manipulations with STRING content or IF_IXML_DOCUMENT(more convenient 
   <lv_content> = lo_zip->save( ).
 ```
 
-### PREPARE_RAW for archives
-Since .xlsx & .docx files are archives, it is not very convenient to extract files from them.
+## Processing individual archive parts
 
-For this, a method has been added for processing a separate file in the archive
+XTT can raise `PREPARE_RAW` for an individual file inside an XLSX or DOCX package, avoiding manual extraction in the handler.
 
 ![image](https://user-images.githubusercontent.com/36256417/103264798-f4de4080-49d5-11eb-9a44-ef4fb2b36ebb.png)
 
-and now you need to check the *path* in the archive, if the `IV_PATH IS INITIAL` event occurred for the entire archive and ir_content is a zip file
+Check `IV_PATH` in the handler. When it is initial, the event refers to the entire archive and `IR_CONTENT` contains the ZIP payload.
 
 ![image](https://user-images.githubusercontent.com/36256417/103264863-37078200-49d6-11eb-84a1-a1a79f9ffb5d.png)

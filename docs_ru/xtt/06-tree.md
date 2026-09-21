@@ -9,8 +9,11 @@ _cus_index: "060"
 
 {% include _xtt_demo.html %}
 
-Возможно, деревья основанные на [подитогах](../tree-group-by-fields/) более распространены, но в SAP есть некоторые другие иерархические данные, такие как СПП-элементы или организационные единицы HR.<br/>
-Для такого рода данных, когда количество подуровней неизвестно заранее и существует только отношение «родительский - дочерний», вы можете возпользоваться методом «TREE_CREATE_RELAT».
+## Назначение
+
+Демо-класс `ZCL_XTT_DEMO_060` формирует иерархию неизвестной глубины по ключам узла и родителя. Такой подход подходит для каталогов, элементов СПП и организационных единиц HR.
+
+Деревья с [промежуточными итогами](../tree-group-by-fields/) встречаются чаще. Для данных, заданных связью «родитель - потомок», используйте `TREE_CREATE_RELAT`.
 
 ### Метод TREE_CREATE_RELAT
 {: .no_toc }
@@ -34,7 +37,7 @@ _cus_index: "060"
     END OF ts_root.
 ```
 
-После заполнения таблицы lt_folders (dir & par_dir) просто передаем имена полей методу `TREE_CREATE_RELAT`.
+После заполнения `LT_FOLDERS` передайте в `TREE_CREATE_RELAT` имена компонентов `DIR` и `PAR_DIR`.
 ```abap
     GET REFERENCE OF lt_folders INTO lr_table.
     ls_root-t = zcl_xtt_replace_block=>tree_create_relat(
@@ -49,7 +52,7 @@ METHOD on_prepare_tree_06.
   FIELD-SYMBOLS:
     <ls_data>     TYPE ts_tree_06.
 
-  " Cast to specefic data
+  " Cast to the application type
   ASSIGN ir_data->* TO <ls_data>.
   <ls_data>-level = ir_tree->level.
 ENDMETHOD.
