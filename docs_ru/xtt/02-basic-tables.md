@@ -9,6 +9,12 @@ _cus_index: "020"
 
 {% include _xtt_demo.html %}
 
+## Назначение
+
+Демо-класс `ZCL_XTT_DEMO_020` показывает стандартный вывод плоской внутренней таблицы. Компонент `T` повторяется в шаблоне, а таблицы Excel, формулы, именованные диапазоны и проверки данных расширяются до размера результата.
+
+## Контекст и шаблон
+
 Чтобы представить таблицу в шаблоне, вы должны объявить ее как внутреннюю таблицу в коде
 ```abap
     " Document structure
@@ -42,7 +48,7 @@ _cus_index: "020"
 Заполнение данными
 
 ```abap
-    " {R-T} in a temaplte. @see get_random_table description
+    " {R-T} in the template. See GET_RANDOM_TABLE.
     ls_root-t      = cl_main=>get_random_table( ).
 
     " For printing

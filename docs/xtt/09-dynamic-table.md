@@ -9,14 +9,15 @@ _cus_index: "090"
 
 {% include _xtt_demo.html %}
 
-All you have to do is to **merge** your columns first<br/>
-And then just insert main table with the second **merge**
+## Purpose
 
-template
+Demo `ZCL_XTT_DEMO_090` generates both dimensions of an XLSX table: a variable number of columns and a variable number of data rows. The order matters - merge the column descriptions first, then merge the main data.
+
+## Template
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/09_templ.png)
 
 
-Declaration
+## Data contract
 ```abap
     " Document structure
     BEGIN OF ts_merge0,
@@ -28,7 +29,9 @@ Declaration
     END OF ts_merge1.
 ```
 
-Insert columns as __table__ or __tree__ and then insert main data
+## Merge sequence
+
+Insert the columns as a table or tree under root `C`, then insert the row data under root `R`:
 ```abap
     " Columns
     ro_xtt->merge( is_block = ls_merge0 iv_block_name = 'C' ).
@@ -37,7 +40,8 @@ Insert columns as __table__ or __tree__ and then insert main data
     ro_xtt->merge( ls_merge1 ).
 ```
 
-### Explanation
-The template could be limited to 1 column with conditional formatting
+## Design notes
 
-The example was created to demonstrate the addition of 'show_if'
+Only one prototype column is required in the template. Its formatting, formulas, and conditional formatting are copied for every generated column. The example also uses `show_if` to select column layouts conditionally.
+
+For a fixed row type with nested amount tables, see [demo 092](../dynamic-table-new-syntax/). To repeat the entire structure across worksheets, see [demo 091](../dynamic-sheets/).

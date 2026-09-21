@@ -1,6 +1,153 @@
 (function () {
   "use strict";
 
+  document.querySelectorAll(".page-toc").forEach(function (toc, tocIndex) {
+    var desktop = window.matchMedia("(min-width: 66.5rem)");
+    var disclosure = toc.querySelector("details");
+    var links = Array.from(toc.querySelectorAll("a[href^='#']"));
+    var entries = links.map(function (link) {
+      var heading = document.getElementById(decodeURIComponent(link.hash.slice(1)));
+      var label = document.createElement("span");
+      label.className = "page-toc-label";
+      label.textContent = link.textContent.trim();
+      link.replaceChildren(label);
+      var excerpt = "";
+      var sibling = heading && heading.nextElementSibling;
+      while (sibling && !/^H[1-6]$/.test(sibling.tagName)) {
+        if (sibling.matches("p, ul, ol") && sibling.textContent.trim()) {
+          excerpt = sibling.textContent.replace(/\s+/g, " ").trim().slice(0, 300);
+          break;
+        }
+        sibling = sibling.nextElementSibling;
+      }
+      return { link: link, heading: heading, title: label.textContent, excerpt: excerpt };
+    }).filter(function (entry) { return entry.heading; });
+    if (!entries.length) return;
+
+    var preview = document.createElement("div");
+    preview.className = "page-toc-preview";
+    preview.id = "page-toc-preview-" + tocIndex;
+    preview.setAttribute("role", "tooltip");
+    preview.hidden = true;
+    var title = document.createElement("strong");
+    var excerpt = document.createElement("p");
+    preview.append(title, excerpt);
+    document.body.appendChild(preview);
+    var closeTimer;
+    var previewLink;
+
+    function hidePreview() {
+      window.clearTimeout(closeTimer);
+      preview.hidden = true;
+      if (previewLink) previewLink.removeAttribute("aria-describedby");
+      previewLink = null;
+    }
+
+    function showPreview(entry) {
+      hidePreview();
+      if (!desktop.matches) return;
+      title.textContent = entry.title;
+      excerpt.textContent = entry.excerpt;
+      excerpt.hidden = !entry.excerpt;
+      preview.hidden = false;
+      var rect = entry.link.getBoundingClientRect();
+      preview.style.right = (window.innerWidth - rect.left + 12) + "px";
+      preview.style.top = Math.max(12, Math.min(rect.top - 12, window.innerHeight - preview.offsetHeight - 12)) + "px";
+      previewLink = entry.link;
+      previewLink.setAttribute("aria-describedby", preview.id);
+    }
+
+    function scheduleHide() {
+      closeTimer = window.setTimeout(hidePreview, 160);
+    }
+
+    entries.forEach(function (entry, index) {
+      entry.link.addEventListener("pointerenter", function () { showPreview(entry); });
+      entry.link.addEventListener("pointerleave", scheduleHide);
+      entry.link.addEventListener("focus", function () { showPreview(entry); });
+      entry.link.addEventListener("blur", scheduleHide);
+      entry.link.addEventListener("click", function () {
+        hidePreview();
+        if (!desktop.matches) disclosure.open = false;
+        entry.heading.setAttribute("tabindex", "-1");
+        entry.heading.focus({ preventScroll: true });
+      });
+      entry.link.addEventListener("keydown", function (event) {
+        var next = null;
+        if (event.key === "ArrowDown") next = (index + 1) % entries.length;
+        if (event.key === "ArrowUp") next = (index - 1 + entries.length) % entries.length;
+        if (event.key === "Home") next = 0;
+        if (event.key === "End") next = entries.length - 1;
+        if (next !== null) {
+          event.preventDefault();
+          entries[next].link.focus();
+        }
+      });
+    });
+    preview.addEventListener("pointerenter", function () { window.clearTimeout(closeTimer); });
+    preview.addEventListener("pointerleave", scheduleHide);
+    document.addEventListener("keydown", function (event) {
+      if (event.key === "Escape") hidePreview();
+    });
+
+    var waveFrame;
+    var pointerY;
+    function renderWave() {
+      waveFrame = null;
+      entries.forEach(function (entry) {
+        var rect = entry.link.getBoundingClientRect();
+        var distance = Math.abs(pointerY - (rect.top + rect.height / 2));
+        var proximity = Math.max(0, 1 - distance / 72);
+        var eased = (1 - Math.cos(proximity * Math.PI)) / 2;
+        entry.link.style.setProperty("--toc-mark-width", (12 + 20 * eased).toFixed(2) + "px");
+      });
+    }
+    function updateWave(event) {
+      if (!desktop.matches || event.pointerType === "touch") return;
+      pointerY = event.clientY;
+      if (!waveFrame) waveFrame = window.requestAnimationFrame(renderWave);
+    }
+    function resetWave() {
+      if (waveFrame) window.cancelAnimationFrame(waveFrame);
+      waveFrame = null;
+      entries.forEach(function (entry) {
+        entry.link.style.removeProperty("--toc-mark-width");
+      });
+    }
+    toc.addEventListener("pointermove", updateWave);
+    toc.addEventListener("pointerleave", resetWave);
+
+    var scheduled = false;
+    function updateCurrent() {
+      scheduled = false;
+      var visible = entries.filter(function (entry) { return entry.heading.getClientRects().length; });
+      var current = visible[0];
+      visible.forEach(function (entry) {
+        if (entry.heading.getBoundingClientRect().top <= 120) current = entry;
+      });
+      entries.forEach(function (entry) {
+        if (entry === current) entry.link.setAttribute("aria-current", "location");
+        else entry.link.removeAttribute("aria-current");
+      });
+    }
+    function onScroll() {
+      hidePreview();
+      if (!scheduled) { scheduled = true; window.requestAnimationFrame(updateCurrent); }
+    }
+    function updateLayout() {
+      disclosure.open = desktop.matches;
+      resetWave();
+      hidePreview();
+      updateCurrent();
+    }
+    toc.classList.add("page-toc-enhanced");
+    desktop.addEventListener("change", updateLayout);
+    window.addEventListener("resize", hidePreview);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("load", updateCurrent);
+    updateLayout();
+  });
+
   function tabPanel(tab) {
     var href = tab.getAttribute("href") || "";
     return href.charAt(0) === "#" ? document.getElementById(href.slice(1)) : null;

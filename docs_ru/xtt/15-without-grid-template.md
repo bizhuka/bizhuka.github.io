@@ -1,6 +1,6 @@
 ---
 parent: "XTT - отчеты"
-title: "150 Без шаблона GRID"
+title: "150 Формирование XLSX из ALV"
 nav_order: 150
 permalink: /ru/xtt/without-grid-template/
 _cus_head: "_popup_head.html"
@@ -8,6 +8,10 @@ _cus_index: "150"
 ---
 
 {% include _xtt_demo.html %}
+
+## Назначение
+
+`ZCL_XTT_FILE_GRID` создаёт XLSX-шаблон из существующего ALV. Используйте его, когда отдельная книга лишь повторяла бы столбцы, группировку, итоги и цвета `CL_GUI_ALV_GRID`.
 
 ### Классы для хранения шаблонов
 

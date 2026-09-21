@@ -1,6 +1,6 @@
 ---
 parent: "XTT - reports"
-title: "130 Addition ';cond='"
+title: "130 Conditional expressions"
 nav_order: 130
 permalink: /xtt/cond/
 _cus_head: "_popup_head.html"
@@ -9,7 +9,13 @@ _cus_index: "130"
 
 {% include _xtt_demo.html %}
 
-### Refinement of reports using scripts
+## Purpose
+
+Demo `ZCL_XTT_DEMO_130` evaluates small ABAP expressions inside a marker. Use `;cond=` for presentation logic that returns one value - choosing a label, formatting a derived value, or reading a component without adding a dedicated field to the report context.
+
+Keep business rules and data access in ABAP classes. A template is a view, and expressions are most maintainable when they remain short and side-effect free.
+
+## Why ABAP expressions
 
 JavaScript, FormCalc and VBA. Which language is most convenient for generating reports?
 
@@ -48,14 +54,14 @@ But more on that next time
 
 ***
 
-### ';cond=' addition 
-For now, suppose we have a structure of the following form
+## The `;cond=` directive
+
+Assume the report receives the following structure:
 
 
 ![image](https://user-images.githubusercontent.com/36256417/102319802-9f516f00-3fa5-11eb-9958-29b2c7a67b1c.png)
 
-Earlier in the report for the TIME field, you had to add **an additional variable** to display (for example) the **am** or **pm** texts.\
-Now, you can put it in a more concise way by simply creating this variable on the fly, as we do in ABAP.
+Instead of adding a separate field for an `am` or `pm` label, derive it in the marker with the same expression you would use in ABAP:
 
 ``` abap
 DATA(result) = COND #( WHEN value-time GE '120000'
@@ -63,9 +69,9 @@ DATA(result) = COND #( WHEN value-time GE '120000'
                        ELSE 'ante meridiem' ).
 ```
 
-where **value** is the structure described earlier.
+Within `;cond=`, `value` refers to the current report context.
 
-Only this time, such a variable can be created in the report itself
+The template can therefore calculate the display value directly:
 ![image](https://user-images.githubusercontent.com/36256417/102321569-10922180-3fa8-11eb-9253-14d4b069b2f7.png)
 (* hereinafter, the *highlighting* in the template was introduced purely for demonstration purposes, but I think ABAPers can easily understand the code without it)
 ---
@@ -86,59 +92,56 @@ Additional variable for numbering table rows? You can also throw her overboard
 By default all expressions in ';cond=' are converted to strings (;type=string)\
 I removed the backlighting in the last example, I want to believe that the main idea is more or less clear.
 
-### Shorthand
-For convenience **{R;cond=WHEN value-**time GE '120000' THEN 'pm' ELSE 'am'} can be abbreviated to **{R:WHEN v-**time GE '120000' THEN 'pm' ELSE 'am'}
+## Shorthand
 
-  *See templates 131
+`{R;cond=WHEN value-time GE '120000' THEN 'pm' ELSE 'am'}` can be shortened to `{R:WHEN v-time GE '120000' THEN 'pm' ELSE 'am'}`.
+
+See [demo 131](./shorthand/) for complete XLSX and DOCX form examples.
 
 In order to reduce the number of possible technical questions, I give a short FAQ in my view (for lack of real questions)\
 \(*The list will be extended if necessary)
 
 ---
 
-### FAQ
+## Behavior and compatibility
 
-* All examples are in Excel. Does it work only in it?\
-Word, Pdf and Html are of course supported too
+### Is the directive limited to Excel?
+
+No. Word, PDF, and HTML output are supported as well.
 
 ![image](https://user-images.githubusercontent.com/36256417/102329559-bfd3f600-3fb2-11eb-9ed2-c05ef3405bf8.png)
 
 ---
 
-* What about compatibility with older ABAP versions? COND () is not in my system.\
-at 7.01 I hope it will work. Although for ZABAPGIT the minimum version is 7.02 (and without it, you can't install any opensource package).
+### What about older ABAP releases?
+
+The library targets the releases supported by the installation package. Before generating the subroutine pool, XTT translates supported `COND` patterns to `IF`/`ELSEIF`/`ENDIF` and can translate simple concatenation expressions.
 1) **COND # ( )** itself before entering to **GENERATE SUBROUTINE POOL** is translated to IF-ELSEIF-ENDIF
 1) if the expression does not have a leading *WHEN* and contains **&&** the expression is converted to **CONCATENATE**.\
 Therefore, in order to avoid errors, in newer versions it is preferable to use String Templates instead of double ampersand
 
 ---
 
-* What happens if the expression throws an exception?\
-For example, should **line_exists()** be checked before **table [key]**?
+### What happens when an expression raises an exception?
+
+For example, must `LINE_EXISTS( )` be checked before a table expression?
 ![image](https://user-images.githubusercontent.com/36256417/102344267-d768aa00-3fc5-11eb-8479-cb42d84d42f3.png)
 
-Exceptions are caught. And an empty value of a certain type will be returned.\
-In DEV & QAS, a warning window will pop up\
-In PROD, the report will behave "quietly" (unless of course there are no critical important errors)
+XTT catches expression exceptions and returns the initial value of the requested type. Development and quality systems display a warning; production processing remains quiet unless the error is critical. Treat a blank result as a possible error, not only as missing data.
 
 ![image](https://user-images.githubusercontent.com/36256417/102344970-dbe19280-3fc6-11eb-814e-059a6425595a.png)
 
 
 ---
-* COND # () only? SWITCH or VALUE?\
-Yes in ';cond=' addition any ABAP expression that is exactly to the left of the sign '=' is allowed.\
-Those expressions that can be assigned to a variable, including the CONV, REDUCE and COND statements.\
-Just imho, the most useful will be exactly *condition* for displaying the value, therefore it is *;cond=WHEN*\
-If the expression does not start with *WHEN*, there will be a simple assignment to *result =*, without wrapping it in **= COND string( )**, more precisely IF-ELSE-ENDIF.
+### Is `COND` the only supported expression?
+
+No. Any supported ABAP expression that can appear on the right side of an assignment may be used, including `SWITCH`, `VALUE`, `CONV`, and `REDUCE`. An expression beginning with `WHEN` is wrapped as a condition; other expressions are assigned directly.
 
 ---
 
-* Can I then write **REDUCE** to calculate totals?\
-It is possible (there is even example 13-03), but I think it is not necessary.\
-In total, there are 5 (with REDUCE already 6) more **readable** ways to calculate totals (3 of which are available only in Excel, because they use formulas).\
-The simplest (and therefore preferable) of them, which, moreover, works in all formats, and does not require writing additional code from the ABAP side is:\
-writing **{R-T;group=}** anywhere in the template (;group=*BUKRS* if you need subtotals for *Company Code*), which will transform the table {R-T} into a tree.\
-The 'Total for all' node (level=0) will be the top node, and level=1 will be directly the table data itself. At in the grouping level=0 you can write something like that **{R-T-DMBTR;func=SUM**| AVERAGE | COUNT | FIRST **}**
+### Should `REDUCE` calculate report totals?
+
+It can, but [tree aggregation](../tree-aggregation-functions/) is usually clearer and works across output formats. Convert the table to a tree with `{R-T;group=...}` and place `;func=SUM`, `AVG`, `COUNT`, or `FIRST` on the appropriate level.
 
 for Excel, in general, you can use an **ListObject** in conjunction with '=SUBTOTAL(109, [SUM 1])'\
 More details are here 02-02, 02-03\
@@ -148,7 +151,7 @@ This digression (as well as the article as a whole) probably already tired the r
 
 ---
 
-* Is ';cond=' is fast enough?
+### Is `;cond=` fast enough?
 
 Measurement results in tr. SAT report for a table with 150.000 lines (examples 02-01 and 13-01)\
 30 and 45 seconds respectively
@@ -161,14 +164,10 @@ In the example **13-01** the structure is declared in the program and there is a
 ![image](https://user-images.githubusercontent.com/36256417/102336164-04fc2600-3fbb-11eb-998a-afdb515cff1d.png)
 
 Result is about *=1.5 slower on the same number of lines. But the 13-01 example's file itself is larger and therefore takes longer to process.\
-For large Excel reports, it may be worth doing the old-fashioned way and making calculations statically with ABAP.\
-For Word or Pdf reports, additional calls of a Perform in SUBROUTINE POOL will not be very significant, since there is usually relatively small amount of processed data
+For large Excel reports, precompute values in ABAP and benchmark with representative data. Word and PDF documents usually contain fewer repeated rows, so the expression overhead is often less significant.
 
 ---
 
-* Can a method be called in an expression?\
-Yes, you can call any *static* methods with a RETURNING parameter. But that's not quite right.\
-Template is a *View* and it should abstract from *Model* as much as possible. So the *SELECT* statements in this method will violate this rule.\
-In addition, the Z* method can have a special operator introduced in 7.70 *STEAL MONEY*\
-I even thought about writing a ban on the sequence of characters '=>', but changed my mind.\
-I leave it to your discretion.
+### Can an expression call a method?
+
+Static methods with a returning parameter can be called, but keep templates separate from data access and business behavior. A method that performs `SELECT` statements from a marker makes the report harder to test, audit, and tune. For deliberate object-method calls, use the [`;call=` directive](../call/).

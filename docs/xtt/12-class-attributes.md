@@ -9,33 +9,36 @@ _cus_index: "120"
 
 {% include _xtt_demo.html %}
 
-### Using classes
-Usually a special structure is created for reports, which contains simple fields and tables for output.\
-But if the data is already contained in the class attributes, there is no need for an additional structure.
+## Purpose
+
+Demo `ZCL_XTT_DEMO_120` passes an object directly to `MERGE( )`. Use this approach when a class already exposes the fields and tables required by the report and a duplicate root structure would add no value.
+
+## Merge an object
 
 ![image](https://user-images.githubusercontent.com/36256417/103114165-cf74ce00-4687-11eb-967d-6da7257c6257.png)
 
-An object of this class can be passed to the MERGE () method
+Pass the object reference to `MERGE( )`; public attributes are resolved like structure components.
 
-### Example in orders (IT 0298)
+## Example: personnel actions
 
-This feature is useful if you have already existing class and you just want to use it in reports.
+The pattern is especially useful for an existing domain object, for example a class that already contains IT 0000 and IT 0001 data for a personnel action.
 
 ![image](https://user-images.githubusercontent.com/36256417/103114357-65a8f400-4688-11eb-84d9-725a941be7dc.png)
 
-The template can use:
-* simple fields *{R-MV_MASSN}* & *{R-MS_P0000-STAT2}*.
-* display the table *{R-MT_P0000}*.
-* and even read a single value from the table *{R;cond=value-MT_P0001[ 1 ]-ENAME}* by using the [;cond=](../cond/) addition
-* ';cond=' will also help you to conditionally output something *{R;cond=WHEN value-mv_massn eq '01' THEN \|Hiring at { value-ms_p0000-begda DATE = ENVIRONMENT }\| WHEN value-mv_massn eq '02' ...*
+The template can:
 
-without creating an additional *root* structure and manipulating class attributes
+- read scalar and nested attributes such as `{R-MV_MASSN}` and `{R-MS_P0000-STAT2}`;
+- repeat an internal table such as `{R-MT_P0000}`;
+- read an entry with an expression such as `{R;cond=value-MT_P0001[ 1 ]-ENAME}`;
+- derive conditional text through [`;cond=`](../cond/).
 
-### Private and protected data
+No additional root structure is required.
 
-**Public** data is always available for output
+## Attribute visibility
 
-if you add **ZCL_XTT_REPLACE_BLOCK** class to friends you can use all the attributes of this class
+Public attributes are always available.
+
+To expose protected or private attributes, declare `ZCL_XTT_REPLACE_BLOCK` as a friend of the report object. Do this deliberately: it gives the rendering layer access to the object's internal state.
 
 ![image](https://user-images.githubusercontent.com/36256417/103114499-013a6480-4689-11eb-9f7e-b782feb61603.png)
 

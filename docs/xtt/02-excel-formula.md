@@ -9,21 +9,21 @@ _cus_index: "021"
 
 {% include _xtt_demo.html %}
 
-### Formulas in XTT
-Direct editing of formulas from the code is prohibited, as this approach is prone to errors and is not very informative.\
-In addition, the internal representation of formulas in Excel xlsx (*absolute*) and Excel xml (*relative*) does not allow using a uniform approach if formulas were filled from the ABAP side.
-Instead, there are a few (hopefully simple) rules for editing formulas in **MS Excel** itself.
+## Purpose
 
-### Copying data
-New lines (and cells) are added by copying the original line in the template. Formulas are copied along with cell data, borders, and other formatting.
+Demo `ZCL_XTT_DEMO_021` shows how formulas survive row and column expansion. Define formulas in Excel, where they remain visible and testable; generating formula strings in ABAP is fragile and differs between XLSX absolute references and Excel XML relative references.
+
+## Formula-copying model
+
+XTT creates new rows and cells by copying the template range. Formulas travel with values, borders, styles, and other cell properties.
 
 To prevent the formulas from "shifting" during copying cells, you can use several methods:
 
-### Relative links in XLSX
+## Relative references in XLSX
 
-The most native and reliable way for Excel is to calculate distance from the current cell where we write the formula, you could use *=OFFSET()* in conjunction with =INDIRECT() for creating *relative* formulas.
+For references relative to the current formula cell, use `OFFSET()` with `INDIRECT()`, or use R1C1 notation through `INDIRECT()`.
 
-those, to get the sum of the previous three cells (1,2,3), you need to shift by -3 cells by columns and expand the range by 3 cells
+To sum the preceding three cells, move three columns left and return a three-column range.
 
 ![image](https://user-images.githubusercontent.com/36256417/91626264-4eeedb00-e9cf-11ea-878f-ffca4d5ed260.png)
 
@@ -33,10 +33,11 @@ The offset can also be specified directly in INDIRECT("RC[**-3**]", 0), in such 
 
 which, without passing arguments, return the current row and column
 
-### $ sign for rows
-It is not very convenient to specify offsets from the current cell, therefore, for simplicity, a special rule was introduced:
+## Runtime row substitution
 
-If you specify the **current** row number with **$** sign, it will be replaced at runtime with actual row number 
+As a simpler alternative, XTT supports a template-specific `$` rule:
+
+When the current template row number is prefixed with `$`, XTT replaces it with the generated row number at runtime.
 
 ![image](https://user-images.githubusercontent.com/36256417/91650284-5b426900-ea9f-11ea-92ea-4563a952efc1.png)
 
@@ -44,49 +45,43 @@ The final report will be like this
 
 ![image](https://user-images.githubusercontent.com/36256417/91650345-339fd080-eaa0-11ea-9d36-214d2627da32.png)
 
-PS: For [;direction=column](../output-direction/) (table output by columns) this rule will accordingly work for formulas in this form **$E**
+For [`;direction=column`](../output-direction/), the equivalent substitution applies to column references such as `$E`.
 
-### Shared formulas
+## Shared formulas
 
-Previously, **AOK & XTT** had "mysterious" formulas disappearing\
-This bug occurred when a relative link was encountered several times in a row
-
-In the current version (I hope), the conversion from absolute reference to relative and vice versa happens without problems
+Current XTT versions preserve repeated shared formulas while converting between absolute and relative references. This avoids the disappearing-formula problem seen in older releases.
 
 ![image](https://user-images.githubusercontent.com/36256417/91650747-2df8b980-eaa5-11ea-8da9-313a1eb31f78.png)
 
 ***
 
-### Named cell ranges
+## Named ranges
 
-By referring to a named range that will be modified at runtime
+Named ranges are updated during generation:
 
-* The entire range will be stretched once
+- A normal named range is expanded once to cover the generated data.
 
 ![image](https://user-images.githubusercontent.com/36256417/91657698-cb271280-eae4-11ea-9216-bb44215fddb0.png)
 
-* If the name of the range ends with '_' this range will be multiplied and the final list (with all ranges) will be replaced in the formula itself 
+- If the name ends in `_`, XTT repeats the range and substitutes the resulting range list into the formula.
 
 ![image](https://user-images.githubusercontent.com/36256417/91702501-a7260880-eb9a-11ea-9e20-5d468d640e51.png)
 
 
-### Sum of children
-For the sum of children it is not at all necessary to use the previous method with named cells or to create [hierarchies](../tree-group-by-fields/)
+## Totals, arrays, and conditional formatting
 
-If you need to summarize a table field, you can use standard Excel tools
+You do not need named ranges or an XTT [tree](../tree-group-by-fields/) merely to total a flat Excel table. Standard Excel table formulas are often sufficient.
+
+Use Excel's native table features when the calculation is specific to XLSX output.
 
 ![image](https://user-images.githubusercontent.com/36256417/91716839-2e32ab00-ebb2-11ea-961e-c12ae27ce2c6.png)
 
-### Array formulas
 [Array formulas](https://exceljet.net/glossary/array-formula) are also supported
 
 ![image](https://user-images.githubusercontent.com/36256417/114306635-323a8a00-9afe-11eb-85b4-619749102b9c.png)
 
-### Word & PDF
-But what if you need to sum the field values not only in Excel, but also in Word or Pdf?
-In this case, you can use the aggregation functions [;func= SUM | AVG | COUNT | FIRST](../tree-aggregation-functions/)
+For calculations that must also work in Word or PDF, use XTT aggregation functions: [`;func=SUM`, `AVG`, `COUNT`, or `FIRST`](../tree-aggregation-functions/).
 
-### Conditional formatting formulas
-For formulas in conditional formatting, it is advisable to specify the scope as whole columns
+For conditional-formatting formulas, define the applicable range as whole columns when possible. This gives XTT room to expand the data without leaving generated cells outside the rule.
 
 ![image](https://user-images.githubusercontent.com/36256417/91657657-8307f000-eae4-11ea-941b-a4dc1dd409ef.png)

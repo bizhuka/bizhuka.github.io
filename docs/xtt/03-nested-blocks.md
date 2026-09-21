@@ -9,8 +9,11 @@ _cus_index: "030"
 
 {% include _xtt_demo.html %}
 
-While processing a table it is necessary to determine the bounds of the "output area".
-That's why you have to  define nested blocks (table of tables etc) very carefully.
+## Purpose
+
+Demo `ZCL_XTT_DEMO_030` explains nested repetition: a table of root records where every root record can itself contain a detail table. Correct block boundaries are essential because XTT must know exactly which part of the template to copy at each level.
+
+## Define the nested data
 
 ```abap
 
@@ -27,31 +30,30 @@ That's why you have to  define nested blocks (table of tables etc) very carefull
 ro_xtt->merge( is_block = lt_root iv_block_name = 'R' ).
 ```
 
-If you pass the whole table as a parameter to `merge` method the bounds for
-`ZCL_XTT_WORD_DOCX`, `ZCL_XTT_EXCEL_XML` and `ZCL_XTT_PDF` will be the entire document. For the `ZCL_XTT_EXCEL_XML` the bounds will be a spreadsheet.
+Pass the outer table to `MERGE( )` with root name `R`. For `ZCL_XTT_WORD_DOCX` and `ZCL_XTT_PDF`, the root block can span the document; in `ZCL_XTT_EXCEL_XML`, it spans a worksheet.
 
 ---
 
-For MS Word the {R} bounds will be the document itself with trailing 'Page Break'
-And {R-T} bounds will be 1 row without header
+## Format-specific boundaries
+
+In Word, `{R}` represents the document-level block, including its trailing page break. `{R-T}` represents one detail row without the header.
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/nested_bl_word_templ.png)
 
 ---
 
-As for 'Xml Spreadsheet 2003' format {R} bounds will be middle sheet
+In Excel XML 2003, `{R}` can identify the worksheet that must be repeated:
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/nested_bl_2003_templ.png)
 
-And after data replication each ts_root row will be a single sheet
+After expansion, every `TS_ROOT` row becomes a separate worksheet.
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/nested_bl_2003_res.png)
 
-I want to emphasize that **TITLE** is not a key word. This is just a structure field, not more than
+`TITLE` is an ordinary structure component, not a reserved XTT keyword.
 
 ---
 
-For pdf class you have to name replicated page as IV_BLOCK_NAME parameter of MERGE method.
-And if you want page breaks within the document set the attribute of the first child as here ... 
+For PDF output, pass the replicated page name through `IV_BLOCK_NAME`. To force page breaks inside the document, set the break attribute on the first child subform as shown below.
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/nested_bl_pdf_templ.png)

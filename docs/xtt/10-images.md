@@ -9,37 +9,32 @@ _cus_index: "100"
 
 {% include _xtt_demo.html %}
 
-### Images in a template
-{: .no_toc }
+## Purpose
 
-What is the most convenient way to show in a template that several images will be displayed in a given place?
+Demo `ZCL_XTT_DEMO_100` replaces image placeholders in XLSX, DOCX, Word XML, and PDF templates. Use a placeholder whenever the template controls the frame, size, position, border, or other presentation details.
 
-If the template has a predetermined number of images, you can create empty images and change the content at runtime.
-There are no problems with changing content, because in XML-based formats images are usually stored [in base64](https://en.wikipedia.org/wiki/Base64),
-in MS office pictures are files in certain directories in the zip archive itself.
-It's pretty simple
+For a fixed number of images, create empty placeholders and replace their binary content at runtime. XML formats commonly embed image data as [Base64](https://en.wikipedia.org/wiki/Base64); Office Open XML stores images as package parts.
 
-### Simple pictures
+## Create an image in ABAP
 
-If the output is not complicated by anything and the picture in the template is a regular rectangle, you can describe the picture like other fields
+For a simple rectangular image, expose it like any other report field.
 
 ![image](https://user-images.githubusercontent.com/36256417/91287754-f42c6800-e7b1-11ea-99ce-bb9dc2b49113.png)
 
-On the ABAP side, we only need 1 additional class **zcl_xtt_image**.
-One instance of it will be the finished image
+Use one `ZCL_XTT_IMAGE` instance per generated picture:
 
 ```abap
  img  TYPE REF TO zcl_xtt_image, " <--- IMAGE
 ```
 
-When creating an object, you will need to transfer only binary data (iv_image TYPE xString)
+At minimum, pass the binary content as `IV_IMAGE TYPE XSTRING`.
 
 ```abap
     " Create new instance
     <ls_icon>-img = zcl_xtt_image=>create_image( iv_image  = lv_image ).
 ```
 
-Additionally, you can transfer the size of the image and its format (extension)
+Optionally provide the file extension and dimensions.
 
 ```abap
     " Create new instance
@@ -49,23 +44,20 @@ Additionally, you can transfer the size of the image and its format (extension)
                                                      iv_height = lv_height ).
 ```
 
-But what if we also need a picture frame and rounded edges?
+## Use a styled placeholder
 
-### Picture templates
-If you add parameters in the text like that {R-T-IMG;**borderColor**=black;**border-style**=dotted} there will be a lot of such parameters and the implementation itself will be very different in pdf from Excel.
+Keep visual properties in the document template rather than encoding format-specific styling directives in a marker. XTT replaces the image content and preserves the placeholder's presentation.
 
-### 1) Excel
-The easiest option is to add the ID for this field to the alternative text
+### Excel
+
+You can identify an image through its alternative text, but this is difficult for a template maintainer to discover.
 ![image](https://user-images.githubusercontent.com/36256417/91291353-c0a00c80-e7b6-11ea-909c-3c8829c00e6e.png)
 
-But this method is uninformative (it is simply **invisible** for user), and in order to make life easier for another ABAP developer, who will look for the origins of this picture,
-you can name the image itself in accordance with the ABAP field passed to the template
+Naming the shape after the ABAP field makes the mapping easier to inspect.
 
 ![image](https://user-images.githubusercontent.com/36256417/91292441-52f4e000-e7b8-11ea-99a9-3b21e3130556.png)
 
-This will make it clearer, but to minimize the number of curses, you can make it even easier
-
-Just specify the field along with the template for the picture in one Excel cell
+The clearest option is to place the field marker in the same cell as the image placeholder.
 ![image](https://user-images.githubusercontent.com/36256417/91292377-39539880-e7b8-11ea-996b-15d659379b71.png)
 
 ***
@@ -77,12 +69,12 @@ Excel
 
 ***
 
-### 2) Word
-Excel's cousin also has an Alt Text field.\
-But is it easy to spot? Word has bookmarks and hyperlinks, but they also have the same lack
+### Word
+
+Word also supports alternative text, bookmarks, and hyperlinks, though each can be easy to miss during maintenance.
 ![image](https://user-images.githubusercontent.com/36256417/91293186-74a29700-e7b9-11ea-961a-8476ab0d46cf.png)
 
-It will be much easier to notice it in the notes.
+Using a visible note makes the marker easier to find.
 ![image](https://user-images.githubusercontent.com/36256417/91293596-16c27f00-e7ba-11ea-8c0b-8f2a8d054be9.png)
 
 ***
@@ -93,18 +85,16 @@ Word
 
 ***
 
-### 3) Pdf
+### PDF
 
-Finally, the beloved Pdf & LiveCycle Designer by many developers
-
-Could convert texts to **Image** fields
+In Adobe LiveCycle Designer, convert the placeholder to an **Image** field.
 ![image](https://user-images.githubusercontent.com/36256417/91294517-7bcaa480-e7bb-11ea-8a15-78d55616863b.png)
 
 
-And it also allows, if desired, to give names in curly braces on the **XML Source** tab
+The marker may be assigned in the **XML Source** view.
 ![image](https://user-images.githubusercontent.com/36256417/91294231-02cb4d00-e7bb-11ea-97e7-a32966defa83.png)
 
-But you can also specify it in the URL (although it is not so noticeable)
+Alternatively, store it in the URL property, noting that this mapping is less visible to the template editor.
 
 ![image](https://user-images.githubusercontent.com/36256417/91294975-29d64e80-e7bc-11ea-8549-7109ba04160a.png)
 

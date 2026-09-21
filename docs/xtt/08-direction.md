@@ -9,11 +9,13 @@ _cus_index: "080"
 
 {% include _xtt_demo.html %}
 
-All tables and trees in you template could be populated with rows and columns as well.<br/>
-But the feature works only for the `ZCL_XTT_EXCEL_XLSX` class and 2 file types (xlsx & xlsm).<br/>
-To do this just add special marker {;direction=column} for your table or tree wherever you want.
+## Purpose
 
-ABAP code is similar to the [Example №05](../tree-group-by-fields/)
+Demo `ZCL_XTT_DEMO_080` expands a table or tree horizontally instead of vertically. The `;direction=column` directive is supported by `ZCL_XTT_EXCEL_XLSX` for XLSX and XLSM output.
+
+## Build the data
+
+The ABAP data is prepared exactly as in the [grouped-tree example](../tree-group-by-fields/):
 ```abap
     SET HANDLER on_prepare_tree_05 ACTIVATION abap_true.
 
@@ -24,7 +26,9 @@ ABAP code is similar to the [Example №05](../tree-group-by-fields/)
 
     SET HANDLER on_prepare_tree_05 ACTIVATION abap_false.
 ```
-The main difference in the template itself.
+## Mark the template
+
+The difference is in the template. Add `{R-T;direction=column}` (or the equivalent marker for your block) to the table or tree that must grow across columns.
 
 * Table
 
@@ -33,7 +37,7 @@ The main difference in the template itself.
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/dir_column_01.png)
 
-The result will appear like that
+The generated output expands horizontally:
 * Table
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/dir_column_03.png)
@@ -41,6 +45,6 @@ The result will appear like that
 
 ![](https://raw.githubusercontent.com/wiki/bizhuka/xtt/img/dir_column_04.png)
 
-### Data offset
-If the result in the report has moved down, add non-empty cells to the left of the column with the template.\
-Pay attention to `I stay here`
+## Prevent an unwanted offset
+
+If generated data shifts downward, place non-empty anchor cells to the left of the template column. The cell labelled `I stay here` in the demo illustrates the required anchor.

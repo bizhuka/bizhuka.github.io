@@ -1,6 +1,6 @@
 ---
 parent: "XTT - reports"
-title: "140 Blocks by condition"
+title: "140 Conditional blocks"
 nav_order: 140
 permalink: /xtt/block/
 _cus_head: "_popup_head.html"
@@ -9,31 +9,29 @@ _cus_index: "140"
 
 {% include _xtt_demo.html %}
 
-### Conditional block output
-{: .no_toc}
+## Purpose
 
-From time to time in reports it is necessary to hide or show part of the data in the template.
-How can this be done most informatively?
+Demo `ZCL_XTT_DEMO_140` shows or removes an entire template region according to an ABAP condition. Use `;type=block` when the condition affects a range of rows or a PDF subform, rather than a single value.
 
 ![image](https://user-images.githubusercontent.com/36256417/103118647-153a9200-469a-11eb-9a26-35cce364830d.png)
 
 
-### Another ABAP in the template
-The two previous cases were
-* Conditional data output with formatting in [;cond=](../cond/)
-* [show_if, hide_if](../tree-output-level-by-condition/) for conditional selection from "templates" of rows
+## Choose the appropriate conditional feature
 
-### Addition ';type=block'
-It resembles most of all **show_if**, but it is not intended for a specific tree or table, but for writing arbitrary conditions
+- Use [`;cond=`](../cond/) to calculate one displayed value.
+- Use [`show_if` or `hide_if`](../tree-output-level-by-condition/) to select row layouts in a repeated tree.
+- Use `;type=block` for an arbitrary, one-time template region.
+
+## `;type=block`
 
 ***
 
-For example, this block will be displayed in 2019 *;cond=sy-datum(4) eq '2019'*
+This example displays the block only in 2019: `;cond=sy-datum(4) EQ '2019'`.
 ![image](https://user-images.githubusercontent.com/36256417/103118035-6432f800-4697-11eb-9e68-ce6b97282058.png)
 
 ***
 
-The 12th line will be displayed if the TITLE field in the R structure contains data
+The next block is displayed when `TITLE` in root `R` is not initial.
 
 ![image](https://user-images.githubusercontent.com/36256417/103118421-fa1b5280-4698-11eb-8070-cd42e825d340.png)
 
@@ -41,7 +39,7 @@ You could also write *;cond=value-title IS NOT INITIAL*
 
 ***
 
-For PDF, **SUBFORM** is used for detecting scopes of the block. For Excel & Word, the scope is declared by tables rows
+For PDF, a **subform** defines the block boundary. In Excel and Word, table rows define it.
 
 Table borders may not be visible in Word
 
@@ -54,13 +52,10 @@ Table Tools -> Layout -> View Gridlines
 
 ***
 
-Previously, to hide a block, you had to create a special ABAP table and fill it in:
-* 1 - line (for display)
-* 0 - if it was necessary to hide the block
+The directive replaces the older workaround of passing a one-row table to show a region and an empty table to hide it.
 
-This add-on simply performs the same function only by writing a condition in the template itself
+## Shorthand
 
-### Shorthand
-For convenience **{R-BL2;type=block;cond=**strlen( **value**-TITLE ) gt 0} can be abbreviated to **{R-BL2;=**strlen( **v**-TITLE ) gt 0}
+`{R-BL2;type=block;cond=strlen( value-TITLE ) GT 0}` can be shortened to `{R-BL2;=strlen( v-TITLE ) GT 0}`.
 
   *See templates 140

@@ -5,8 +5,7 @@ nav_order: 1
 permalink: /xtt/compare/
 ---
 
-### Mustachioed template engine
-{: .no_toc }
+## Template model
 
 &nbsp;&nbsp;&nbsp;Most modern template engines in the web (and also in ABAP) work according to one simple principle. <br/>
 **Data + Template = Ready document** <br/>
@@ -49,7 +48,7 @@ Bookmarks are also needed in Word (2 previous ones specialize in Excel format)
 
 ***
 
-### **XTT** - Xml template toolkit
+## XTT approach
 
 &nbsp;&nbsp;&nbsp;This opus is more like the latest development and maximizes the capabilities of the WYSIWYG editor itself.<br/>
 For data transfer, as in the XLSX Workbench, the concept of context is used.
@@ -108,7 +107,7 @@ The structure of the document will look approximately the same everywhere.
 
 ***
 
-### Directives
+## Directive reference
 
 &nbsp;&nbsp;&nbsp;All special features (directives) are always inside **{curly braces}**<br/>
 They, quite conditionally, can be divided into 3 main groups:
